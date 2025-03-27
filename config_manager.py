@@ -10,6 +10,7 @@ It provides a singleton ConfigManager that can be imported across all modules.
 """
 
 import os
+from dotenv import load_dotenv
 import sys
 import logging
 import configparser
@@ -35,7 +36,6 @@ class ConfigManager:
         self.config = configparser.ConfigParser()
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
         self.config_path = os.path.join(self.script_dir, "config.ini")
-        self._api_keys = {}
         self._load_config()
         self._initialized = True
         
@@ -77,20 +77,10 @@ class ConfigManager:
             "max_tokens": "150",
             "temperature": "0.7"
         }
-        
-        self.config["API_Keys"] = {
-            "grok_key": "",
-            "openai_key": "",
-            "claude_key": "",
-            "elevenlabs_key": "",
-            "google_tts_key": "",
-            "google_stt_key": ""
-        }
-        
+                       
         self.config["API_Models"] = {
             "grok_model": "grok-beta",
             "openai_model": "gpt-4o",
-            "claude_model": "claude-3-sonnet-20250219",
             "whisper_model": "base"
         }
         
@@ -161,13 +151,6 @@ class ConfigManager:
                 self._create_default_config()
                 return
     
-    def _load_api_keys(self):
-        """Load API keys from config or external secure storage."""
-        # In a production app, consider using environment variables or a secure vault
-        # instead of storing API keys in the config file
-        if "API_Keys" in self.config:
-            self._api_keys = dict(self.config["API_Keys"])
-    
     def get(self, section, key, fallback=None):
         """Get a configuration value by section and key."""
         try:
@@ -201,12 +184,18 @@ class ConfigManager:
             return fallback
     
     def get_api_key(self, provider):
-        """Get the API key for a specific provider."""
-        key_name = f"{provider}_key"
-        if key_name in self._api_keys:
-            return self._api_keys[key_name]
-        self.logger.warning(f"API key for {provider} not found")
-        return ""
+        """Get the API key for a specific provider from environment variables."""
+         # Construct the environment variable name (e.g., "GROK_KEY", "OPENAI_KEY")
+        key_name = f"{provider.upper()}_KEY" 
+        api_key = os.getenv(key_name) # Use os.getenv to read the environment variable
+
+        if api_key:
+            Optional: Log only part of the key for verification, NEVER the full key
+            self.logger.debug(f"Found API key for {provider} in environment.")
+            return api_key
+        else:
+            self.logger.warning(f"API key for {provider} (variable: {key_name}) not found in environment variables or .env file.")
+            return "" # Return empty string if not found
     
     def get_active_providers(self):
         """Get list of active AI providers."""

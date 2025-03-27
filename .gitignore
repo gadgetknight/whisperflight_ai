@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+# Add your venv folder name here if it's inside the project, e.g.:
+# whisper_env/

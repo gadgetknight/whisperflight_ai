@@ -4,6 +4,7 @@ pygame>=2.5.0
 pyaudio>=0.2.13
 requests>=2.31.0
 configparser>=6.0.0
+python_dotenv 
 
 # SimConnect for MSFS integration
 SimConnect>=0.4.26
