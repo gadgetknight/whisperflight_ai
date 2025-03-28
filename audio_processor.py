@@ -1,13 +1,13 @@
 """
 Whisper Flight AI - Audio Processor
-Version: 5.1.11 (Corrected for key/ID loading)
+Version: 5.1.15 (Corrected - Robust Listen Control)
 Purpose: Handles speech recognition and text-to-speech with multiple providers
-Last Updated: March 26, 2025
+Last Updated: March 28, 2025
 Author: Your Name
 
-Changes based on debugging:
-- Corrected ElevenLabsTTS __init__ to remove all key/ID references.
-- Moved ElevenLabsTTS API Key and Voice ID fetching into the synthesize method.
+Changes:
+- Made start/stop_continuous_listening more robust with thread checks.
+- Removed state import and speak's restart logic (handled by StateManager).
 """
 
 import os
@@ -23,540 +23,355 @@ import queue
 import tempfile
 from abc import ABC, abstractmethod
 from config_manager import config
+# DO NOT import state_manager here
 
-# --- Availability Checks (Keep as they are) ---
-try:
-    import speech_recognition as sr
-    GOOGLE_STT_AVAILABLE = True
-except ImportError:
-    GOOGLE_STT_AVAILABLE = False
-    logging.warning("SpeechRecognition module not found. Google STT unavailable.")
+# --- Availability Checks ---
+try: import speech_recognition as sr; GOOGLE_STT_AVAILABLE=True
+except ImportError: GOOGLE_STT_AVAILABLE=False; logging.warning("SpeechRec N/A.")
+try: import whisper; WHISPER_AVAILABLE=True; WHISPER_HAS_TIMESTAMPS=hasattr(whisper.DecodingOptions(),"word_timestamps") if whisper else False
+except ImportError: WHISPER_AVAILABLE=False; WHISPER_HAS_TIMESTAMPS=False; logging.warning("Whisper N/A.")
+except AttributeError: WHISPER_HAS_TIMESTAMPS=False; logging.warning("Whisper struct changed?")
+try: import elevenlabs; ELEVENLABS_AVAILABLE=True
+except ImportError: ELEVENLABS_AVAILABLE=False; logging.warning("ElevenLabs N/A.")
+try: from gtts import gTTS; GTTS_AVAILABLE=True
+except ImportError: GTTS_AVAILABLE=False; logging.warning("gTTS N/A.")
 
-try:
-    import whisper
-    WHISPER_AVAILABLE = True
-    WHISPER_HAS_TIMESTAMPS = hasattr(whisper.DecodingOptions(), "word_timestamps")
-except ImportError:
-    WHISPER_AVAILABLE = False
-    WHISPER_HAS_TIMESTAMPS = False
-    logging.warning("Whisper module not found. Whisper STT unavailable.")
-
-try:
-    import elevenlabs
-    ELEVENLABS_AVAILABLE = True
-except ImportError:
-    ELEVENLABS_AVAILABLE = False
-    logging.warning("ElevenLabs module not found. ElevenLabs TTS unavailable.")
-
-try:
-    from gtts import gTTS
-    GTTS_AVAILABLE = True
-except ImportError:
-    GTTS_AVAILABLE = False
-    logging.warning("gTTS module not found. Google TTS unavailable.")
-
-# --- SpeechToText Base Class and Implementations (Keep as they are) ---
+# --- SpeechToText Base Class and Implementations ---
 class SpeechToText(ABC):
+    # --- Keep __init__ and record_audio as before ---
     def __init__(self):
         self.logger = logging.getLogger(self.__class__.__name__)
         self.recording_seconds = config.getfloat("Speech", "recording_seconds", 5)
-        self.sample_rate = 16000
-        self.channels = 1
-        self.chunk_size = 1024
-        self.format = pyaudio.paInt16
-    
+        self.sample_rate = 16000; self.channels = 1; self.chunk_size = 1024; self.format = pyaudio.paInt16
     @abstractmethod
-    def transcribe(self, audio_data):
-        pass
-    
-    # record_audio method remains the same...
+    def transcribe(self, audio_data): pass
     def record_audio(self):
-        self.logger.info("Recording audio started")
-        device_name = config.get("Audio", "input_device", "default")
-        device_index = None
-        p = pyaudio.PyAudio()
-        if device_name != "default":
-            for i in range(p.get_device_count()):
-                info = p.get_device_info_by_index(i)
-                if device_name.lower() in info["name"].lower() and info["maxInputChannels"] > 0:
-                    device_index = i
-                    break
-        temp_file = tempfile.NamedTemporaryFile(suffix=".wav", delete=False)
-        temp_filename = temp_file.name
-        temp_file.close()
-        max_retries = 3
-        for attempt in range(max_retries):
+        self.logger.debug("Recording audio started"); device_name=config.get("Audio", "input_device", "default"); device_index=None; p=None
+        try:
+            p = pyaudio.PyAudio(); device_count = p.get_device_count()
+            if device_name != "default":
+                for i in range(device_count):
+                    try: info = p.get_device_info_by_index(i)
+                    except OSError: info = None # Handle potential error getting device info
+                    if info and 'name' in info and 'maxInputChannels' in info and device_name.lower() in info["name"].lower() and info["maxInputChannels"] > 0:
+                        device_index = i; self.logger.info(f"Using input: {info['name']} (Idx: {i})"); break
+                if device_index is None: self.logger.warning(f"Input '{device_name}' not found, using default.")
+            else: self.logger.info("Using default audio input.")
+            temp_fn = None; stream = None
+            with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as temp_file: temp_fn = temp_file.name
             try:
-                stream = p.open(
-                    format=self.format,
-                    channels=self.channels,
-                    rate=self.sample_rate,
-                    input=True,
-                    input_device_index=device_index,
-                    frames_per_buffer=self.chunk_size
-                )
-                frames = []
-                for _ in range(int(self.sample_rate / self.chunk_size * self.recording_seconds)):
-                    data = stream.read(self.chunk_size, exception_on_overflow=False)
-                    frames.append(data)
-                stream.stop_stream()
-                stream.close()
-                wf = wave.open(temp_filename, 'wb')
-                wf.setnchannels(self.channels)
-                wf.setsampwidth(p.get_sample_size(self.format))
-                wf.setframerate(self.sample_rate)
-                wf.writeframes(b''.join(frames))
-                wf.close()
-                self.logger.info(f"Audio recorded to {temp_filename}")
-                break # Success
-            except Exception as e:
-                self.logger.error(f"Error recording audio (attempt {attempt + 1}/{max_retries}): {e}")
-                if attempt + 1 == max_retries:
-                    p.terminate() # Terminate PyAudio if retries fail
-                    return None
-                time.sleep(1)
-        p.terminate()
-        return temp_filename
-    
-    # get_input method remains the same...
+                 stream = p.open(format=self.format, channels=self.channels, rate=self.sample_rate, input=True, input_device_index=device_index, frames_per_buffer=self.chunk_size)
+                 self.logger.debug("Audio stream opened."); frames = []
+                 num_chunks = int(self.sample_rate / self.chunk_size * self.recording_seconds)
+                 for i in range(num_chunks):
+                     try: frames.append(stream.read(self.chunk_size, exception_on_overflow=False))
+                     except IOError as e: self.logger.warning(f"Audio read error: {e} (Chunk {i+1}/{num_chunks})")
+                 self.logger.debug("Finished reading stream.")
+            finally:
+                 if stream:
+                     try: stream.stop_stream(); stream.close(); self.logger.debug("Audio stream closed.")
+                     except Exception as e: self.logger.error(f"Stream close error: {e}")
+            try:
+                with wave.open(temp_fn, 'wb') as wf:
+                    wf.setnchannels(self.channels); wf.setsampwidth(p.get_sample_size(self.format)); wf.setframerate(self.sample_rate); wf.writeframes(b''.join(frames))
+                self.logger.info(f"Audio recorded: {temp_fn}"); return temp_fn
+            except Exception as e: self.logger.error(f"WAV write error: {e}"); return None
+        except Exception as e: self.logger.error(f"Recording setup error: {e}", exc_info=True); return None
+        finally:
+             if p:
+                 try: p.terminate()
+                 except Exception as e: self.logger.error(f"PyAudio term error: {e}")
+             if 'temp_fn' in locals() and temp_fn and os.path.exists(temp_fn) and ('wf' not in locals() or not wf):
+                  try: os.remove(temp_fn); self.logger.debug("Cleaned temp WAV.")
+                  except Exception as e: self.logger.warning(f"Failed cleanup temp WAV: {e}")
+
     def get_input(self):
         audio_file = self.record_audio()
-        if not audio_file:
-            self.logger.info("No audio file recorded, returning empty string")
-            return ""
+        if not audio_file: self.logger.info("No audio recorded."); return ""
+        text_result = ""
         try:
-            text = self.transcribe(audio_file)
-            self.logger.info(f"Transcribed audio input: '{text}'")
-            return text.lower().strip()
-        except Exception as e:
-            self.logger.error(f"Error transcribing audio: {e}")
-            return ""
+            text_result = self.transcribe(audio_file)
+            if text_result: self.logger.info(f"Transcribed: '{text_result}'"); return text_result.lower().strip()
+            else: self.logger.info("Transcription empty."); return ""
+        except Exception as e: self.logger.error(f"Transcription call error: {e}", exc_info=True); return ""
         finally:
             try:
-                if audio_file and os.path.exists(audio_file): # Check if exists before removing
-                   os.remove(audio_file)
-                   self.logger.info(f"Temporary audio file {audio_file} removed")
-            except Exception as remove_e: # Catch potential errors during removal
-                self.logger.warning(f"Failed to remove temporary file {audio_file}: {remove_e}")
+                if audio_file and os.path.exists(audio_file): os.remove(audio_file); self.logger.debug(f"Temp removed: {audio_file}")
+            except Exception as e: self.logger.warning(f"Failed remove temp: {audio_file} ({e})")
 
 class WhisperSTT(SpeechToText):
-    # This class remains the same...
+    # --- Keep logic (NO keyword replacement) ---
     def __init__(self):
-        super().__init__()
-        self.model = None
-        self.model_name = config.get("API_Models", "whisper_model", "base")
-        self.noise_threshold = config.getfloat("Speech", "noise_threshold", 0.05)
+        super().__init__(); self.model = None; self.model_name = config.get("API_Models", "whisper_model", "base")
+        self.noise_threshold_conf = config.getfloat("Speech", "noise_threshold", fallback=0.2)
+        self.logger.info(f"WhisperSTT: Noise threshold (for VAD if used): {self.noise_threshold_conf}")
         self._load_model()
-    
     def _load_model(self):
-        if not WHISPER_AVAILABLE:
-            self.logger.error("Whisper module not available")
-            return
-        try:
-            self.logger.info(f"Loading Whisper {self.model_name} model...")
-            self.model = whisper.load_model(self.model_name)
-            self.logger.info(f"Whisper {self.model_name} model loaded successfully")
-        except Exception as e:
-            self.logger.error(f"Error loading Whisper model: {e}")
-            self.model = None
-    
+        if not WHISPER_AVAILABLE: self.logger.error("Whisper N/A."); return
+        try: self.logger.info(f"Loading Whisper '{self.model_name}'..."); self.model = whisper.load_model(self.model_name); self.logger.info("Whisper loaded.")
+        except Exception as e: self.logger.error(f"Whisper load error: {e}"); self.model = None
     def transcribe(self, audio_data):
-        if not self.model:
-            self._load_model()
-            if not self.model:
-                self.logger.error("Whisper model not loaded, transcription aborted")
-                return ""
+        if not self.model: self.logger.error("Whisper model N/A."); return ""
+        if not os.path.exists(audio_data): self.logger.error(f"Audio file N/A: {audio_data}"); return ""
         try:
-            self.logger.info(f"Starting Whisper transcription for audio file: {audio_data}")
-            if WHISPER_HAS_TIMESTAMPS:
-                result = self.model.transcribe(audio_data, word_timestamps=True)
-            else:
-                result = self.model.transcribe(audio_data)
-            text = result["text"].strip()
-            self.logger.info(f"Raw Whisper transcription result: '{text}'") 
-            if len(text) < 2 or "1.0.1" in text: # Basic check
-                self.logger.info("Transcription too short or invalid, returning empty string")
-                return ""
-            lower_text = text.lower()
-            # Keyword checks remain the same...
-            if any(phrase in lower_text for phrase in [
-                "sky tour", "skytour", "sky to", "sky tore", "sky tor", 
-                "skator", "skater", "sky door", "sky t", "sky2", "scatour", "scator"
-            ]):
-                self.logger.info(f"Wake phrase detected: '{lower_text}' - Normalized to 'sky tour'")
-                return "sky tour"
-            if any(word in lower_text for word in ["grok", "growth", "rock", "crock", "roc"]):
-                self.logger.info(f"Grok command detected: '{lower_text}'")
-                return "use grok"
-            if any(word in lower_text for word in ["open ai", "openai", "open eye", "open a", "gpt"]):
-                self.logger.info(f"OpenAI command detected: '{lower_text}'")
-                return "use openai"
-            if "philadelphia" in lower_text and any(word in lower_text for word in ["airport", "international"]):
-                self.logger.info(f"Philadelphia airport command detected: '{lower_text}'")
-                return "navigate to philadelphia international airport"
-            if "question" in lower_text or "i have a question" in lower_text:
-                self.logger.info(f"Reactivation phrase detected: '{lower_text}'")
-                return "question"
-            
-            self.logger.info(f"Transcription completed successfully: '{text}'")
-            return text
-        except Exception as e:
-            self.logger.error(f"Error during Whisper transcription: {e}")
-            return ""
+            self.logger.info(f"Starting Whisper transcription: {audio_data}")
+            options = {"language": "en", "fp16": False};
+            if WHISPER_HAS_TIMESTAMPS: options["word_timestamps"] = False
+            result = self.model.transcribe(audio_data, **options)
+            text = result["text"].strip() if result and "text" in result else ""
+            self.logger.info(f"Raw Whisper result: '{text}'")
+            if "1.0.1.1.1" in text: self.logger.warning("Invalid numeric transcription."); return ""
+            return text 
+        except Exception as e: self.logger.error(f"Whisper transcription error: {e}", exc_info=True); return ""
 
 class GoogleSTT(SpeechToText):
-    # This class remains the same...
+    # --- Keep logic ---
     def __init__(self):
         super().__init__()
-        self.recognizer = sr.Recognizer() if GOOGLE_STT_AVAILABLE else None
-    
+        if GOOGLE_STT_AVAILABLE: self.recognizer = sr.Recognizer() 
+        else: self.recognizer = None; self.logger.error("SpeechRec N/A.")
     def transcribe(self, audio_data):
-        if not self.recognizer:
-            self.logger.error("Google Speech Recognition not available")
-            return ""
+        if not self.recognizer: return ""
         try:
-            self.logger.info(f"Starting Google STT transcription for audio file: {audio_data}")
+            self.logger.info(f"Starting Google STT: {audio_data}")
             with sr.AudioFile(audio_data) as source:
-                audio = self.recognizer.record(source)
-                text = self.recognizer.recognize_google(audio)
-                self.logger.info(f"Google STT transcription result: '{text}'")
-                return text
-        except sr.UnknownValueError:
-            self.logger.info("Google STT could not understand audio")
-            return ""
-        except sr.RequestError as e:
-            self.logger.error(f"Google STT request error: {e}")
-            return ""
-        except Exception as e:
-            self.logger.error(f"Error in Google STT: {e}")
-            return ""
+                audio = self.recognizer.record(source); text = self.recognizer.recognize_google(audio) 
+                self.logger.info(f"Google STT result: '{text}'"); return text
+        except sr.UnknownValueError: self.logger.info("Google STT: UnknownValue"); return ""
+        except sr.RequestError as e: self.logger.error(f"Google STT: RequestError: {e}"); return ""
+        except Exception as e: self.logger.error(f"Google STT Error: {e}", exc_info=True); return ""
 
-# --- TextToSpeech Base Class (Keep as is) ---
+# --- TextToSpeech Base Class ---
 class TextToSpeech(ABC):
     def __init__(self):
         self.logger = logging.getLogger(self.__class__.__name__)
-        # Removed self.voice assignment here, get specific voice in subclass if needed
-        # Ensure pygame mixer is initialized only once, perhaps better in AudioProcessor
         if not pygame.mixer.get_init():
-             pygame.mixer.init() 
-    
+             try: pygame.mixer.init(); self.logger.info("Mixer init.")
+             except Exception as e: self.logger.error(f"Mixer init error: {e}")
     @abstractmethod
-    def synthesize(self, text, output_file):
-        pass
-    
-    # speak method remains the same...
-    def speak(self, text):
-        if not text:
-            self.logger.info("No text provided to speak")
-            return False
-        temp_filename = None # Define outside try block
-        try:
-            # Use a context manager for the temporary file
-            with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as temp_file:
-                 temp_filename = temp_file.name
+    def synthesize(self, text, output_file): pass
 
-            if not self.synthesize(text, temp_filename):
-                self.logger.error(f"Synthesis failed for text: '{text}'")
-                # Clean up temp file if synthesis failed before playing
-                if temp_filename and os.path.exists(temp_filename):
-                     os.remove(temp_filename)
-                return False
-                
-            # Check if mixer is initialized before loading/playing
-            if not pygame.mixer.get_init():
-                self.logger.error("Pygame mixer not initialized.")
-                return False
-
-            pygame.mixer.music.load(temp_filename)
-            pygame.mixer.music.play()
-            self.logger.info(f"Playing audio for text: '{text[:50]}...'")
-            while pygame.mixer.music.get_busy():
-                pygame.time.wait(100) # Use pygame time wait
-            self.logger.info(f"Finished playing audio for text: '{text[:50]}...'")
-            
-            # Stop and unload to release the file before deleting
-            pygame.mixer.music.stop() 
-            pygame.mixer.music.unload() 
-            
-            return True
-        except Exception as e:
-            self.logger.error(f"Error speaking text: {e}")
-            return False
-        finally:
-            # Ensure cleanup happens even if errors occur
-            try:
-                # Wait a very short moment before deleting, sometimes needed on Windows
-                time.sleep(0.1) 
-                if temp_filename and os.path.exists(temp_filename):
-                    os.remove(temp_filename)
-                    self.logger.info(f"Temporary audio file {temp_filename} removed")
-            except Exception as remove_e:
-                self.logger.warning(f"Failed to remove temporary file {temp_filename}: {remove_e}")
-
-
-# --- TextToSpeech Implementations (Corrected) ---
-class ElevenLabsTTS(TextToSpeech):
-    def __init__(self):
-        super().__init__()
-        # ** COMPLETELY EMPTY or just 'pass' **
-        # No api_key or voice_id checks/storage here!
-        pass 
-
-    def synthesize(self, text, output_file):
-        if not ELEVENLABS_AVAILABLE:
-            self.logger.error("ElevenLabs module not available")
-            return False
-
-        # Fetch key and ID HERE, just before use
-        api_key = config.get_api_key("elevenlabs") 
-        voice_id = config.get("Audio", "elevenlabs_voice_id", "") 
-
-        if not api_key or not voice_id: 
-            if not api_key: self.logger.error("ElevenLabs API key not found in environment or .env file.")
-            if not voice_id: self.logger.error("ElevenLabs voice ID not found in config.ini [Audio] section.")
-            return False
-
-        try:
-            self.logger.info(f"Synthesizing text with ElevenLabs (Voice ID: {voice_id}): '{text[:50]}...'") 
-            import requests # Import requests here if not imported globally
-            url = f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}" 
-            headers = {
-                "Accept": "audio/mpeg",
-                "Content-Type": "application/json",
-                "xi-api-key": api_key 
-            }
+    def speak(self, text, audio_processor_instance): 
+        if not text: self.logger.info("No text to speak."); return False
+        if not pygame.mixer.get_init(): self.logger.error("Mixer not init."); return False
+        temp_filename = None; speak_success = False 
         
-            data = {
-                "text": text,
-                "model_id": "eleven_monolingual_v1", # Consider making this configurable
-                "voice_settings": {"stability": 0.75, "similarity_boost": 0.75} # Consider making these configurable
-            }
-            max_retries = 3
+        # Stop Listening before speaking
+        if audio_processor_instance: audio_processor_instance.stop_continuous_listening() # Use instance passed
+        else: self.logger.warning("Cannot stop listening - audio_processor_instance invalid.")
+
+        try:
+            with tempfile.NamedTemporaryFile(suffix=".mp3", delete=False) as temp_file: temp_filename = temp_file.name
+            synthesis_ok = self.synthesize(text, temp_filename)
+            if not synthesis_ok: self.logger.error(f"Synthesis failed: '{text[:50]}...'"); speak_success = False
+            else:
+                pygame.mixer.music.load(temp_filename)
+                volume = config.getfloat("Audio", "volume", 1.0); pygame.mixer.music.set_volume(volume)
+                pygame.mixer.music.play()
+                self.logger.info(f"Playing audio: '{text[:50]}...'")
+                while pygame.mixer.music.get_busy(): pygame.time.wait(100) 
+                self.logger.info(f"Finished playing: '{text[:50]}...'")
+                pygame.mixer.music.stop(); pygame.mixer.music.unload() 
+                speak_success = True
+        except Exception as e: self.logger.error(f"Error during speak/playback: {e}", exc_info=True); speak_success = False
+        finally:
+            time.sleep(0.1) 
+            try:
+                if temp_filename and os.path.exists(temp_filename): os.remove(temp_filename); self.logger.debug(f"Temp removed: {temp_filename}")
+            except Exception as e: self.logger.warning(f"Failed remove temp: {temp_filename} ({e})")
+            # IMPORTANT: Listening restart is handled by StateManager AFTER this returns
+
+        return speak_success
+
+# --- TextToSpeech Implementations ---
+class ElevenLabsTTS(TextToSpeech):
+    def __init__(self): super().__init__(); pass 
+    def synthesize(self, text, output_file):
+        # --- Keep logic from previous ---
+        if not ELEVENLABS_AVAILABLE: self.logger.error("ElevenLabs N/A."); return False
+        api_key=config.get_api_key("elevenlabs"); voice_id=config.get("Audio", "elevenlabs_voice_id", "")
+        if not api_key or not voice_id: 
+            if not api_key: self.logger.error("ElevenLabs key missing.")
+            if not voice_id: self.logger.error("ElevenLabs voice_id missing.")
+            return False
+        try:
+            self.logger.info(f"Synthesizing(11L): '{text[:50]}...'"); import requests 
+            url=f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id}"; headers={"Accept":"audio/mpeg","Content-Type":"application/json","xi-api-key":api_key}
+            data={"text": text, "model_id": "eleven_monolingual_v1", "voice_settings": {"stability": 0.75, "similarity_boost": 0.75}}
+            max_retries=3; timeout=20
             for attempt in range(max_retries):
                 try:
-                    response = requests.post(url, json=data, headers=headers, timeout=20) # Increased timeout
-                    response.raise_for_status() # Check for HTTP errors (4xx, 5xx)
-                    with open(output_file, "wb") as f:
-                        f.write(response.content)
-                    self.logger.info("Successfully generated audio with ElevenLabs")
-                    return True
-                except requests.exceptions.RequestException as e: # Catch specific request errors
-                    self.logger.error(f"Error in ElevenLabs synthesis attempt {attempt + 1}/{max_retries}: {str(e)}")
+                    response=requests.post(url, json=data, headers=headers, timeout=timeout)
+                    response.raise_for_status() 
+                    with open(output_file, "wb") as f: f.write(response.content)
+                    self.logger.info("11L synth OK."); return True
+                except requests.exceptions.RequestException as e: 
+                    self.logger.error(f"11L API err att {attempt+1}/{max_retries}: {e}", exc_info=False) 
                     if attempt + 1 == max_retries:
-                         self.logger.error("ElevenLabs failed after multiple retries.")
-                         # Optional: Fallback to Google TTS if available
-                         if GTTS_AVAILABLE:
-                             self.logger.info("Falling back to Google TTS")
-                             return GoogleTTS().synthesize(text, output_file)
-                         else:
-                             return False # No fallback available
-                    time.sleep(2 ** attempt) # Exponential backoff
-            return False # Should not be reached if logic above is correct, but as safety
-        except Exception as e: # Catch any other unexpected errors
-            self.logger.error(f"Unexpected error in ElevenLabs synthesis: {e}")
-            return False
+                         if GTTS_AVAILABLE: self.logger.info("Falling back gTTS."); return GoogleTTS().synthesize(text, output_file)
+                         else: return False 
+                    time.sleep(2 ** attempt) 
+            return False 
+        except Exception as e: self.logger.error(f"Unexpected 11L error: {e}", exc_info=True); return False
 
 class GoogleTTS(TextToSpeech):
-    # This class remains the same...
-    def __init__(self):
-        super().__init__()
-        self.lang = config.get("API_Models", "gtts_language", "en")
-    
+    # --- Keep logic ---
+    def __init__(self): super().__init__(); self.lang = config.get("API_Models", "gtts_language", "en")
     def synthesize(self, text, output_file):
-        if not GTTS_AVAILABLE:
-            self.logger.error("Google TTS module not available")
-            return False
+        if not GTTS_AVAILABLE: self.logger.error("gTTS N/A."); return False
         try:
-            self.logger.info(f"Synthesizing text with Google TTS: '{text[:50]}...'")
-            tts = gTTS(text=text, lang=self.lang, slow=False)
-            tts.save(output_file)
-            self.logger.info("Google TTS synthesis successful")
-            return True
-        except Exception as e:
-            self.logger.error(f"Error in Google TTS synthesis: {e}")
-            return False
+            self.logger.info(f"Synthesizing(gTTS): '{text[:50]}...'")
+            tts = gTTS(text=text, lang=self.lang, slow=False); tts.save(output_file)
+            self.logger.info("gTTS synth OK."); return True
+        except Exception as e: self.logger.error(f"gTTS error: {e}", exc_info=True); return False
 
-# --- AudioProcessor Class (Keep as is, relies on corrected providers) ---
+# --- AudioProcessor Class (Modified start/stop listening) ---
 class AudioProcessor:
     def __init__(self):
-        self.logger = logging.getLogger("AudioProcessor")
-        self.logger.info("Initializing AudioProcessor")
-        # Ensure pygame mixer is initialized once here
+        self.logger = logging.getLogger("AudioProcessor"); self.logger.info("Init AudioProcessor")
         if not pygame.mixer.get_init():
-             pygame.mixer.init() 
+             try: pygame.mixer.init(); self.logger.info("Mixer init.")
+             except Exception as e: self.logger.error(f"Mixer init error: {e}")
         self.stt_provider = self._create_stt_provider()
         self.tts_provider = self._create_tts_provider()
         self.audio_queue = queue.Queue()
         self.is_listening = False
-        self.listen_thread = None
+        self.listen_thread = None # Ensure attribute exists
+        self.listen_lock = threading.Lock() # Lock for thread safety
         script_dir = os.path.dirname(os.path.abspath(__file__))
-        self.sound_effects = {
-            "optimus_prime": os.path.join(script_dir, "Sky_Tour_Activated.mp3"),
-            "deactivate": os.path.join(script_dir, "Sky_Tour_Deactivated.mp3")
-        }
-        # Check if sound files exist during init
-        for name, path in self.sound_effects.items():
-            if os.path.exists(path):
-                 self.logger.info(f"Found sound effect '{name}': {path}")
-            else:
-                 self.logger.warning(f"Sound effect file not found for '{name}': {path}")
-    
+        self.sound_effects = {"optimus_prime": os.path.join(script_dir, "Sky_Tour_Activated.mp3"), "deactivate": os.path.join(script_dir, "Sky_Tour_Deactivated.mp3")}
+        for n, p in self.sound_effects.items(): # Check sounds
+            if not os.path.exists(p): self.logger.warning(f"SFX N/A '{n}': {p}")
+            else: self.logger.info(f"Found SFX '{n}': {p}")
+
+    # --- _create_stt/tts_provider unchanged ---
     def _create_stt_provider(self):
-        provider_name = config.get("Speech", "stt_engine", "whisper").lower()
-        if provider_name == "whisper" and WHISPER_AVAILABLE:
-            return WhisperSTT()
-        elif provider_name == "google" and GOOGLE_STT_AVAILABLE:
-            # Add check for Google STT API key here if needed by SpeechRecognition library setup
-            # key = config.get_api_key("google_stt") 
-            # if not key: self.logger.error("Google STT key not found.") ; return None
-            return GoogleSTT()
-        elif WHISPER_AVAILABLE:
-            self.logger.warning(f"STT provider '{provider_name}' unavailable, falling back to Whisper")
-            return WhisperSTT()
-        elif GOOGLE_STT_AVAILABLE:
-             self.logger.warning(f"STT provider '{provider_name}' unavailable, falling back to Google")
-             return GoogleSTT()
-        else:
-             self.logger.error("No STT provider available")
-             return None
-    
+        provider = config.get("Speech", "stt_engine", "whisper").lower(); self.logger.info(f"STT engine: {provider}")
+        if provider == "whisper" and WHISPER_AVAILABLE: return WhisperSTT()
+        elif provider == "google" and GOOGLE_STT_AVAILABLE: return GoogleSTT()
+        elif WHISPER_AVAILABLE: self.logger.warning("Fallback STT: Whisper"); return WhisperSTT()
+        elif GOOGLE_STT_AVAILABLE: self.logger.warning("Fallback STT: Google"); return GoogleSTT()
+        else: self.logger.error("No STT provider!"); return None
     def _create_tts_provider(self):
-        provider_name = config.get("Speech", "tts_engine", "elevenlabs").lower()
-        self.logger.info(f"Selected TTS engine: {provider_name}")
-        if provider_name == "elevenlabs" and ELEVENLABS_AVAILABLE:
-            # No need to check keys here anymore, done in synthesize
-            return ElevenLabsTTS() 
-        elif provider_name == "google" and GTTS_AVAILABLE:
-             # No need to check keys here anymore (gTTS doesn't use key directly)
-            return GoogleTTS()
-        # Fallback logic
-        elif ELEVENLABS_AVAILABLE:
-            self.logger.warning(f"TTS provider '{provider_name}' unavailable, falling back to ElevenLabs")
-            return ElevenLabsTTS()
-        elif GTTS_AVAILABLE:
-            self.logger.warning(f"TTS provider '{provider_name}' unavailable, falling back to Google")
-            return GoogleTTS()
-        else:
-            self.logger.error("No TTS provider available")
-            return None
-    
+        provider = config.get("Speech", "tts_engine", "elevenlabs").lower(); self.logger.info(f"TTS engine: {provider}")
+        if provider == "elevenlabs" and ELEVENLABS_AVAILABLE: return ElevenLabsTTS()
+        elif provider == "google" and GTTS_AVAILABLE: return GoogleTTS()
+        elif ELEVENLABS_AVAILABLE: self.logger.warning("Fallback TTS: 11L"); return ElevenLabsTTS()
+        elif GTTS_AVAILABLE: self.logger.warning("Fallback TTS: gTTS"); return GoogleTTS()
+        else: self.logger.error("No TTS provider!"); return None
+
     def speak(self, text, sound_effect=None):
-        # Check mixer init just in case
-        if not pygame.mixer.get_init():
-             self.logger.error("Pygame mixer not initialized in speak().")
-             # Optionally try to init again: pygame.mixer.init()
-             return False
-             
+        """Handles sound effects and calls TTS provider's speak method."""
+        if not pygame.mixer.get_init(): self.logger.error("Mixer N/A."); return False
+        
+        played_sound = False
         if sound_effect and sound_effect in self.sound_effects:
             try:
-                sound_file = self.sound_effects[sound_effect]
+                sound_file = self.sound_effects[sound_effect];
                 if os.path.exists(sound_file):
-                    # Stop potentially playing music first
-                    if pygame.mixer.music.get_busy():
-                        pygame.mixer.music.stop()
-                        pygame.mixer.music.unload() # Ensure unloaded
-                        time.sleep(0.1) # Short pause after stopping
-
-                    pygame.mixer.music.load(sound_file)
-                    pygame.mixer.music.play()
-                    self.logger.info(f"Playing sound effect: {sound_file}")
-                    # Wait for sound effect to finish
-                    while pygame.mixer.music.get_busy():
-                        pygame.time.wait(100)
-                    # Don't return True here if text should also be spoken
-                else:
-                    self.logger.warning(f"Sound effect file not found: {sound_file}")
-            except Exception as e:
-                self.logger.error(f"Error playing sound effect: {e}")
-                # Continue to speaking text even if sound effect fails
-
-        if not text or not self.tts_provider:
-            if not text: self.logger.info("No text provided to speak (after sound effect check).")
-            if not self.tts_provider: self.logger.error("No TTS provider available")
-            return False
+                     # Call base speak method just for SFX playback (handles stop listening)
+                     temp_speak_success = self.tts_provider.speak("", self) # Pass empty text, just uses stop listen
+                     # If stopping listen worked, play sound
+                     if temp_speak_success is not None: # Check if speak method handles None return on error
+                         if pygame.mixer.music.get_busy(): pygame.mixer.music.stop(); pygame.mixer.music.unload(); time.sleep(0.1)
+                         pygame.mixer.music.load(sound_file); pygame.mixer.music.play()
+                         self.logger.info(f"Playing SFX: {sound_file}")
+                         while pygame.mixer.music.get_busy(): pygame.time.wait(50)
+                         pygame.mixer.music.unload(); played_sound = True
+                else: self.logger.warning(f"SFX missing: {sound_file}")
+            except Exception as e: self.logger.error(f"Error playing SFX: {e}")
             
-        print("\n🔊 AI: " + text + "\n") # Keep console output for now
-        # TTS provider's speak method handles actual synthesis and playback
-        return self.tts_provider.speak(text) 
-    
-    # listen, start/stop_continuous_listening, _listen_worker, 
-    # get_next_command, get_audio_input methods remain the same...
-    def listen(self):
-        if not self.stt_provider:
-            self.logger.error("No STT provider available")
-            return ""
-        return self.stt_provider.get_input()
-    
-    def start_continuous_listening(self):
-        if self.is_listening:
-            self.logger.info("Continuous listening already active")
-            return
-        self.is_listening = True
-        # Ensure thread resources are cleaned up if method called again
-        if self.listen_thread and self.listen_thread.is_alive():
-             self.logger.warning("Previous listen thread still alive? Attempting to stop.")
-             self.stop_continuous_listening() # Attempt cleanup first
+        # Handle text-to-speech if text provided
+        if text and self.tts_provider:
+            print(f"\n🔊 AI: {text}\n")
+            # The speak method handles stopping listening before and StateManager handles restart after
+            return self.tts_provider.speak(text, audio_processor_instance=self) 
+        elif played_sound:
+             return True # Only sound effect was played successfully
+        else: # No text and no TTS provider OR sound effect failed
+            if not text: self.logger.debug("No text provided for speak.")
+            if not self.tts_provider: self.logger.error("No TTS provider.")
+            # If only SFX failed, should maybe return False? Assume False if no sound/text output.
+            return False
 
-        self.listen_thread = threading.Thread(target=self._listen_worker, daemon=True)
-        self.listen_thread.start()
-        self.logger.info("Started continuous listening thread")
+    def get_input(self): 
+        if not self.stt_provider: self.logger.error("No STT provider."); return ""
+        return self.stt_provider.get_input()
+
+    # --- Robust Start/Stop Listening ---
+    def start_continuous_listening(self):
+        with self.listen_lock: # Use lock for thread safety
+             if self.is_listening: 
+                 self.logger.debug("Start request ignored, already listening.")
+                 return
+             # Ensure previous thread is truly finished before starting new one
+             if hasattr(self, 'listen_thread') and self.listen_thread and self.listen_thread.is_alive(): 
+                 self.logger.warning("Start request: Previous listen thread still alive? Forcing stop...")
+                 self._stop_listen_thread_internal() # Call internal stop
+
+             self.is_listening = True
+             self.listen_thread = threading.Thread(target=self._listen_worker, daemon=True); 
+             self.listen_thread.start()
+             self.logger.info("Started continuous listening thread.")
     
     def stop_continuous_listening(self):
-        if not self.is_listening and not (self.listen_thread and self.listen_thread.is_alive()):
-             self.logger.info("Continuous listening already stopped.")
-             return
+        with self.listen_lock: # Use lock
+            self._stop_listen_thread_internal() # Call internal stop logic
 
-        self.is_listening = False
-        if self.listen_thread and self.listen_thread.is_alive():
-             try:
-                 # Don't wait indefinitely, especially if thread is stuck
-                 self.listen_thread.join(timeout=1.5) 
-                 if self.listen_thread.is_alive():
-                      self.logger.warning("Listen thread did not terminate gracefully.")
-             except Exception as e:
-                 self.logger.error(f"Error stopping listen thread: {e}")
-        self.listen_thread = None
-        # Clear the queue on stop? Optional, depends on desired behavior.
-        # while not self.audio_queue.empty():
-        #    try: self.audio_queue.get_nowait()
-        #    except queue.Empty: break
-        self.logger.info("Stopped continuous listening thread")
+    def _stop_listen_thread_internal(self):
+        """Internal method to stop listening thread, assumes lock is held."""
+        if not self.is_listening and not (hasattr(self, 'listen_thread') and self.listen_thread and self.listen_thread.is_alive()): 
+            # Already stopped or never started
+            return
+            
+        self.is_listening = False # Signal thread to stop
+        thread_to_join = getattr(self, 'listen_thread', None) # Use getattr for safety
+
+        if thread_to_join and thread_to_join.is_alive():
+             self.logger.debug("Attempting to join listening thread...")
+             try: 
+                 thread_to_join.join(timeout=1.0) # Slightly longer timeout?
+                 if thread_to_join.is_alive():
+                     self.logger.warning("Listen thread did not join gracefully!")
+                 else:
+                     self.logger.info("Stopped continuous listening thread.")
+             except Exception as e: 
+                 self.logger.error(f"Error joining listen thread: {e}")
+        else:
+             self.logger.info("Stopped listening (thread already finished or never started).")
+        
+        # Clear reference
+        self.listen_thread = None 
+        # Clear queue on stop? Helps prevent processing stale commands after restart.
+        if hasattr(self, 'audio_queue'):
+             cleared_count = 0
+             while not self.audio_queue.empty():
+                 try: self.audio_queue.get_nowait(); cleared_count += 1
+                 except queue.Empty: break
+                 except Exception: break # Safety break
+             if cleared_count > 0: self.logger.debug(f"Cleared {cleared_count} items from queue on stop.")
     
     def _listen_worker(self):
-        while self.is_listening:
+        while self.is_listening: # Check flag reliably
             try:
-                 text = self.listen()
-                 if text:
+                 text = self.get_input() 
+                 if self.is_listening and text: # Double-check flag before putting
                      self.audio_queue.put(text)
-                 # Add a small sleep to prevent busy-waiting if listen() returns quickly
+                 # Sleep regardless of text outcome to yield control
                  time.sleep(0.1) 
-            except Exception as e:
-                 self.logger.error(f"Error in listen worker loop: {e}")
-                 # Avoid continuous error spamming
-                 time.sleep(1)
+            except Exception as e: 
+                self.logger.error(f"Listen worker error: {e}", exc_info=True); 
+                # Avoid busy loop on continuous errors
+                if self.is_listening: time.sleep(1) 
 
     def get_next_command(self, block=True, timeout=None):
-        try:
-            command = self.audio_queue.get(block=block, timeout=timeout)
-            self.logger.info(f"Retrieved command from queue: '{command}'")
+        try: 
+            command = self.audio_queue.get(block=block, timeout=timeout); 
+            self.logger.info(f"Queue retrieve: '{command}'"); 
             return command
-        except queue.Empty:
-            # Don't log every time it's empty if non-blocking, only if timeout occurs
-            if block and timeout is not None: 
-                 self.logger.info("Timeout waiting for command in queue.")
+        except queue.Empty: 
+            if block and timeout is not None: self.logger.debug("Timeout waiting for queue.")
             return None
     
-    def get_audio_input(self):
-        # This seems redundant with listen(), maybe intended for one-off recording?
-        # Keeping it as it was unless specific different behavior is needed.
-        return self.listen()
-
 # --- Singleton Instance ---
-# Ensure logger is configured before creating instance if not already done globally
-# logging.basicConfig(level=logging.INFO) # Example if needed here
 audio_processor = AudioProcessor()
-
-# --- Sound File Check (Keep as is, already done in __init__) ---
-# activate_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Sky_Tour_Activated.mp3")
-# deactivate_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Sky_Tour_Deactivated.mp3")
-# ... (logging checks already moved to __init__) ...

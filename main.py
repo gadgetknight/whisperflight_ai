@@ -1,14 +1,13 @@
 """
 Whisper Flight AI - Main Module
-Version: 5.0.24 (Corrected import/use of renamed StateManager instance)
+Version: 5.0.26 (Corrected finally block syntax)
 Purpose: Core loop for real-time narration and Q&A in MSFS2024
-Last Updated: March 27, 2025
+Last Updated: March 28, 2025
 Author: Your Name
 
 Changes:
-- Import renamed 'manager' instance and 'AppState' enum directly from state_manager.
-- Use 'manager' to access StateManager instance methods/attributes.
-- Use 'AppState' directly for enum members.
+- Fixed SyntaxError in finally block cleanup logic.
+- Uses corrected state_manager import/access.
 """
 
 import os
@@ -31,19 +30,13 @@ except ImportError:
         def log_startup(self): pass
     logging_system = DummyLogging()
 
-# Import config first
 from config_manager import config
-
-# Import other modules
 from audio_processor import audio_processor
 from simconnect_server import sim_server
 from ai_provider import ai_manager
 from geo_utils import geo_utils
 from navigation import navigation_manager
-# *** CORRECTED IMPORT ***
-# Import the renamed instance 'manager' and the enum 'AppState' directly
-from state_manager import manager as state_manager, AppState 
-# *** END CORRECTION ***
+import state_manager # Import module
 from efb_integration import efb
 
 try:
@@ -100,17 +93,16 @@ def initialize_joystick():
             joystick = None
     else: joystick = None
 
-# --- Main Loop Function (Using 'manager' instance) ---
+# --- Main Loop Function ---
 def main_event_loop():
     global running, joystick
     initialize_joystick()
 
-    # Use the imported 'state_manager' (which is the 'manager' instance) directly
-    sm = state_manager 
+    sm = state_manager.manager 
+    AppState = state_manager.AppState 
     ap = audio_processor
 
     if sm and ap:
-        # Use imported 'AppState' directly
         logging.info(f"Application ready. Current state: {sm.current_state.name}")
         # --- Banner Print ---
         print(f"""
@@ -142,19 +134,24 @@ def main_event_loop():
 
     # --- Main Loop ---
     while running:
-        command_to_process = None
+        command_to_process = None 
 
         # 1. Handle Pygame Events
         try:
             events = pygame.event.get()
             for event in events:
                 if event.type == pygame.QUIT: running = False; break
+                
                 elif event.type == pygame.KEYDOWN and keyboard_enabled:
+                    # Optional: Add F8 debug print here if still needed later
+                    # if event.key == pygame.K_F8:
+                    #    print("DEBUG: F8 key press DETECTED by Pygame.") 
                     if event.key in keyboard_mapping:
                         command = keyboard_mapping[event.key]
                         logging.info(f"Keyboard input: '{command}'")
                         if ap and hasattr(ap, 'audio_queue'): ap.audio_queue.put(command)
                         else: logging.warning("Audio queue N/A.")
+
                 elif event.type == pygame.JOYBUTTONDOWN and joystick:
                     if joystick and joystick.get_init():
                          button = event.button
@@ -169,16 +166,15 @@ def main_event_loop():
             if ap: command_to_process = ap.get_next_command(block=False)
             else: logging.error("Audio processor N/A."); time.sleep(1); continue
 
-            # 3. Process Command using StateManager (using 'sm' alias for the instance)
+            # 3. Process Command using StateManager
             if command_to_process:
                 logging.info(f"Processing command: '{command_to_process}' in state {sm.current_state.name}")
                 try:
-                    result = sm.handle_command(command_to_process)
+                    result = sm.handle_command(command_to_process) 
                     if result is not None: logging.info(f"handle_command result: {result}")
                 except Exception as handler_e:
                      logging.error(f"Error during handle_command: {handler_e}", exc_info=True)
-                     # Use imported 'AppState' directly
-                     sm.change_state(AppState.ERROR, f"Exception: {handler_e}")
+                     sm.change_state(AppState.ERROR, f"Exception: {handler_e}") 
 
             # 4. Brief Sleep
             time.sleep(0.05)
@@ -188,7 +184,7 @@ def main_event_loop():
              running = False
     # --- End Main Loop ---
 
-    # Cleanup
+    # Cleanup (Ensure this happens outside the loop)
     logging.info("Main loop exited. Cleaning up...")
     if ap:
         try: ap.stop_continuous_listening()
@@ -196,14 +192,14 @@ def main_event_loop():
     if sim_server:
         try: sim_server.stop()
         except Exception as e: logging.error(f"Error stopping SimConnect: {e}")
-    pygame.quit()
+    pygame.quit() 
     logging.info("Application cleanup finished.")
 
 # --- main() and __main__ block ---
 def main():
     logging.info("Main function started")
-    # Use imported 'state_manager' (the instance) for check
-    if not config or not ai_manager or not state_manager or not audio_processor or not sim_server:
+    # Use renamed instance 'manager' for check
+    if not config or not ai_manager or not state_manager.manager or not audio_processor or not sim_server:
          logging.critical("Core components failed to initialize. Exiting.")
          return
     logging.info("Core components initialized.")
@@ -213,11 +209,44 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        running = False
+        running = False # Ensure loop condition is false
         logging.info("Application terminated by user (KeyboardInterrupt)")
     except Exception as e:
         logging.critical(f"Unhandled exception occurred: {e}", exc_info=True)
     finally:
-         if running: running = False
-         logging.info("Exiting application.")
+         # --- CORRECTED CLEANUP LOGIC ---
+         # This block runs regardless of how the try block exits
+         if running: # Should be false if exited normally or via Ctrl+C
+             running = False # Ensure it's false if exited via other exception
+             
+         logging.info("Entering final cleanup...")
+         
+         # Try stopping audio processor
+         if 'ap' in locals() and ap: # Check if ap was defined
+             logging.debug("Attempting to stop audio processor in finally block...")
+             try: 
+                 ap.stop_continuous_listening()
+                 logging.info("Audio processor stopped.")
+             except Exception as e: 
+                 logging.error(f"Error stopping audio processor in finally: {e}")
+         else:
+              logging.debug("Audio processor 'ap' not defined in finally block.")
+
+         # Try stopping sim server
+         if 'sim_server' in locals() and sim_server: # Check if sim_server was defined
+             logging.debug("Attempting to stop SimConnect server in finally block...")
+             try: 
+                 sim_server.stop()
+                 logging.info("SimConnect server stopped.")
+             except Exception as e: 
+                 logging.error(f"Error stopping SimConnect server in finally: {e}")
+         else:
+              logging.debug("SimConnect server 'sim_server' not defined in finally block.")
+
+         # Ensure Pygame quits
+         logging.debug("Attempting to quit Pygame in finally block...")
          pygame.quit()
+         logging.info("Pygame quit called.")
+         
+         logging.info("Exiting application from finally block.")
+         # --- END CORRECTION ---
