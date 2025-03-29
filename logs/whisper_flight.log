@@ -1,3 +1,129 @@
-2025-03-27 23:19:48 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
-2025-03-27 23:27:14 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
-2025-03-27 23:30:33 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-28 19:15:23 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-28 19:18:40 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-28 19:27:07 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-28 19:31:12 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Initializing AudioProcessor
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Creating STT provider: whisper
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Creating WhisperSTT instance
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - WhisperSTT initialized with model=base, noise_threshold=0.2
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Loading Whisper base model...
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Whisper base model loaded successfully in 0.56 seconds
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Creating TTS provider: elevenlabs
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Creating ElevenLabsTTS instance
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - TextToSpeech base class initialized
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - ElevenLabsTTS initialized
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - API key exists: True
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Voice ID: cgSgspJ2msm6clMCkdW9
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - ElevenLabs API key found
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - ElevenLabs using voice ID: cgSgspJ2msm6clMCkdW9
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Sound effect 'optimus_prime' found at: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Sound effect 'deactivate' found at: C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - AudioProcessor initialization complete
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Found activation sound file at C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Found deactivation sound file at C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - === AUDIO PROCESSOR CONFIGURATION ===
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - STT Engine: whisper
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - TTS Engine: elevenlabs
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Whisper Model: base
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Noise Threshold: 0.2
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Recording Seconds: 5.0
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Input Device: default
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - Output Device: default
+2025-03-28 19:31:16 - AUDIO_DEBUG - INFO - ==========================================
+2025-03-28 20:05:59 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Initializing AudioProcessor
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Creating STT provider: whisper
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Creating WhisperSTT instance
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - WhisperSTT initialized with model=base, noise_threshold=0.2
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Loading Whisper base model...
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Whisper base model loaded successfully in 0.55 seconds
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Creating TTS provider: elevenlabs
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Creating ElevenLabsTTS instance
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - TextToSpeech base class initialized
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - ElevenLabsTTS initialized
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - API key exists: True
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Voice ID: cgSgspJ2msm6clMCkdW9
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - ElevenLabs API key found
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - ElevenLabs using voice ID: cgSgspJ2msm6clMCkdW9
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Sound effect 'optimus_prime' found at: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Sound effect 'deactivate' found at: C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - AudioProcessor initialization complete
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Found activation sound file at C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Found deactivation sound file at C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - === AUDIO PROCESSOR CONFIGURATION ===
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - STT Engine: whisper
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - TTS Engine: elevenlabs
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Whisper Model: base
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Noise Threshold: 0.2
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Recording Seconds: 5.0
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Input Device: default
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - Output Device: default
+2025-03-28 20:06:01 - AUDIO_DEBUG - INFO - ==========================================
+2025-03-28 20:06:01 - root - INFO - pysimconnect module found in environment
+2025-03-28 20:06:01 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-28 20:06:11 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-28 20:06:12 - AUDIO_DEBUG - INFO - Initializing AudioProcessor
+2025-03-28 20:06:12 - AUDIO_DEBUG - INFO - Creating STT provider: whisper
+2025-03-28 20:06:12 - AUDIO_DEBUG - INFO - Creating WhisperSTT instance
+2025-03-28 20:06:12 - AUDIO_DEBUG - INFO - WhisperSTT initialized with model=base, noise_threshold=0.2
+2025-03-28 20:06:12 - AUDIO_DEBUG - INFO - Loading Whisper base model...
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Whisper base model loaded successfully in 0.56 seconds
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Creating TTS provider: elevenlabs
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Creating ElevenLabsTTS instance
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - TextToSpeech base class initialized
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - ElevenLabsTTS initialized
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - API key exists: True
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Voice ID: cgSgspJ2msm6clMCkdW9
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - ElevenLabs API key found
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - ElevenLabs using voice ID: cgSgspJ2msm6clMCkdW9
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Sound effect 'optimus_prime' found at: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Sound effect 'deactivate' found at: C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - AudioProcessor initialization complete
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Found activation sound file at C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Found deactivation sound file at C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - === AUDIO PROCESSOR CONFIGURATION ===
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - STT Engine: whisper
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - TTS Engine: elevenlabs
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Whisper Model: base
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Noise Threshold: 0.2
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Recording Seconds: 5.0
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Input Device: default
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - Output Device: default
+2025-03-28 20:06:13 - AUDIO_DEBUG - INFO - ==========================================
+2025-03-28 20:06:13 - root - INFO - pysimconnect module found in environment
+2025-03-28 20:06:13 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-28 21:21:51 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Initializing AudioProcessor
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Creating STT provider: whisper
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Creating WhisperSTT instance
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - WhisperSTT initialized with model=base, noise_threshold=0.2
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Loading Whisper base model...
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Whisper base model loaded successfully in 0.54 seconds
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Creating TTS provider: elevenlabs
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Creating ElevenLabsTTS instance
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - TextToSpeech base class initialized
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - ElevenLabsTTS initialized
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - API key exists: True
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Voice ID: cgSgspJ2msm6clMCkdW9
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - ElevenLabs API key found
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - ElevenLabs using voice ID: cgSgspJ2msm6clMCkdW9
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Sound effect 'optimus_prime' found at: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Sound effect 'deactivate' found at: C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - AudioProcessor initialization complete
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Found activation sound file at C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Found deactivation sound file at C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - === AUDIO PROCESSOR CONFIGURATION ===
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - STT Engine: whisper
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - TTS Engine: elevenlabs
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Whisper Model: base
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Noise Threshold: 0.2
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Recording Seconds: 5.0
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Input Device: default
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - Output Device: default
+2025-03-28 21:21:55 - AUDIO_DEBUG - INFO - ==========================================
+2025-03-28 21:21:55 - MockSimConnectServer - INFO - Initializing MockSimConnectServer
+2025-03-28 21:21:55 - MockSimConnectServer - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-28 21:21:55 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-28 21:21:55 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-28 21:21:55 - root - INFO - pysimconnect module found in environment
+2025-03-28 21:21:55 - SimConnectServer - INFO - Initializing SimConnectServer

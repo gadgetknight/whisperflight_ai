@@ -1,10 +1,3 @@
-# Version 5.1.38 – Refined junk filter, adjusted "No" handler state
-# Changes:
-# - Added more phrases to junk filter list.
-# - Changed "No" handler back to STANDBY state and stop listening.
-# - Added wake word debug print.
-# - state_manager.py
-# -*- coding: utf-8 -*-
 """
 Whisper Flight AI - State Manager
 Version: 5.1.38 (Corrected - Loop/Input Mitigation v6)
@@ -125,7 +118,7 @@ class StateManager:
             if count > 0: self.logger.info(f"Cleared {count} items from queue.")
         else: self.logger.warning("Audio queue N/A.")
     def _create_tour_guide_prompt(self, location_name, altitude):
-        return (f"AI tour guide near {location_name} at {altitude} ft. Brief, engaging audio narration (3-4 paras): 1) View desc. 2) Hist/geo fact. 3) Visible POI. Tone: Conversational, enthusiastic. Focus: aerial. No jargon.")
+        return (f"AI tour guide near {location_name} at {altitude} ft. Brief, engaging audio narration (1 short sentence): 1) View desc. 2) Hist/geo fact. 3) Visible POI. Tone: Conversational, enthusiastic. Focus: aerial. No jargon.")
 
     # --- MAIN HANDLERS ---
     def handle_wake_word(self, wake_word):
