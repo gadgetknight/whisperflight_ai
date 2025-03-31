@@ -191,13 +191,13 @@ def display_banner() -> None:
         f"""
 ╔══════════════════════════════════════════════════════════════════╗
 ║                                                                  ║
-║           🛫 WHISPER FLIGHT AI TOUR GUIDE v{__version__} 🛬           ║
+║           🛫 WHISPER FLIGHT AI TOUR GUIDE v{__version__} 🛬             ║
 ║                                                                  ║
 ╠══════════════════════════════════════════════════════════════════╣
 ║                                                                  ║
 ║  🎙️ Say "Sky Tour" to activate                                   ║
-║  🗣️ After activation, say "Where am I?" for location info       ║
-║  🧭 Ask for directions like "Take me to the Golden Gate Bridge" ║
+║  🗣️ After activation, say "Where am I?" for location info         ║
+║  🧭 Ask for directions like "Take me to the Golden Gate Bridge"   ║
 ║  🔍 Ask open-ended questions about your surroundings             ║
 ║  🛑 Say "Deactivate" to stop the tour                            ║
 ║                                                                  ║
@@ -206,10 +206,10 @@ def display_banner() -> None:
 ║    F5 - Toggle Quiet Mode                                        ║
 ║    F6 - Toggle Debug Mode                                        ║
 ║    F7 - Toggle SimConnect Mode (Currently: {sim_mode})            ║
-║    F8 / Joystick {config.getint("Controls", "sky_tour_button", 2)} - Sky Tour                  ║
-║    F9 / Joystick {config.getint("Controls", "where_am_i_button", 3)} - Where Am I?              ║
-║    F10 / Joystick {config.getint("Controls", "question_button", 1)} - Question                  ║
-║    F11 / Joystick {config.getint("Controls", "deactivate_button", 0)} - Deactivate               ║
+║    F8 / Joystick {config.getint("Controls", "sky_tour_button", 2)} - Sky Tour                          ║
+║    F9 / Joystick {config.getint("Controls", "where_am_i_button", 3)} - Where Am I?                     ║
+║    F10 / Joystick {config.getint("Controls", "question_button", 1)} - Question                         ║
+║    F11 / Joystick {config.getint("Controls", "deactivate_button", 0)} - Deactivate                        ║
 ║                                                                  ║
 ╚══════════════════════════════════════════════════════════════════╝
 """
