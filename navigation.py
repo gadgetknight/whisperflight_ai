@@ -1,6 +1,6 @@
 """
 Whisper Flight AI - Navigation Module
-Version: 5.0.0
+Version: 5.0.1
 Purpose: Handles flight navigation, landmark tracking and POI recommendations
 Last Updated: March 25, 2025, 09:00 UTC
 Author: Your Name
@@ -19,7 +19,20 @@ import re
 from collections import namedtuple
 from config_manager import config
 from geo_utils import geo_utils
-from simconnect_server import sim_server
+
+# Try to use the mock SimConnect directly first for testing
+try:
+    from mock_simconnect_server import sim_server
+    print("Using mock SimConnect server directly")
+except ImportError:
+    try:
+        # Fall back to real SimConnect if mock not available
+        from simconnect_server import sim_server
+        print("Using real SimConnect server")
+    except Exception as e:
+        print(f"SimConnect error: {e}")
+        print("No SimConnect implementation available - exiting")
+        sys.exit(1)
 
 # Definition of a point of interest
 POI = namedtuple('POI', ['name', 'latitude', 'longitude', 'description', 

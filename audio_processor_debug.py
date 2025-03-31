@@ -1,15 +1,15 @@
 """
 Whisper Flight AI - Audio Processor Diagnostic
-Version: 5.1.11-DEBUG
+Version: 5.1.12-DEBUG (Enhanced Wake Word Detection)
 Purpose: Diagnose audio processing and wake word detection issues
 Last Updated: March 28, 2025
 Author: Your Name
 
 Changes in this version:
 - Added extensive debug logging for wake word detection
-- Added audio level monitoring in continuous listening
-- Added transcription detail logging
-- Added timing benchmarks for performance analysis
+- Added detailed transcription output in console for visibility
+- Enhanced audio level monitoring with better visual indicators
+- Added more verbose logging around speech recognition process
 """
 
 import os
@@ -64,6 +64,9 @@ debug_handler.setFormatter(debug_formatter)
 debug_logger.addHandler(debug_handler)
 debug_logger.setLevel(logging.DEBUG)
 
+# Replace the debug_log function in audio_processor_debug.py (around line 70)
+
+# Old code:
 def debug_log(message, level="INFO"):
    """Centralized debug logging with console output"""
    if level == "DEBUG":
@@ -79,6 +82,15 @@ def debug_log(message, level="INFO"):
    
    # Also print to console for immediate feedback
    print(f"AUDIO_DEBUG: {message}")
+
+# New code (using our debug manager):
+from debug_manager import debug_log
+
+# No need to redefine debug_log since we're importing it
+
+# Fix the problematic part in the transcribe method (around line 292)
+# Replace lines that use Unicode symbols like ❌ with:
+debug_log(f"NO WAKE WORD MATCH in: '{lower_text}'", "INFO")
 
 class SpeechToText(ABC):
    def __init__(self):
@@ -187,6 +199,7 @@ class SpeechToText(ABC):
            debug_log(f"Transcribing audio file: {audio_file}", "INFO")
            text = self.transcribe(audio_file)
            debug_log(f"Transcribed audio input: '{text}'", "INFO")
+           print(f"\n>>> VOICE INPUT DETECTED: '{text}'")
            return text.lower().strip()
        except Exception as e:
            debug_log(f"Error transcribing audio: {e}", "ERROR")
@@ -259,6 +272,8 @@ class WhisperSTT(SpeechToText):
            # Log detailed result information
            text = result["text"].strip()
            debug_log(f"Raw Whisper transcription result: '{text}'", "INFO")
+           debug_log(f"RAW TRANSCRIPTION: '{text}'", "INFO")
+           print(f"\nDEBUG WHISPER HEARD: '{text}'")  # Direct console output
            
            # Log segmentation info if available
            if "segments" in result:
@@ -275,12 +290,19 @@ class WhisperSTT(SpeechToText):
            lower_text = text.lower()
            debug_log(f"Checking for wake phrases in: '{lower_text}'", "INFO")
            
-           # Check each wake variation
+           # Check each wake variation with detailed logging
            for variation in wake_variations:
                if variation in lower_text:
-                   debug_log(f"Wake phrase detected: '{variation}' in '{lower_text}'", "INFO")
+                   debug_log(f"WAKE WORD MATCH FOUND! '{variation}' in '{lower_text}'", "INFO")
+                   print(f"\n✅ WAKE WORD DETECTED: Found '{variation}' in '{lower_text}'")
                    debug_log("Normalizing to 'sky tour'", "INFO")
                    return "sky tour"
+               else:
+                   debug_log(f"No match for '{variation}'", "DEBUG")
+           
+           # Explicit failed match message
+           debug_log(f"❌ NO WAKE WORD MATCH in: '{lower_text}'", "INFO")
+           print(f"\n❌ NO WAKE WORD MATCH in: '{lower_text}'")
            
            # Check for API commands
            if any(word in lower_text for word in ["grok", "growth", "rock", "crock", "roc"]):
@@ -638,6 +660,7 @@ class AudioProcessor:
                text = self.listen()
                if text:
                    debug_log(f"Recognized text: '{text}'", "INFO")
+                   print(f"\n>>> VOICE INPUT DETECTED: '{text}'")
                    self.audio_queue.put(text)
                    debug_log(f"Added text to audio queue: '{text}'", "INFO")
                else:
@@ -654,12 +677,12 @@ class AudioProcessor:
    
    def get_next_command(self, block=True, timeout=None):
        try:
-           debug_log(f"Attempting to get command from queue (block={block}, timeout={timeout})", "DEBUG")
+           # debug_log(f"Attempting to get command from queue (block={block}, timeout={timeout})", "DEBUG")
            command = self.audio_queue.get(block=block, timeout=timeout)
            debug_log(f"Retrieved command from queue: '{command}'", "INFO")
            return command
        except queue.Empty:
-           debug_log("Queue empty, no command available", "DEBUG")
+           # debug_log("Queue empty, no command available", "DEBUG")
            return None
    
    def get_audio_input(self):
@@ -683,7 +706,7 @@ if not os.path.exists(deactivate_file):
 else:
    debug_log(f"Found deactivation sound file at {deactivate_file}", "INFO")
 
-# Diagnostic output of key parameters
+   # Diagnostic output of key parameters
 debug_log("=== AUDIO PROCESSOR CONFIGURATION ===", "INFO")
 debug_log(f"STT Engine: {config.get('Speech', 'stt_engine', 'whisper')}", "INFO")
 debug_log(f"TTS Engine: {config.get('Speech', 'tts_engine', 'elevenlabs')}", "INFO")
