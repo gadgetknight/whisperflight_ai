@@ -10420,3 +10420,1711 @@ Device 43: Headphones () (Inputs: 0)
 2025-03-30 20:44:24 - AudioProcessor - INFO - Started continuous listening thread.
 2025-03-30 20:44:24 - StateManager - INFO - State change: PROCESSING -> WAITING - Reason: Question answered
 2025-03-30 20:44:25 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:55:46 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 20:55:47 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-30 20:55:47 - AudioProcessor - INFO - Mixer init.
+2025-03-30 20:55:47 - AudioProcessor - INFO - STT engine: whisper
+2025-03-30 20:55:47 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-30 20:55:47 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-30 20:55:48 - WhisperSTT - INFO - Whisper loaded.
+2025-03-30 20:55:48 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-30 20:55:48 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 20:55:48 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 20:55:48 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-30 20:55:48 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-30 20:55:48 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-30 20:55:48 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-30 20:55:48 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-30 20:55:48 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-30 20:55:48 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-30 20:55:48 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-30 20:55:48 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-30 20:55:48 - root - INFO - Python version: 3.11.4
+2025-03-30 20:55:48 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-30 20:55:48 - root - INFO - Debug mode: Disabled
+2025-03-30 20:55:48 - root - INFO - Distributed mode: Disabled
+2025-03-30 20:55:48 - root - INFO - Default AI provider: openai
+2025-03-30 20:55:48 - root - INFO - STT engine: whisper
+2025-03-30 20:55:48 - root - INFO - TTS engine: elevenlabs
+2025-03-30 20:55:48 - root - INFO - Main function started
+2025-03-30 20:55:48 - root - INFO - Core components initialized.
+2025-03-30 20:55:48 - root - INFO - Found 2 joystick(s).
+2025-03-30 20:55:48 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-30 20:55:48 - root - INFO - Application ready. Current state: STANDBY
+2025-03-30 20:55:48 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 20:55:48 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 20:55:48 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:55:53 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3uuka065.wav
+2025-03-30 20:55:53 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3uuka065.wav
+2025-03-30 20:55:54 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:55:54 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:55:59 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp9g13j5ny.wav
+2025-03-30 20:55:59 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp9g13j5ny.wav
+2025-03-30 20:55:59 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:55:59 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:04 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgbootfqa.wav
+2025-03-30 20:56:04 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgbootfqa.wav
+2025-03-30 20:56:05 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:56:05 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:10 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmplt3zcpcg.wav
+2025-03-30 20:56:10 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmplt3zcpcg.wav
+2025-03-30 20:56:10 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:56:10 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:15 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpatyierxw.wav
+2025-03-30 20:56:15 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpatyierxw.wav
+2025-03-30 20:56:15 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:56:15 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:20 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpe4_tliu3.wav
+2025-03-30 20:56:20 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpe4_tliu3.wav
+2025-03-30 20:56:21 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:56:21 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:26 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp4mjkcxqg.wav
+2025-03-30 20:56:26 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp4mjkcxqg.wav
+2025-03-30 20:56:26 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:56:26 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:31 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp59bi8rim.wav
+2025-03-30 20:56:31 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp59bi8rim.wav
+2025-03-30 20:56:32 - WhisperSTT - INFO - Raw Whisper result: 'I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room.'
+2025-03-30 20:56:32 - AudioProcessor - INFO - Queue retrieve: 'I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room.'
+2025-03-30 20:56:32 - root - INFO - Processing command: 'I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room. I'm going to go to the next room.' in state STANDBY
+2025-03-30 20:56:32 - root - INFO - handle_command result: False
+2025-03-30 20:56:32 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:37 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp53222lju.wav
+2025-03-30 20:56:37 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp53222lju.wav
+2025-03-30 20:56:38 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:56:38 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:43 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmppq4feajq.wav
+2025-03-30 20:56:43 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmppq4feajq.wav
+2025-03-30 20:56:43 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:56:43 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:48 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpco5c_v7_.wav
+2025-03-30 20:56:48 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpco5c_v7_.wav
+2025-03-30 20:56:48 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:56:49 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:54 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpxkn8t89f.wav
+2025-03-30 20:56:54 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpxkn8t89f.wav
+2025-03-30 20:56:54 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:56:54 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:56:59 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpdpe03qg1.wav
+2025-03-30 20:56:59 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpdpe03qg1.wav
+2025-03-30 20:56:59 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:56:59 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:57:04 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1hdo85h3.wav
+2025-03-30 20:57:04 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1hdo85h3.wav
+2025-03-30 20:57:05 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:57:05 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:57:10 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmphwoxjybw.wav
+2025-03-30 20:57:10 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmphwoxjybw.wav
+2025-03-30 20:57:14 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 20:57:16 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-30 20:57:16 - AudioProcessor - INFO - Mixer init.
+2025-03-30 20:57:16 - AudioProcessor - INFO - STT engine: whisper
+2025-03-30 20:57:16 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-30 20:57:16 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-30 20:57:16 - WhisperSTT - INFO - Whisper loaded.
+2025-03-30 20:57:16 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-30 20:57:16 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 20:57:16 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 20:57:16 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-30 20:57:16 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-30 20:57:16 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-30 20:57:16 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-30 20:57:16 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-30 20:57:16 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-30 20:57:16 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-30 20:57:16 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-30 20:57:16 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-30 20:57:16 - root - INFO - Python version: 3.11.4
+2025-03-30 20:57:16 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-30 20:57:16 - root - INFO - Debug mode: Disabled
+2025-03-30 20:57:16 - root - INFO - Distributed mode: Disabled
+2025-03-30 20:57:16 - root - INFO - Default AI provider: openai
+2025-03-30 20:57:16 - root - INFO - STT engine: whisper
+2025-03-30 20:57:16 - root - INFO - TTS engine: elevenlabs
+2025-03-30 20:57:16 - root - INFO - Main function started
+2025-03-30 20:57:16 - root - INFO - Core components initialized.
+2025-03-30 20:57:16 - root - INFO - Found 2 joystick(s).
+2025-03-30 20:57:17 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-30 20:57:17 - root - INFO - Application ready. Current state: STANDBY
+2025-03-30 20:57:17 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 20:57:17 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 20:57:17 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:57:22 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpiobn3ybq.wav
+2025-03-30 20:57:22 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpiobn3ybq.wav
+2025-03-30 20:57:22 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:57:22 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:57:27 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpjup67cy2.wav
+2025-03-30 20:57:27 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpjup67cy2.wav
+2025-03-30 20:57:27 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:57:27 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:57:32 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmptjnp_tcy.wav
+2025-03-30 20:57:32 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmptjnp_tcy.wav
+2025-03-30 20:57:33 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:57:33 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:57:38 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpm7uksrtb.wav
+2025-03-30 20:57:38 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpm7uksrtb.wav
+2025-03-30 20:57:38 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:57:38 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:57:43 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpofqv4imf.wav
+2025-03-30 20:57:43 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpofqv4imf.wav
+2025-03-30 20:57:43 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:57:44 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:57:49 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmprj_qwokz.wav
+2025-03-30 20:57:49 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmprj_qwokz.wav
+2025-03-30 20:57:49 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:57:49 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:57:54 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmphceyx6hm.wav
+2025-03-30 20:57:54 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmphceyx6hm.wav
+2025-03-30 20:57:54 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:57:54 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:57:59 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpzlaqnr6v.wav
+2025-03-30 20:57:59 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpzlaqnr6v.wav
+2025-03-30 20:58:00 - WhisperSTT - INFO - Raw Whisper result: 'All right.'
+2025-03-30 20:58:00 - AudioProcessor - INFO - Queue retrieve: 'All right.'
+2025-03-30 20:58:00 - root - INFO - Processing command: 'All right.' in state STANDBY
+2025-03-30 20:58:00 - root - INFO - handle_command result: False
+2025-03-30 20:58:00 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:58:05 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpd1o52b4r.wav
+2025-03-30 20:58:05 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpd1o52b4r.wav
+2025-03-30 20:58:05 - WhisperSTT - INFO - Raw Whisper result: 'All right. I...'
+2025-03-30 20:58:05 - AudioProcessor - INFO - Queue retrieve: 'All right. I...'
+2025-03-30 20:58:05 - root - INFO - Processing command: 'All right. I...' in state STANDBY
+2025-03-30 20:58:05 - root - INFO - handle_command result: False
+2025-03-30 20:58:05 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:58:10 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp0upm2fos.wav
+2025-03-30 20:58:10 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp0upm2fos.wav
+2025-03-30 20:58:11 - WhisperSTT - INFO - Raw Whisper result: 'I started the start flight AI bat.'
+2025-03-30 20:58:11 - AudioProcessor - INFO - Queue retrieve: 'I started the start flight AI bat.'
+2025-03-30 20:58:11 - root - INFO - Processing command: 'I started the start flight AI bat.' in state STANDBY
+2025-03-30 20:58:11 - root - INFO - handle_command result: False
+2025-03-30 20:58:11 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:58:16 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpqlxh2a2_.wav
+2025-03-30 20:58:16 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpqlxh2a2_.wav
+2025-03-30 20:58:16 - WhisperSTT - INFO - Raw Whisper result: 'and I tried to click on F6 mode.'
+2025-03-30 20:58:16 - AudioProcessor - INFO - Queue retrieve: 'and I tried to click on F6 mode.'
+2025-03-30 20:58:16 - root - INFO - Processing command: 'and I tried to click on F6 mode.' in state STANDBY
+2025-03-30 20:58:16 - root - INFO - handle_command result: False
+2025-03-30 20:58:16 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:58:21 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmptrfrooaz.wav
+2025-03-30 20:58:21 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmptrfrooaz.wav
+2025-03-30 20:58:21 - WhisperSTT - INFO - Raw Whisper result: 'frames and it's not doing anything.'
+2025-03-30 20:58:21 - AudioProcessor - INFO - Queue retrieve: 'frames and it's not doing anything.'
+2025-03-30 20:58:21 - root - INFO - Processing command: 'frames and it's not doing anything.' in state STANDBY
+2025-03-30 20:58:21 - root - INFO - handle_command result: False
+2025-03-30 20:58:22 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:58:27 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpqcsct2se.wav
+2025-03-30 20:58:27 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpqcsct2se.wav
+2025-03-30 20:58:27 - WhisperSTT - INFO - Raw Whisper result: 'But as you can see I'm sitting here talking to you.'
+2025-03-30 20:58:27 - AudioProcessor - INFO - Queue retrieve: 'But as you can see I'm sitting here talking to you.'
+2025-03-30 20:58:27 - root - INFO - Processing command: 'But as you can see I'm sitting here talking to you.' in state STANDBY
+2025-03-30 20:58:27 - root - INFO - handle_command result: False
+2025-03-30 20:58:27 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:58:32 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpofa4gv2x.wav
+2025-03-30 20:58:32 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpofa4gv2x.wav
+2025-03-30 20:58:32 - WhisperSTT - INFO - Raw Whisper result: 'It's looking for a wake word, but it is understanding every word that I'm saying.'
+2025-03-30 20:58:32 - AudioProcessor - INFO - Queue retrieve: 'It's looking for a wake word, but it is understanding every word that I'm saying.'
+2025-03-30 20:58:32 - root - INFO - Processing command: 'It's looking for a wake word, but it is understanding every word that I'm saying.' in state STANDBY
+2025-03-30 20:58:32 - root - INFO - handle_command result: False
+2025-03-30 20:58:32 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:58:37 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp_c1sqwhf.wav
+2025-03-30 20:58:37 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp_c1sqwhf.wav
+2025-03-30 20:58:38 - WhisperSTT - INFO - Raw Whisper result: 'So I guess the audio is working good.'
+2025-03-30 20:58:38 - AudioProcessor - INFO - Queue retrieve: 'So I guess the audio is working good.'
+2025-03-30 20:58:38 - root - INFO - Processing command: 'So I guess the audio is working good.' in state STANDBY
+2025-03-30 20:58:38 - root - INFO - handle_command result: False
+2025-03-30 20:58:38 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:58:43 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpnhr33nsw.wav
+2025-03-30 20:58:43 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpnhr33nsw.wav
+2025-03-30 20:58:43 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:58:45 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:58:50 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpkzfwyc2v.wav
+2025-03-30 20:58:50 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpkzfwyc2v.wav
+2025-03-30 20:58:50 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:58:50 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:58:55 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpx09aqfmv.wav
+2025-03-30 20:58:55 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpx09aqfmv.wav
+2025-03-30 20:58:56 - WhisperSTT - INFO - Raw Whisper result: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-30 20:58:56 - AudioProcessor - INFO - Queue retrieve: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-30 20:58:56 - root - INFO - Processing command: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.' in state STANDBY
+2025-03-30 20:58:56 - root - INFO - handle_command result: False
+2025-03-30 20:58:56 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:01 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpzs2_zoxs.wav
+2025-03-30 20:59:01 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpzs2_zoxs.wav
+2025-03-30 20:59:02 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:02 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:07 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpfyf55g80.wav
+2025-03-30 20:59:07 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpfyf55g80.wav
+2025-03-30 20:59:07 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:07 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:12 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpvgiy71vg.wav
+2025-03-30 20:59:12 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpvgiy71vg.wav
+2025-03-30 20:59:12 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:13 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:18 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpdo5uljlr.wav
+2025-03-30 20:59:18 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpdo5uljlr.wav
+2025-03-30 20:59:18 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:18 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:23 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp8ihnh2wl.wav
+2025-03-30 20:59:23 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp8ihnh2wl.wav
+2025-03-30 20:59:23 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:23 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:28 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpwzpix_1g.wav
+2025-03-30 20:59:28 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpwzpix_1g.wav
+2025-03-30 20:59:29 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:29 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:34 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp5cg76kuv.wav
+2025-03-30 20:59:34 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp5cg76kuv.wav
+2025-03-30 20:59:34 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:34 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:39 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp6816o42k.wav
+2025-03-30 20:59:39 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp6816o42k.wav
+2025-03-30 20:59:39 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:40 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:45 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgofzluhq.wav
+2025-03-30 20:59:45 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgofzluhq.wav
+2025-03-30 20:59:45 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:45 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:50 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpoqrq6p_5.wav
+2025-03-30 20:59:50 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpoqrq6p_5.wav
+2025-03-30 20:59:50 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:50 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 20:59:55 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpyxvilw_8.wav
+2025-03-30 20:59:55 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpyxvilw_8.wav
+2025-03-30 20:59:56 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 20:59:56 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:01 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpyh75equr.wav
+2025-03-30 21:00:01 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpyh75equr.wav
+2025-03-30 21:00:01 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:01 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:06 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpl5f85f67.wav
+2025-03-30 21:00:06 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpl5f85f67.wav
+2025-03-30 21:00:06 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:07 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:12 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp0221az9y.wav
+2025-03-30 21:00:12 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp0221az9y.wav
+2025-03-30 21:00:12 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:12 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:17 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1qen2e74.wav
+2025-03-30 21:00:17 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1qen2e74.wav
+2025-03-30 21:00:17 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:17 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:22 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmphtfct5ev.wav
+2025-03-30 21:00:22 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmphtfct5ev.wav
+2025-03-30 21:00:23 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:23 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:28 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmppg9y1e6b.wav
+2025-03-30 21:00:28 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmppg9y1e6b.wav
+2025-03-30 21:00:28 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:28 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:33 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpp49edme1.wav
+2025-03-30 21:00:33 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpp49edme1.wav
+2025-03-30 21:00:33 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:34 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:39 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmphndtufr2.wav
+2025-03-30 21:00:39 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmphndtufr2.wav
+2025-03-30 21:00:39 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:39 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:44 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpa9tew0ap.wav
+2025-03-30 21:00:44 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpa9tew0ap.wav
+2025-03-30 21:00:44 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:44 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:49 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmps1u01f4f.wav
+2025-03-30 21:00:49 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmps1u01f4f.wav
+2025-03-30 21:00:50 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:50 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:00:55 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp0gxnfu_v.wav
+2025-03-30 21:00:55 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp0gxnfu_v.wav
+2025-03-30 21:00:55 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:00:55 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:00 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgzehpoxi.wav
+2025-03-30 21:01:00 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgzehpoxi.wav
+2025-03-30 21:01:00 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:01:00 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:06 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp6ivo8ahf.wav
+2025-03-30 21:01:06 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp6ivo8ahf.wav
+2025-03-30 21:01:06 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:01:06 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:11 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmppjpispw7.wav
+2025-03-30 21:01:11 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmppjpispw7.wav
+2025-03-30 21:01:11 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:01:11 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:16 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp750rodfq.wav
+2025-03-30 21:01:16 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp750rodfq.wav
+2025-03-30 21:01:17 - WhisperSTT - INFO - Raw Whisper result: 'first.'
+2025-03-30 21:01:17 - AudioProcessor - INFO - Queue retrieve: 'first.'
+2025-03-30 21:01:17 - root - INFO - Processing command: 'first.' in state STANDBY
+2025-03-30 21:01:17 - root - INFO - handle_command result: False
+2025-03-30 21:01:17 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:22 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpv5htutko.wav
+2025-03-30 21:01:22 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpv5htutko.wav
+2025-03-30 21:01:22 - WhisperSTT - INFO - Raw Whisper result: 'handling much'
+2025-03-30 21:01:22 - AudioProcessor - INFO - Queue retrieve: 'handling much'
+2025-03-30 21:01:22 - root - INFO - Processing command: 'handling much' in state STANDBY
+2025-03-30 21:01:22 - root - INFO - handle_command result: False
+2025-03-30 21:01:22 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:27 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp_umn9ok7.wav
+2025-03-30 21:01:27 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp_umn9ok7.wav
+2025-03-30 21:01:28 - WhisperSTT - INFO - Raw Whisper result: 'by creating an updated version of the key handling code that might work better for yourself.'
+2025-03-30 21:01:28 - AudioProcessor - INFO - Queue retrieve: 'by creating an updated version of the key handling code that might work better for yourself.'
+2025-03-30 21:01:28 - root - INFO - Processing command: 'by creating an updated version of the key handling code that might work better for yourself.' in state STANDBY
+2025-03-30 21:01:28 - root - INFO - handle_command result: False
+2025-03-30 21:01:28 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:33 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmptctjztwk.wav
+2025-03-30 21:01:33 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmptctjztwk.wav
+2025-03-30 21:01:33 - WhisperSTT - INFO - Raw Whisper result: 'set up because without that information it's kind of hard to me make'
+2025-03-30 21:01:33 - AudioProcessor - INFO - Queue retrieve: 'set up because without that information it's kind of hard to me make'
+2025-03-30 21:01:33 - root - INFO - Processing command: 'set up because without that information it's kind of hard to me make' in state STANDBY
+2025-03-30 21:01:33 - root - INFO - handle_command result: False
+2025-03-30 21:01:33 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:38 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpt3ko36ro.wav
+2025-03-30 21:01:38 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpt3ko36ro.wav
+2025-03-30 21:01:38 - WhisperSTT - INFO - Raw Whisper result: 'and once again you gave me a snippet of code'
+2025-03-30 21:01:38 - AudioProcessor - INFO - Queue retrieve: 'and once again you gave me a snippet of code'
+2025-03-30 21:01:38 - root - INFO - Processing command: 'and once again you gave me a snippet of code' in state STANDBY
+2025-03-30 21:01:38 - root - INFO - handle_command result: False
+2025-03-30 21:01:39 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:44 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpxlkym4tk.wav
+2025-03-30 21:01:44 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpxlkym4tk.wav
+2025-03-30 21:01:44 - WhisperSTT - INFO - Raw Whisper result: 'with no way to tell where it's going or...'
+2025-03-30 21:01:44 - AudioProcessor - INFO - Queue retrieve: 'with no way to tell where it's going or...'
+2025-03-30 21:01:44 - root - INFO - Processing command: 'with no way to tell where it's going or...' in state STANDBY
+2025-03-30 21:01:44 - root - INFO - handle_command result: False
+2025-03-30 21:01:44 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:49 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp4yjnz8y9.wav
+2025-03-30 21:01:49 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp4yjnz8y9.wav
+2025-03-30 21:01:49 - WhisperSTT - INFO - Raw Whisper result: 'line'
+2025-03-30 21:01:49 - AudioProcessor - INFO - Queue retrieve: 'line'
+2025-03-30 21:01:49 - root - INFO - Processing command: 'line' in state STANDBY
+2025-03-30 21:01:49 - root - INFO - handle_command result: False
+2025-03-30 21:01:50 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:01:55 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpw8i6vup3.wav
+2025-03-30 21:01:55 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpw8i6vup3.wav
+2025-03-30 21:01:55 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:01:55 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:00 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpn5p1h36e.wav
+2025-03-30 21:02:00 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpn5p1h36e.wav
+2025-03-30 21:02:00 - WhisperSTT - INFO - Raw Whisper result: 'And again, you told me Verify Debug Manager.'
+2025-03-30 21:02:00 - AudioProcessor - INFO - Queue retrieve: 'And again, you told me Verify Debug Manager.'
+2025-03-30 21:02:00 - root - INFO - Processing command: 'And again, you told me Verify Debug Manager.' in state STANDBY
+2025-03-30 21:02:00 - root - INFO - handle_command result: False
+2025-03-30 21:02:00 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:05 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpdkz5jpmj.wav
+2025-03-30 21:02:05 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpdkz5jpmj.wav
+2025-03-30 21:02:06 - WhisperSTT - INFO - Raw Whisper result: 'wise in the correct location. It is in cap...'
+2025-03-30 21:02:06 - AudioProcessor - INFO - Queue retrieve: 'wise in the correct location. It is in cap...'
+2025-03-30 21:02:06 - root - INFO - Processing command: 'wise in the correct location. It is in cap...' in state STANDBY
+2025-03-30 21:02:06 - root - INFO - handle_command result: False
+2025-03-30 21:02:06 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:11 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpuyjk_xtg.wav
+2025-03-30 21:02:11 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpuyjk_xtg.wav
+2025-03-30 21:02:11 - WhisperSTT - INFO - Raw Whisper result: 'it is. Please stop asking.'
+2025-03-30 21:02:11 - AudioProcessor - INFO - Queue retrieve: 'it is. Please stop asking.'
+2025-03-30 21:02:11 - root - INFO - Processing command: 'it is. Please stop asking.' in state STANDBY
+2025-03-30 21:02:11 - root - INFO - handle_command result: False
+2025-03-30 21:02:11 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:16 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpm3itxt2j.wav
+2025-03-30 21:02:16 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpm3itxt2j.wav
+2025-03-30 21:02:16 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:02:17 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:22 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpcs_cdxsc.wav
+2025-03-30 21:02:22 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpcs_cdxsc.wav
+2025-03-30 21:02:22 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:02:22 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:27 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpuftax1oc.wav
+2025-03-30 21:02:27 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpuftax1oc.wav
+2025-03-30 21:02:27 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:02:27 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:32 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmppe9_6lst.wav
+2025-03-30 21:02:32 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmppe9_6lst.wav
+2025-03-30 21:02:33 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:02:33 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:38 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp4rmijko1.wav
+2025-03-30 21:02:38 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp4rmijko1.wav
+2025-03-30 21:02:38 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:02:38 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:43 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpewczz_q4.wav
+2025-03-30 21:02:43 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpewczz_q4.wav
+2025-03-30 21:02:43 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:02:44 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:49 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpd5giz9pe.wav
+2025-03-30 21:02:49 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpd5giz9pe.wav
+2025-03-30 21:02:49 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:02:49 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:54 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpzh41oh3y.wav
+2025-03-30 21:02:54 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpzh41oh3y.wav
+2025-03-30 21:02:54 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:02:54 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:02:59 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpzmh3qgmy.wav
+2025-03-30 21:02:59 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpzmh3qgmy.wav
+2025-03-30 21:03:00 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:03:00 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:05 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpqb3r7qqg.wav
+2025-03-30 21:03:05 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpqb3r7qqg.wav
+2025-03-30 21:03:05 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:03:05 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:10 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1u_oi_5x.wav
+2025-03-30 21:03:10 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1u_oi_5x.wav
+2025-03-30 21:03:10 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:03:10 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:16 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpiz5c93j6.wav
+2025-03-30 21:03:16 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpiz5c93j6.wav
+2025-03-30 21:03:16 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:03:16 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:21 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmppu4ib9o_.wav
+2025-03-30 21:03:21 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmppu4ib9o_.wav
+2025-03-30 21:03:21 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:03:21 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:26 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpacbwx4vv.wav
+2025-03-30 21:03:26 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpacbwx4vv.wav
+2025-03-30 21:03:27 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:03:27 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:32 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmptc9_wpet.wav
+2025-03-30 21:03:32 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmptc9_wpet.wav
+2025-03-30 21:03:32 - WhisperSTT - INFO - Raw Whisper result: 'Well, it's kind of dumb stupid.'
+2025-03-30 21:03:32 - AudioProcessor - INFO - Queue retrieve: 'Well, it's kind of dumb stupid.'
+2025-03-30 21:03:32 - root - INFO - Processing command: 'Well, it's kind of dumb stupid.' in state STANDBY
+2025-03-30 21:03:32 - root - INFO - handle_command result: False
+2025-03-30 21:03:32 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:37 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpovjv_33y.wav
+2025-03-30 21:03:37 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpovjv_33y.wav
+2025-03-30 21:03:37 - WhisperSTT - INFO - Raw Whisper result: 'retarded to move on to other things when we haven't finished fixing this thing.'
+2025-03-30 21:03:37 - AudioProcessor - INFO - Queue retrieve: 'retarded to move on to other things when we haven't finished fixing this thing.'
+2025-03-30 21:03:37 - root - INFO - Processing command: 'retarded to move on to other things when we haven't finished fixing this thing.' in state STANDBY
+2025-03-30 21:03:37 - root - INFO - handle_command result: False
+2025-03-30 21:03:37 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:42 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3e4o8b4i.wav
+2025-03-30 21:03:42 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3e4o8b4i.wav
+2025-03-30 21:03:43 - WhisperSTT - INFO - Raw Whisper result: 'They don't count and then, and then I comes back to drawing indicating the result and I didn't begin. Now, I'm sure this millimeter will get intense issue over time, I couldn't see the result then, this went from which is銀,'
+2025-03-30 21:03:43 - AudioProcessor - INFO - Queue retrieve: 'They don't count and then, and then I comes back to drawing indicating the result and I didn't begin. Now, I'm sure this millimeter will get intense issue over time, I couldn't see the result then, this went from which is銀,'
+2025-03-30 21:03:43 - root - INFO - Processing command: 'They don't count and then, and then I comes back to drawing indicating the result and I didn't begin. Now, I'm sure this millimeter will get intense issue over time, I couldn't see the result then, this went from which is銀,' in state STANDBY
+2025-03-30 21:03:43 - root - INFO - handle_command result: False
+2025-03-30 21:03:43 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:48 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp0bbu8h5u.wav
+2025-03-30 21:03:48 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp0bbu8h5u.wav
+2025-03-30 21:03:49 - WhisperSTT - INFO - Raw Whisper result: 'It was your idea to create the dynamic import method.'
+2025-03-30 21:03:49 - AudioProcessor - INFO - Queue retrieve: 'It was your idea to create the dynamic import method.'
+2025-03-30 21:03:49 - root - INFO - Processing command: 'It was your idea to create the dynamic import method.' in state STANDBY
+2025-03-30 21:03:49 - root - INFO - handle_command result: False
+2025-03-30 21:03:49 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:54 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpvctw1_ej.wav
+2025-03-30 21:03:54 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpvctw1_ej.wav
+2025-03-30 21:03:54 - WhisperSTT - INFO - Raw Whisper result: 'So if you didn't know what you were doing, why would you do that method versus an easy method?'
+2025-03-30 21:03:54 - AudioProcessor - INFO - Queue retrieve: 'So if you didn't know what you were doing, why would you do that method versus an easy method?'
+2025-03-30 21:03:54 - root - INFO - Processing command: 'So if you didn't know what you were doing, why would you do that method versus an easy method?' in state STANDBY
+2025-03-30 21:03:54 - root - INFO - handle_command result: False
+2025-03-30 21:03:54 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:03:59 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp_uej1iq_.wav
+2025-03-30 21:03:59 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp_uej1iq_.wav
+2025-03-30 21:04:00 - WhisperSTT - INFO - Raw Whisper result: 'and which one is going to be best for the program?'
+2025-03-30 21:04:00 - AudioProcessor - INFO - Queue retrieve: 'and which one is going to be best for the program?'
+2025-03-30 21:04:00 - root - INFO - Processing command: 'and which one is going to be best for the program?' in state STANDBY
+2025-03-30 21:04:00 - root - INFO - handle_command result: False
+2025-03-30 21:04:00 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:04:05 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpcoqn34g4.wav
+2025-03-30 21:04:05 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpcoqn34g4.wav
+2025-03-30 21:04:05 - WhisperSTT - INFO - Raw Whisper result: 'I'm looking for rock solid. Not let's try.'
+2025-03-30 21:04:05 - AudioProcessor - INFO - Queue retrieve: 'I'm looking for rock solid. Not let's try.'
+2025-03-30 21:04:05 - root - INFO - Processing command: 'I'm looking for rock solid. Not let's try.' in state STANDBY
+2025-03-30 21:04:05 - root - INFO - handle_command result: False
+2025-03-30 21:04:05 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:04:10 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp7ijypyik.wav
+2025-03-30 21:04:10 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp7ijypyik.wav
+2025-03-30 21:04:11 - WhisperSTT - INFO - Raw Whisper result: 'see if it works. That's why I came to you, you're supposed to...'
+2025-03-30 21:04:11 - AudioProcessor - INFO - Queue retrieve: 'see if it works. That's why I came to you, you're supposed to...'
+2025-03-30 21:04:11 - root - INFO - Processing command: 'see if it works. That's why I came to you, you're supposed to...' in state STANDBY
+2025-03-30 21:04:11 - root - INFO - handle_command result: False
+2025-03-30 21:04:11 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:04:16 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpbbbnlihz.wav
+2025-03-30 21:04:16 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpbbbnlihz.wav
+2025-03-30 21:04:16 - WhisperSTT - INFO - Raw Whisper result: 'best.'
+2025-03-30 21:04:16 - AudioProcessor - INFO - Queue retrieve: 'best.'
+2025-03-30 21:04:16 - root - INFO - Processing command: 'best.' in state STANDBY
+2025-03-30 21:04:16 - root - INFO - handle_command result: False
+2025-03-30 21:04:16 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:04:21 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpc0r0jz1h.wav
+2025-03-30 21:04:21 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpc0r0jz1h.wav
+2025-03-30 21:04:22 - WhisperSTT - INFO - Raw Whisper result: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-30 21:04:22 - AudioProcessor - INFO - Queue retrieve: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-30 21:04:22 - root - INFO - Processing command: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.' in state STANDBY
+2025-03-30 21:04:22 - root - INFO - handle_command result: False
+2025-03-30 21:04:22 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:04:27 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpzm0_x01u.wav
+2025-03-30 21:04:27 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpzm0_x01u.wav
+2025-03-30 21:04:28 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:04:28 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:04:33 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp7vjo6c93.wav
+2025-03-30 21:04:33 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp7vjo6c93.wav
+2025-03-30 21:04:33 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:04:33 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:04:38 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmph7hqwrgl.wav
+2025-03-30 21:04:38 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmph7hqwrgl.wav
+2025-03-30 21:04:39 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:04:39 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:04:44 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3w1u8dyl.wav
+2025-03-30 21:04:44 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3w1u8dyl.wav
+2025-03-30 21:04:44 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:04:44 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:04:49 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgotpu7r4.wav
+2025-03-30 21:04:49 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgotpu7r4.wav
+2025-03-30 21:04:49 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:04:49 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:04:54 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpk7rzztgp.wav
+2025-03-30 21:04:54 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpk7rzztgp.wav
+2025-03-30 21:04:55 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:04:55 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:05:00 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpjkpg68e7.wav
+2025-03-30 21:05:00 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpjkpg68e7.wav
+2025-03-30 21:05:00 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-30 21:05:00 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 21:19:19 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 21:24:28 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 21:51:59 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 22:02:36 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 22:02:38 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-30 22:02:38 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-30 22:02:38 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-30 22:02:38 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-30 22:02:38 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-30 22:02:39 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-30 22:02:39 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-30 22:02:39 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-30 22:02:39 - AudioProcessor - INFO - STT engine: whisper
+2025-03-30 22:02:39 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-30 22:02:39 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-30 22:02:39 - WhisperSTT - INFO - Whisper loaded.
+2025-03-30 22:02:39 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-30 22:02:39 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:02:39 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 22:02:39 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-30 22:02:39 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-30 22:02:39 - root - INFO - Python version: 3.11.4
+2025-03-30 22:02:39 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-30 22:02:39 - root - INFO - Debug mode: Disabled
+2025-03-30 22:02:39 - root - INFO - Distributed mode: Disabled
+2025-03-30 22:02:39 - root - INFO - Default AI provider: openai
+2025-03-30 22:02:39 - root - INFO - STT engine: whisper
+2025-03-30 22:02:39 - root - INFO - TTS engine: elevenlabs
+2025-03-30 22:02:39 - root - INFO - Main function started
+2025-03-30 22:02:39 - root - INFO - Core components initialized.
+2025-03-30 22:02:39 - root - INFO - Found 2 joystick(s).
+2025-03-30 22:02:39 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-30 22:02:39 - root - INFO - Application ready. Current state: STANDBY
+2025-03-30 22:02:50 - root - INFO - Processing command: 'sky tour' in state STANDBY
+2025-03-30 22:02:50 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Wake word
+2025-03-30 22:02:50 - ElevenLabsTTS - INFO - No text to speak.
+2025-03-30 22:02:50 - AudioProcessor - INFO - Playing SFX: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:02:52 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 22:02:52 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 22:02:52 - root - INFO - handle_command result: True
+2025-03-30 22:02:52 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 22:02:56 - root - INFO - Processing command: 'sky tour' in state ACTIVE
+2025-03-30 22:02:56 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-30 22:02:56 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: General question
+2025-03-30 22:02:56 - StateManager - INFO - Handling question (thread): 'sky tour...'
+2025-03-30 22:02:56 - root - INFO - handle_command result: True
+2025-03-30 22:02:57 - GeoUtils - INFO - Reverse geocoded 40.69673324484491, -74.03813721380713 to 'Ellis Island Bridge, Jersey City, Hudson County, New Jersey, 07303, United States'
+2025-03-30 22:02:57 - AIManager - INFO - Attempting response generation with: openai
+2025-03-30 22:02:57 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp0yn_clhk.wav
+2025-03-30 22:02:57 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp0yn_clhk.wav
+2025-03-30 22:02:57 - WhisperSTT - INFO - Raw Whisper result: 'Where am I?'
+2025-03-30 22:02:57 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-30 22:03:00 - OpenAIProvider - INFO - OpenAI response generated successfully (559 chars)
+2025-03-30 22:03:00 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're flying near Ellis Island, a historic site k...'
+2025-03-30 22:03:07 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:03:07 - ElevenLabsTTS - INFO - Playing audio: 'You're flying near Ellis Island, a historic site k...'
+2025-03-30 22:03:13 - root - INFO - Processing command: 'you're flying near ellis island a historic site known for being the gateway for million' in state PROCESSING
+2025-03-30 22:03:13 - StateManager - WARNING - Command 'you're flying near ellis island a historic site known for being the gateway for million' ignored in state PROCESSING.
+2025-03-30 22:03:13 - root - INFO - handle_command result: False
+2025-03-30 22:03:18 - root - INFO - Processing command: 'to your northeast, you'll see the iconic statue of liberty on liberty island.' in state PROCESSING
+2025-03-30 22:03:18 - StateManager - WARNING - Command 'to your northeast, you'll see the iconic statue of liberty on liberty island.' ignored in state PROCESSING.
+2025-03-30 22:03:18 - root - INFO - handle_command result: False
+2025-03-30 22:03:40 - ElevenLabsTTS - INFO - Finished playing: 'You're flying near Ellis Island, a historic site k...'
+2025-03-30 22:04:36 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
+2025-03-30 22:04:37 - root - INFO - Processing command: 'directly to the north, the skyline of manhattan stands tall, offering views of one' in state PROCESSING
+2025-03-30 22:04:37 - StateManager - WARNING - Command 'directly to the north, the skyline of manhattan stands tall, offering views of one' ignored in state PROCESSING.
+2025-03-30 22:04:37 - root - INFO - handle_command result: False
+2025-03-30 22:04:37 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:04:37 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'
+2025-03-30 22:04:38 - ElevenLabsTTS - INFO - Finished playing: 'More questions?...'
+2025-03-30 22:04:38 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 22:04:38 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 22:04:38 - StateManager - INFO - State change: PROCESSING -> WAITING - Reason: Question answered
+2025-03-30 22:04:38 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 22:04:42 - root - INFO - Processing command: 'question' in state WAITING
+2025-03-30 22:04:43 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-30 22:04:43 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Okay, what is your question?...'
+2025-03-30 22:04:43 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpzex_wf3b.wav
+2025-03-30 22:04:43 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpzex_wf3b.wav
+2025-03-30 22:04:43 - WhisperSTT - INFO - Raw Whisper result: 'No.'
+2025-03-30 22:04:43 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-30 22:04:44 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:04:44 - ElevenLabsTTS - INFO - Playing audio: 'Okay, what is your question?...'
+2025-03-30 22:04:45 - ElevenLabsTTS - INFO - Finished playing: 'Okay, what is your question?...'
+2025-03-30 22:04:46 - StateManager - INFO - State change: WAITING -> ACTIVE - Reason: Ready for question
+2025-03-30 22:04:46 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 22:04:46 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 22:04:46 - root - INFO - handle_command result: True
+2025-03-30 22:04:46 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 22:04:48 - root - INFO - Processing command: 'question' in state ACTIVE
+2025-03-30 22:04:48 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-30 22:04:48 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Okay, what is your question?...'
+2025-03-30 22:04:49 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:04:49 - ElevenLabsTTS - INFO - Playing audio: 'Okay, what is your question?...'
+2025-03-30 22:04:51 - ElevenLabsTTS - INFO - Finished playing: 'Okay, what is your question?...'
+2025-03-30 22:04:51 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp67_soy6c.wav
+2025-03-30 22:04:51 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp67_soy6c.wav
+2025-03-30 22:04:51 - AudioProcessor - WARNING - Start: Previous listen thread alive? Stopping...
+2025-03-30 22:04:51 - WhisperSTT - INFO - Raw Whisper result: 'Okay, what is your question?'
+2025-03-30 22:04:51 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-30 22:04:51 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-30 22:04:51 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 22:04:51 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 22:04:51 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 22:04:51 - root - INFO - handle_command result: True
+2025-03-30 22:04:53 - root - INFO - Processing command: 'question' in state ACTIVE
+2025-03-30 22:04:54 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-30 22:04:54 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Okay, what is your question?...'
+2025-03-30 22:04:54 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:04:54 - ElevenLabsTTS - INFO - Playing audio: 'Okay, what is your question?...'
+2025-03-30 22:04:56 - ElevenLabsTTS - INFO - Finished playing: 'Okay, what is your question?...'
+2025-03-30 22:04:56 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpzpekxv4t.wav
+2025-03-30 22:04:56 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpzpekxv4t.wav
+2025-03-30 22:04:56 - AudioProcessor - WARNING - Start: Previous listen thread alive? Stopping...
+2025-03-30 22:04:57 - WhisperSTT - INFO - Raw Whisper result: 'Okay, what is your question?'
+2025-03-30 22:04:57 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-30 22:04:57 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-30 22:04:57 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 22:04:57 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 22:04:57 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 22:04:57 - root - INFO - handle_command result: True
+2025-03-30 22:04:58 - root - INFO - Processing command: 'question' in state ACTIVE
+2025-03-30 22:04:59 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-30 22:04:59 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Okay, what is your question?...'
+2025-03-30 22:04:59 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:04:59 - ElevenLabsTTS - INFO - Playing audio: 'Okay, what is your question?...'
+2025-03-30 22:05:01 - ElevenLabsTTS - INFO - Finished playing: 'Okay, what is your question?...'
+2025-03-30 22:05:01 - AudioProcessor - WARNING - Start: Previous listen thread alive? Stopping...
+2025-03-30 22:05:02 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmphqg7xj6o.wav
+2025-03-30 22:05:02 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmphqg7xj6o.wav
+2025-03-30 22:05:02 - WhisperSTT - INFO - Raw Whisper result: 'Okay, what is your question?'
+2025-03-30 22:05:02 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-30 22:05:02 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-30 22:05:02 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 22:05:02 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 22:05:02 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 22:05:02 - root - INFO - handle_command result: True
+2025-03-30 22:05:03 - root - INFO - Processing command: 'question' in state ACTIVE
+2025-03-30 22:05:04 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-30 22:05:04 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Okay, what is your question?...'
+2025-03-30 22:05:05 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:05:05 - ElevenLabsTTS - INFO - Playing audio: 'Okay, what is your question?...'
+2025-03-30 22:05:09 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 22:05:11 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-30 22:05:11 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-30 22:05:11 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-30 22:05:11 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-30 22:05:11 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-30 22:05:11 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-30 22:05:11 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-30 22:05:11 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-30 22:05:11 - AudioProcessor - INFO - STT engine: whisper
+2025-03-30 22:05:11 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-30 22:05:11 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-30 22:05:12 - WhisperSTT - INFO - Whisper loaded.
+2025-03-30 22:05:12 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-30 22:05:12 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:05:12 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 22:05:12 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-30 22:05:12 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-30 22:05:12 - root - INFO - Python version: 3.11.4
+2025-03-30 22:05:12 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-30 22:05:12 - root - INFO - Debug mode: Disabled
+2025-03-30 22:05:12 - root - INFO - Distributed mode: Disabled
+2025-03-30 22:05:12 - root - INFO - Default AI provider: openai
+2025-03-30 22:05:12 - root - INFO - STT engine: whisper
+2025-03-30 22:05:12 - root - INFO - TTS engine: elevenlabs
+2025-03-30 22:05:12 - root - INFO - Main function started
+2025-03-30 22:05:12 - root - INFO - Core components initialized.
+2025-03-30 22:05:12 - root - INFO - Found 2 joystick(s).
+2025-03-30 22:05:12 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-30 22:05:12 - root - INFO - Application ready. Current state: STANDBY
+2025-03-30 22:05:18 - root - INFO - Processing command: 'i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more. i'm going to get you a little bit more.' in state STANDBY
+2025-03-30 22:05:18 - root - INFO - handle_command result: False
+2025-03-30 22:05:35 - root - INFO - Processing command: 'byeout wall' in state STANDBY
+2025-03-30 22:05:35 - root - INFO - handle_command result: False
+2025-03-30 22:06:06 - root - INFO - Processing command: 'the keyboard's doing nothing, none of the keys were.' in state STANDBY
+2025-03-30 22:06:06 - root - INFO - handle_command result: False
+2025-03-30 22:06:12 - root - INFO - Processing command: 'how many hours are we going to have to work on this just for a deep' in state STANDBY
+2025-03-30 22:06:12 - root - INFO - handle_command result: False
+2025-03-30 22:06:17 - root - INFO - Processing command: 'that works.' in state STANDBY
+2025-03-30 22:06:17 - root - INFO - handle_command result: False
+2025-03-30 22:10:32 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 22:10:36 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-30 22:10:36 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-30 22:10:36 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-30 22:10:36 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-30 22:10:36 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-30 22:10:36 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-30 22:10:36 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-30 22:10:36 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-30 22:10:36 - AudioProcessor - INFO - STT engine: whisper
+2025-03-30 22:10:36 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-30 22:10:36 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-30 22:10:37 - WhisperSTT - INFO - Whisper loaded.
+2025-03-30 22:10:37 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-30 22:10:37 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:10:37 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 22:10:37 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-30 22:10:37 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-30 22:10:37 - root - INFO - Python version: 3.11.4
+2025-03-30 22:10:37 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-30 22:10:37 - root - INFO - Debug mode: Disabled
+2025-03-30 22:10:37 - root - INFO - Distributed mode: Disabled
+2025-03-30 22:10:37 - root - INFO - Default AI provider: openai
+2025-03-30 22:10:37 - root - INFO - STT engine: whisper
+2025-03-30 22:10:37 - root - INFO - TTS engine: elevenlabs
+2025-03-30 22:10:37 - root - INFO - Main function started
+2025-03-30 22:10:37 - root - INFO - Core components initialized.
+2025-03-30 22:10:37 - root - INFO - Found 2 joystick(s).
+2025-03-30 22:10:37 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-30 22:10:37 - root - INFO - Application ready. Current state: STANDBY
+2025-03-30 22:12:42 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 22:12:44 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-30 22:12:44 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-30 22:12:44 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-30 22:12:44 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-30 22:12:44 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-30 22:12:45 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-30 22:12:45 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-30 22:12:45 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-30 22:12:45 - AudioProcessor - INFO - STT engine: whisper
+2025-03-30 22:12:45 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-30 22:12:45 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-30 22:12:45 - WhisperSTT - INFO - Whisper loaded.
+2025-03-30 22:12:45 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-30 22:12:45 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:12:45 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 22:12:45 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-30 22:12:45 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-30 22:12:45 - root - INFO - Python version: 3.11.4
+2025-03-30 22:12:45 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-30 22:12:45 - root - INFO - Debug mode: Disabled
+2025-03-30 22:12:45 - root - INFO - Distributed mode: Disabled
+2025-03-30 22:12:45 - root - INFO - Default AI provider: openai
+2025-03-30 22:12:45 - root - INFO - STT engine: whisper
+2025-03-30 22:12:45 - root - INFO - TTS engine: elevenlabs
+2025-03-30 22:12:45 - root - INFO - Main function started
+2025-03-30 22:12:45 - root - INFO - Core components initialized.
+2025-03-30 22:12:45 - root - INFO - Found 2 joystick(s).
+2025-03-30 22:12:45 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-30 22:12:45 - root - INFO - Application ready. Current state: STANDBY
+2025-03-30 22:12:52 - root - INFO - Processing command: 'let's do it. i can't bend it out there.' in state STANDBY
+2025-03-30 22:12:52 - root - INFO - handle_command result: False
+2025-03-30 22:12:58 - root - INFO - Processing command: 'and' in state STANDBY
+2025-03-30 22:12:58 - root - INFO - handle_command result: False
+2025-03-30 22:13:03 - root - INFO - Processing command: 'i commented out that mine and it's still pretty' in state STANDBY
+2025-03-30 22:13:03 - root - INFO - handle_command result: False
+2025-03-30 22:13:08 - root - INFO - Processing command: 'the debug stuff so i don't know guess again.' in state STANDBY
+2025-03-30 22:13:08 - root - INFO - handle_command result: False
+2025-03-30 22:13:17 - root - INFO - Processing command: '1st rate 4th rate' in state STANDBY
+2025-03-30 22:13:17 - root - INFO - handle_command result: False
+2025-03-30 22:15:45 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 22:15:47 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-30 22:15:47 - AudioProcessor - INFO - Mixer init.
+2025-03-30 22:15:47 - AudioProcessor - INFO - STT engine: whisper
+2025-03-30 22:15:47 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-30 22:15:47 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-30 22:15:48 - WhisperSTT - INFO - Whisper loaded.
+2025-03-30 22:15:48 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-30 22:15:48 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:15:48 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 22:15:48 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-30 22:15:48 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-30 22:15:48 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-30 22:15:48 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-30 22:15:48 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-30 22:15:48 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-30 22:15:48 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-30 22:15:48 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-30 22:15:48 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-30 22:15:48 - root - INFO - Python version: 3.11.4
+2025-03-30 22:15:48 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-30 22:15:48 - root - INFO - Debug mode: Disabled
+2025-03-30 22:15:48 - root - INFO - Distributed mode: Disabled
+2025-03-30 22:15:48 - root - INFO - Default AI provider: openai
+2025-03-30 22:15:48 - root - INFO - STT engine: whisper
+2025-03-30 22:15:48 - root - INFO - TTS engine: elevenlabs
+2025-03-30 22:15:48 - root - INFO - Main function started
+2025-03-30 22:15:48 - root - INFO - Core components initialized.
+2025-03-30 22:15:48 - root - INFO - Found 2 joystick(s).
+2025-03-30 22:15:48 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-30 22:15:48 - root - INFO - Application ready. Current state: STANDBY
+2025-03-30 22:15:48 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 22:15:48 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 22:15:48 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 22:15:53 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpatprpsfb.wav
+2025-03-30 22:15:53 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpatprpsfb.wav
+2025-03-30 22:15:54 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour. Skytor'
+2025-03-30 22:15:54 - AudioProcessor - INFO - Queue retrieve: 'Sky tour. Skytor'
+2025-03-30 22:15:54 - root - INFO - Processing command: 'Sky tour. Skytor' in state STANDBY
+2025-03-30 22:15:54 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-30 22:15:54 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-30 22:15:54 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-30 22:15:55 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:15:55 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-30 22:15:56 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-30 22:15:56 - root - INFO - handle_command result: True
+2025-03-30 22:16:50 - root - INFO - Joystick input: Btn 2 -> 'sky tour'
+2025-03-30 22:16:50 - AudioProcessor - INFO - Queue retrieve: 'sky tour'
+2025-03-30 22:16:50 - root - INFO - Processing command: 'sky tour' in state STANDBY
+2025-03-30 22:16:50 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Wake word
+2025-03-30 22:16:50 - ElevenLabsTTS - INFO - No text to speak.
+2025-03-30 22:16:50 - AudioProcessor - INFO - Playing SFX: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:16:51 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 22:16:51 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 22:16:51 - root - INFO - handle_command result: True
+2025-03-30 22:16:51 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 22:16:56 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp2jlgqgaf.wav
+2025-03-30 22:16:56 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp2jlgqgaf.wav
+2025-03-30 22:16:57 - WhisperSTT - INFO - Raw Whisper result: 'Where am I?'
+2025-03-30 22:16:57 - AudioProcessor - INFO - Queue retrieve: 'Where am I?'
+2025-03-30 22:16:57 - root - INFO - Processing command: 'Where am I?' in state ACTIVE
+2025-03-30 22:16:57 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-30 22:16:57 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-30 22:16:57 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: Where am I cmd
+2025-03-30 22:16:57 - StateManager - INFO - Handling 'Where am I?' (thread)...
+2025-03-30 22:16:57 - root - INFO - handle_command result: True
+2025-03-30 22:16:57 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Checking your location......'
+2025-03-30 22:16:57 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:16:57 - ElevenLabsTTS - INFO - Playing audio: 'Checking your location......'
+2025-03-30 22:16:59 - ElevenLabsTTS - INFO - Finished playing: 'Checking your location......'
+2025-03-30 22:16:59 - GeoUtils - INFO - Reverse geocoded 40.71504560113484, -74.01947184983092 to 'Battery Park City Greenway, Battery Park City, Manhattan, New York County, New York, 10285, United States'
+2025-03-30 22:16:59 - AIManager - INFO - Attempting response generation with: openai
+2025-03-30 22:17:01 - OpenAIProvider - INFO - OpenAI response generated successfully (382 chars)
+2025-03-30 22:17:01 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're soaring above Battery Park City in Lower Ma...'
+2025-03-30 22:17:07 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 22:17:08 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-30 22:17:08 - AudioProcessor - INFO - Mixer init.
+2025-03-30 22:17:08 - AudioProcessor - INFO - STT engine: whisper
+2025-03-30 22:17:08 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-30 22:17:08 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-30 22:17:09 - WhisperSTT - INFO - Whisper loaded.
+2025-03-30 22:17:09 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-30 22:17:09 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:17:09 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 22:17:09 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-30 22:17:09 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-30 22:17:09 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-30 22:17:09 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-30 22:17:09 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-30 22:17:09 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-30 22:17:09 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-30 22:17:09 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-30 22:17:09 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-30 22:17:09 - root - INFO - Python version: 3.11.4
+2025-03-30 22:17:09 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-30 22:17:09 - root - INFO - Debug mode: Disabled
+2025-03-30 22:17:09 - root - INFO - Distributed mode: Disabled
+2025-03-30 22:17:09 - root - INFO - Default AI provider: openai
+2025-03-30 22:17:09 - root - INFO - STT engine: whisper
+2025-03-30 22:17:09 - root - INFO - TTS engine: elevenlabs
+2025-03-30 22:17:09 - root - INFO - Main function started
+2025-03-30 22:17:09 - root - INFO - Core components initialized.
+2025-03-30 22:17:09 - root - INFO - Found 2 joystick(s).
+2025-03-30 22:17:09 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-30 22:17:09 - root - INFO - Application ready. Current state: STANDBY
+2025-03-30 22:17:09 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 22:17:09 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 22:17:09 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 22:17:14 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpusv9xh9f.wav
+2025-03-30 22:17:14 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpusv9xh9f.wav
+2025-03-30 22:17:14 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour.'
+2025-03-30 22:17:14 - AudioProcessor - INFO - Queue retrieve: 'Sky tour.'
+2025-03-30 22:17:14 - root - INFO - Processing command: 'Sky tour.' in state STANDBY
+2025-03-30 22:17:14 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-30 22:17:14 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-30 22:17:14 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-30 22:17:15 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:17:15 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-30 22:17:17 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-30 22:17:17 - root - INFO - handle_command result: True
+2025-03-30 22:18:50 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-30 22:18:52 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-30 22:18:52 - AudioProcessor - INFO - Mixer init.
+2025-03-30 22:18:52 - AudioProcessor - INFO - STT engine: whisper
+2025-03-30 22:18:52 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-30 22:18:52 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-30 22:18:52 - WhisperSTT - INFO - Whisper loaded.
+2025-03-30 22:18:52 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-30 22:18:52 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:18:52 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 22:18:52 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-30 22:18:52 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-30 22:18:52 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-30 22:18:52 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-30 22:18:52 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-30 22:18:52 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-30 22:18:52 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-30 22:18:52 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-30 22:18:52 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-30 22:18:52 - root - INFO - Python version: 3.11.4
+2025-03-30 22:18:52 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-30 22:18:52 - root - INFO - Debug mode: Disabled
+2025-03-30 22:18:52 - root - INFO - Distributed mode: Disabled
+2025-03-30 22:18:52 - root - INFO - Default AI provider: openai
+2025-03-30 22:18:52 - root - INFO - STT engine: whisper
+2025-03-30 22:18:52 - root - INFO - TTS engine: elevenlabs
+2025-03-30 22:18:52 - root - INFO - Main function started
+2025-03-30 22:18:52 - root - INFO - Core components initialized.
+2025-03-30 22:18:52 - root - INFO - Found 2 joystick(s).
+2025-03-30 22:18:52 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-30 22:18:52 - root - INFO - Application ready. Current state: STANDBY
+2025-03-30 22:18:52 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-30 22:18:52 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-30 22:18:53 - WhisperSTT - INFO - Using default audio input.
+2025-03-30 22:18:58 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpmgbbsgdk.wav
+2025-03-30 22:18:58 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpmgbbsgdk.wav
+2025-03-30 22:18:58 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour.'
+2025-03-30 22:18:58 - AudioProcessor - INFO - Queue retrieve: 'Sky tour.'
+2025-03-30 22:18:58 - root - INFO - Processing command: 'Sky tour.' in state STANDBY
+2025-03-30 22:18:58 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-30 22:18:58 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-30 22:18:58 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-30 22:18:59 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-30 22:18:59 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-30 22:19:00 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-30 22:19:00 - root - INFO - handle_command result: True
+2025-03-31 10:18:38 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 10:18:42 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 10:18:42 - AudioProcessor - INFO - Mixer init.
+2025-03-31 10:18:42 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 10:18:42 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 10:18:42 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 10:18:42 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 10:18:42 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 10:18:42 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 10:18:42 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 10:18:42 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-31 10:18:42 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-31 10:18:42 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-31 10:18:42 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-31 10:18:42 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 10:18:43 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 10:18:43 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 10:18:43 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 10:18:43 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 10:18:43 - root - INFO - Python version: 3.11.4
+2025-03-31 10:18:43 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 10:18:43 - root - INFO - Debug mode: Disabled
+2025-03-31 10:18:43 - root - INFO - Distributed mode: Disabled
+2025-03-31 10:18:43 - root - INFO - Default AI provider: openai
+2025-03-31 10:18:43 - root - INFO - STT engine: whisper
+2025-03-31 10:18:43 - root - INFO - TTS engine: elevenlabs
+2025-03-31 10:18:43 - root - INFO - Main function started
+2025-03-31 10:18:43 - root - INFO - Core components initialized.
+2025-03-31 10:18:43 - root - INFO - Found 2 joystick(s).
+2025-03-31 10:18:43 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 10:18:43 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 10:18:43 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 10:18:43 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 10:18:43 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:18:48 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp6budj_dm.wav
+2025-03-31 10:18:48 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp6budj_dm.wav
+2025-03-31 10:18:48 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:18:49 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:18:54 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp0yc_o5_g.wav
+2025-03-31 10:18:54 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp0yc_o5_g.wav
+2025-03-31 10:18:55 - WhisperSTT - INFO - Raw Whisper result: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-31 10:18:55 - AudioProcessor - INFO - Queue retrieve: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-31 10:18:55 - root - INFO - Processing command: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.' in state STANDBY
+2025-03-31 10:18:55 - root - INFO - handle_command result: False
+2025-03-31 10:18:55 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:00 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpv5zdzwue.wav
+2025-03-31 10:19:00 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpv5zdzwue.wav
+2025-03-31 10:19:00 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:00 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:05 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp8776qz3f.wav
+2025-03-31 10:19:05 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp8776qz3f.wav
+2025-03-31 10:19:05 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:05 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:10 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp5ln4zo99.wav
+2025-03-31 10:19:10 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp5ln4zo99.wav
+2025-03-31 10:19:10 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:10 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:15 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpa9kczujj.wav
+2025-03-31 10:19:15 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpa9kczujj.wav
+2025-03-31 10:19:16 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:16 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:21 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpyyw_h4vs.wav
+2025-03-31 10:19:21 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpyyw_h4vs.wav
+2025-03-31 10:19:21 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:21 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:26 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpdf8td2ar.wav
+2025-03-31 10:19:26 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpdf8td2ar.wav
+2025-03-31 10:19:26 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:26 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:31 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpx7fql_cg.wav
+2025-03-31 10:19:31 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpx7fql_cg.wav
+2025-03-31 10:19:31 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:31 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:36 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp_wgs5a1j.wav
+2025-03-31 10:19:36 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp_wgs5a1j.wav
+2025-03-31 10:19:37 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:37 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:42 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3v7ex9ir.wav
+2025-03-31 10:19:42 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3v7ex9ir.wav
+2025-03-31 10:19:42 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:42 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:47 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpc9z2lqbr.wav
+2025-03-31 10:19:47 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpc9z2lqbr.wav
+2025-03-31 10:19:47 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:47 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:52 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpbnbp8alk.wav
+2025-03-31 10:19:52 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpbnbp8alk.wav
+2025-03-31 10:19:52 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:52 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:19:57 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp81u_gvjr.wav
+2025-03-31 10:19:57 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp81u_gvjr.wav
+2025-03-31 10:19:57 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:19:58 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:03 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgg2ksdlk.wav
+2025-03-31 10:20:03 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgg2ksdlk.wav
+2025-03-31 10:20:03 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:03 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:08 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp0ond91kp.wav
+2025-03-31 10:20:08 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp0ond91kp.wav
+2025-03-31 10:20:08 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:08 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:13 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp82hfw2q8.wav
+2025-03-31 10:20:13 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp82hfw2q8.wav
+2025-03-31 10:20:13 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:13 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:18 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp9jfnh06f.wav
+2025-03-31 10:20:18 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp9jfnh06f.wav
+2025-03-31 10:20:18 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:18 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:23 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpnv247zn5.wav
+2025-03-31 10:20:23 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpnv247zn5.wav
+2025-03-31 10:20:24 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:24 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:29 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmphu793iw3.wav
+2025-03-31 10:20:29 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmphu793iw3.wav
+2025-03-31 10:20:29 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:29 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:34 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp8mce3ccg.wav
+2025-03-31 10:20:34 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp8mce3ccg.wav
+2025-03-31 10:20:34 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:34 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:39 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp0ik35l1d.wav
+2025-03-31 10:20:39 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp0ik35l1d.wav
+2025-03-31 10:20:39 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:39 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:44 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1v78bs42.wav
+2025-03-31 10:20:44 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1v78bs42.wav
+2025-03-31 10:20:45 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:45 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:50 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgklvn7_f.wav
+2025-03-31 10:20:50 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgklvn7_f.wav
+2025-03-31 10:20:52 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:52 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:20:57 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpa5fi8jwe.wav
+2025-03-31 10:20:57 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpa5fi8jwe.wav
+2025-03-31 10:20:57 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:20:57 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:02 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpv412iel9.wav
+2025-03-31 10:21:02 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpv412iel9.wav
+2025-03-31 10:21:02 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:02 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:07 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpws3iopkw.wav
+2025-03-31 10:21:07 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpws3iopkw.wav
+2025-03-31 10:21:07 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:08 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:13 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpqj0opj2z.wav
+2025-03-31 10:21:13 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpqj0opj2z.wav
+2025-03-31 10:21:13 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:13 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:18 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpk0sf83l_.wav
+2025-03-31 10:21:18 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpk0sf83l_.wav
+2025-03-31 10:21:18 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:18 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:23 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpp5j6f1kf.wav
+2025-03-31 10:21:23 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpp5j6f1kf.wav
+2025-03-31 10:21:23 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:23 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:28 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp56tzvp17.wav
+2025-03-31 10:21:28 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp56tzvp17.wav
+2025-03-31 10:21:29 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:29 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:34 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpve3_5_ad.wav
+2025-03-31 10:21:34 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpve3_5_ad.wav
+2025-03-31 10:21:34 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:34 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:39 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp547y7d1g.wav
+2025-03-31 10:21:39 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp547y7d1g.wav
+2025-03-31 10:21:39 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:39 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:44 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3vw1vunl.wav
+2025-03-31 10:21:44 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3vw1vunl.wav
+2025-03-31 10:21:44 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:44 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:50 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp5jdilumq.wav
+2025-03-31 10:21:50 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp5jdilumq.wav
+2025-03-31 10:21:50 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:50 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:21:55 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpsl_gr3qp.wav
+2025-03-31 10:21:55 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpsl_gr3qp.wav
+2025-03-31 10:21:55 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:21:55 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:00 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpjpwe9s9e.wav
+2025-03-31 10:22:00 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpjpwe9s9e.wav
+2025-03-31 10:22:01 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:01 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:06 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmptodq73wm.wav
+2025-03-31 10:22:06 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmptodq73wm.wav
+2025-03-31 10:22:06 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:06 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:11 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpjsllwf5g.wav
+2025-03-31 10:22:11 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpjsllwf5g.wav
+2025-03-31 10:22:12 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:12 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:17 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpdmd4fxtw.wav
+2025-03-31 10:22:17 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpdmd4fxtw.wav
+2025-03-31 10:22:17 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:17 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:22 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpwk511_c5.wav
+2025-03-31 10:22:22 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpwk511_c5.wav
+2025-03-31 10:22:22 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:23 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:28 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp8tyb344r.wav
+2025-03-31 10:22:28 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp8tyb344r.wav
+2025-03-31 10:22:28 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:28 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:33 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3xnp7nqq.wav
+2025-03-31 10:22:33 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3xnp7nqq.wav
+2025-03-31 10:22:33 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:33 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:38 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3w226ga5.wav
+2025-03-31 10:22:38 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3w226ga5.wav
+2025-03-31 10:22:39 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:39 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:44 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpqmwpu9gv.wav
+2025-03-31 10:22:44 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpqmwpu9gv.wav
+2025-03-31 10:22:44 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:44 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:49 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3xqiaosb.wav
+2025-03-31 10:22:49 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3xqiaosb.wav
+2025-03-31 10:22:49 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:50 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:22:55 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp5xkmiw_w.wav
+2025-03-31 10:22:55 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp5xkmiw_w.wav
+2025-03-31 10:22:55 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:22:55 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:00 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpm5wp5z2w.wav
+2025-03-31 10:23:00 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpm5wp5z2w.wav
+2025-03-31 10:23:00 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:00 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:05 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpcnufwlx7.wav
+2025-03-31 10:23:05 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpcnufwlx7.wav
+2025-03-31 10:23:05 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:06 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:11 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp7f23ox08.wav
+2025-03-31 10:23:11 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp7f23ox08.wav
+2025-03-31 10:23:11 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:11 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:16 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1n3zccg0.wav
+2025-03-31 10:23:16 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1n3zccg0.wav
+2025-03-31 10:23:16 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:16 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:21 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpqg0te21l.wav
+2025-03-31 10:23:21 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpqg0te21l.wav
+2025-03-31 10:23:22 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:22 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:27 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpxqr5nj0c.wav
+2025-03-31 10:23:27 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpxqr5nj0c.wav
+2025-03-31 10:23:27 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:27 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:32 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpm98pk10e.wav
+2025-03-31 10:23:32 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpm98pk10e.wav
+2025-03-31 10:23:33 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:33 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:38 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp6zhfgssa.wav
+2025-03-31 10:23:38 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp6zhfgssa.wav
+2025-03-31 10:23:39 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:39 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:45 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpva54ccs_.wav
+2025-03-31 10:23:45 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpva54ccs_.wav
+2025-03-31 10:23:45 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:45 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:50 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpc9ppt7bg.wav
+2025-03-31 10:23:50 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpc9ppt7bg.wav
+2025-03-31 10:23:50 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:50 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:23:55 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp6tn2i8ey.wav
+2025-03-31 10:23:55 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp6tn2i8ey.wav
+2025-03-31 10:23:55 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:23:55 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:24:00 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpnxjyryai.wav
+2025-03-31 10:24:00 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpnxjyryai.wav
+2025-03-31 10:24:01 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:24:01 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:24:06 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpltrn0bbe.wav
+2025-03-31 10:24:06 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpltrn0bbe.wav
+2025-03-31 10:24:06 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:24:06 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:24:11 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3ukes8p3.wav
+2025-03-31 10:24:11 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3ukes8p3.wav
+2025-03-31 10:24:11 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:24:11 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:24:16 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpc4w2hxxz.wav
+2025-03-31 10:24:16 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpc4w2hxxz.wav
+2025-03-31 10:24:17 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:24:17 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:24:22 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmph18xfcot.wav
+2025-03-31 10:24:22 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmph18xfcot.wav
+2025-03-31 10:24:22 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:24:22 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:24:27 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpi2im8c_j.wav
+2025-03-31 10:24:27 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpi2im8c_j.wav
+2025-03-31 10:24:29 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour'
+2025-03-31 10:24:29 - AudioProcessor - INFO - Queue retrieve: 'Sky tour'
+2025-03-31 10:24:29 - root - INFO - Processing command: 'Sky tour' in state STANDBY
+2025-03-31 10:24:29 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Wake word
+2025-03-31 10:24:29 - ElevenLabsTTS - INFO - No text to speak.
+2025-03-31 10:24:29 - AudioProcessor - INFO - Playing SFX: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 10:24:29 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:24:30 - root - INFO - handle_command result: True
+2025-03-31 10:24:34 - root - INFO - Joystick input: Btn 3 -> 'where am i'
+2025-03-31 10:24:34 - AudioProcessor - INFO - Queue retrieve: 'where am i'
+2025-03-31 10:24:34 - root - INFO - Processing command: 'where am i' in state ACTIVE
+2025-03-31 10:24:34 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp4gt488sq.wav
+2025-03-31 10:24:34 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp4gt488sq.wav
+2025-03-31 10:24:34 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour activated.'
+2025-03-31 10:24:34 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 10:24:34 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 10:24:34 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: Where am I cmd
+2025-03-31 10:24:34 - StateManager - INFO - Handling 'Where am I?' (thread)...
+2025-03-31 10:24:34 - root - INFO - handle_command result: True
+2025-03-31 10:24:34 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Checking your location......'
+2025-03-31 10:24:35 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:24:35 - ElevenLabsTTS - INFO - Playing audio: 'Checking your location......'
+2025-03-31 10:24:36 - ElevenLabsTTS - INFO - Finished playing: 'Checking your location......'
+2025-03-31 10:24:37 - GeoUtils - INFO - Reverse geocoded 40.807761774333706, -73.92680611163695 to 'Major Deegan Expressway, Mott Haven, The Bronx, Bronx County, New York, 10454, United States'
+2025-03-31 10:24:37 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 10:24:40 - OpenAIProvider - INFO - OpenAI response generated successfully (300 chars)
+2025-03-31 10:24:40 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're flying high above the vibrant neighborhood ...'
+2025-03-31 10:24:44 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:24:44 - ElevenLabsTTS - INFO - Playing audio: 'You're flying high above the vibrant neighborhood ...'
+2025-03-31 10:25:01 - ElevenLabsTTS - INFO - Finished playing: 'You're flying high above the vibrant neighborhood ...'
+2025-03-31 10:25:01 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
+2025-03-31 10:25:02 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:25:02 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'
+2025-03-31 10:25:03 - ElevenLabsTTS - INFO - Finished playing: 'More questions?...'
+2025-03-31 10:25:03 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 10:25:03 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 10:25:03 - StateManager - INFO - State change: PROCESSING -> WAITING - Reason: Loc provided
+2025-03-31 10:25:03 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:25:08 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp4qa0b74q.wav
+2025-03-31 10:25:08 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp4qa0b74q.wav
+2025-03-31 10:25:08 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:25:09 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:25:14 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmprto2ymow.wav
+2025-03-31 10:25:14 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmprto2ymow.wav
+2025-03-31 10:25:27 - WhisperSTT - INFO - Raw Whisper result: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-31 10:25:27 - AudioProcessor - INFO - Queue retrieve: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-31 10:25:27 - root - INFO - Processing command: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.' in state WAITING
+2025-03-31 10:25:27 - root - INFO - handle_command result: False
+2025-03-31 10:25:27 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:25:32 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmprpxamd_k.wav
+2025-03-31 10:25:32 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmprpxamd_k.wav
+2025-03-31 10:25:34 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:25:34 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:25:39 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpt0m00o4h.wav
+2025-03-31 10:25:39 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpt0m00o4h.wav
+2025-03-31 10:25:40 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:25:40 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:25:45 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpc3u3fnez.wav
+2025-03-31 10:25:45 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpc3u3fnez.wav
+2025-03-31 10:25:50 - WhisperSTT - INFO - Raw Whisper result: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-31 10:25:50 - AudioProcessor - INFO - Queue retrieve: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-31 10:25:50 - root - INFO - Processing command: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.' in state WAITING
+2025-03-31 10:25:50 - root - INFO - handle_command result: False
+2025-03-31 10:25:51 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:25:56 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpvcrqbhkj.wav
+2025-03-31 10:25:56 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpvcrqbhkj.wav
+2025-03-31 10:25:56 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:25:56 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:26:01 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpnp1me7t9.wav
+2025-03-31 10:26:01 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpnp1me7t9.wav
+2025-03-31 10:26:01 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:26:01 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:26:06 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp4_l0ht2h.wav
+2025-03-31 10:26:06 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp4_l0ht2h.wav
+2025-03-31 10:26:06 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:26:06 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:26:11 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpklmp_8ui.wav
+2025-03-31 10:26:11 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpklmp_8ui.wav
+2025-03-31 10:26:11 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:26:11 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:26:16 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpwd3ibn0n.wav
+2025-03-31 10:26:16 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpwd3ibn0n.wav
+2025-03-31 10:26:16 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:26:17 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:26:22 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp165u91js.wav
+2025-03-31 10:26:22 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp165u91js.wav
+2025-03-31 10:26:22 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:26:22 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:31:42 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 10:31:47 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 10:31:47 - AudioProcessor - INFO - Mixer init.
+2025-03-31 10:31:47 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 10:31:47 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 10:31:47 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 10:31:48 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 10:31:48 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 10:31:48 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 10:31:48 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 10:31:48 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-31 10:31:48 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-31 10:31:48 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-31 10:31:48 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-31 10:31:48 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 10:31:48 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 10:31:48 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 10:31:48 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 10:31:48 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 10:31:48 - root - INFO - Python version: 3.11.4
+2025-03-31 10:31:48 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 10:31:48 - root - INFO - Debug mode: Disabled
+2025-03-31 10:31:48 - root - INFO - Distributed mode: Disabled
+2025-03-31 10:31:48 - root - INFO - Default AI provider: openai
+2025-03-31 10:31:48 - root - INFO - STT engine: whisper
+2025-03-31 10:31:48 - root - INFO - TTS engine: elevenlabs
+2025-03-31 10:31:48 - root - INFO - Main function started
+2025-03-31 10:31:48 - root - INFO - Core components initialized.
+2025-03-31 10:31:48 - root - INFO - Found 2 joystick(s).
+2025-03-31 10:31:48 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 10:31:48 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 10:31:48 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 10:31:48 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 10:31:48 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:31:53 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpbhr7me9x.wav
+2025-03-31 10:31:53 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpbhr7me9x.wav
+2025-03-31 10:31:54 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:31:54 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:31:59 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmppokh5vpy.wav
+2025-03-31 10:31:59 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmppokh5vpy.wav
+2025-03-31 10:31:59 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:31:59 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:04 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpc3zk4gmc.wav
+2025-03-31 10:32:04 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpc3zk4gmc.wav
+2025-03-31 10:32:05 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:05 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:10 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpcna544ud.wav
+2025-03-31 10:32:10 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpcna544ud.wav
+2025-03-31 10:32:10 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:10 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:15 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgbsduwnx.wav
+2025-03-31 10:32:15 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgbsduwnx.wav
+2025-03-31 10:32:15 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:15 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:20 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp6678afsz.wav
+2025-03-31 10:32:20 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp6678afsz.wav
+2025-03-31 10:32:20 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:20 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:25 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp57b9g1b9.wav
+2025-03-31 10:32:25 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp57b9g1b9.wav
+2025-03-31 10:32:25 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:26 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:31 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpnibj0gtt.wav
+2025-03-31 10:32:31 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpnibj0gtt.wav
+2025-03-31 10:32:31 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:31 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:36 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3k4iszq3.wav
+2025-03-31 10:32:36 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3k4iszq3.wav
+2025-03-31 10:32:36 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:36 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:41 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpl2agv2ac.wav
+2025-03-31 10:32:41 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpl2agv2ac.wav
+2025-03-31 10:32:41 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:41 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:46 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgfz2ypks.wav
+2025-03-31 10:32:46 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgfz2ypks.wav
+2025-03-31 10:32:46 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:47 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:52 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1xtf6h5c.wav
+2025-03-31 10:32:52 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1xtf6h5c.wav
+2025-03-31 10:32:52 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:52 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:32:57 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpepv3tfys.wav
+2025-03-31 10:32:57 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpepv3tfys.wav
+2025-03-31 10:32:57 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:32:57 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:02 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpy4gz70k2.wav
+2025-03-31 10:33:02 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpy4gz70k2.wav
+2025-03-31 10:33:02 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:02 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:07 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpvqmasvv5.wav
+2025-03-31 10:33:07 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpvqmasvv5.wav
+2025-03-31 10:33:07 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:08 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:13 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpzqk4sbex.wav
+2025-03-31 10:33:13 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpzqk4sbex.wav
+2025-03-31 10:33:13 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:13 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:18 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpqk11brsk.wav
+2025-03-31 10:33:18 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpqk11brsk.wav
+2025-03-31 10:33:18 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:18 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:23 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpwso6tcaw.wav
+2025-03-31 10:33:23 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpwso6tcaw.wav
+2025-03-31 10:33:23 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:23 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:28 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpn1yejzt_.wav
+2025-03-31 10:33:28 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpn1yejzt_.wav
+2025-03-31 10:33:28 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:28 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:34 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmphtj6a5ly.wav
+2025-03-31 10:33:34 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmphtj6a5ly.wav
+2025-03-31 10:33:34 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:34 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:39 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp0ntnldhl.wav
+2025-03-31 10:33:39 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp0ntnldhl.wav
+2025-03-31 10:33:39 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:39 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:44 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpjv6o4jof.wav
+2025-03-31 10:33:44 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpjv6o4jof.wav
+2025-03-31 10:33:44 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:44 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:49 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpyla2dtz5.wav
+2025-03-31 10:33:49 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpyla2dtz5.wav
+2025-03-31 10:33:49 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:49 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:33:54 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1hk8abvm.wav
+2025-03-31 10:33:54 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1hk8abvm.wav
+2025-03-31 10:33:55 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:33:55 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:52:43 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 10:52:47 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 10:52:47 - AudioProcessor - INFO - Mixer init.
+2025-03-31 10:52:47 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 10:52:47 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 10:52:47 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 10:52:47 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 10:52:47 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 10:52:47 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 10:52:47 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 10:52:47 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-31 10:52:47 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-31 10:52:47 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-31 10:52:47 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-31 10:52:47 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 10:52:48 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 10:52:48 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 10:52:48 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 10:52:48 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 10:52:48 - root - INFO - Python version: 3.11.4
+2025-03-31 10:52:48 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 10:52:48 - root - INFO - Debug mode: Disabled
+2025-03-31 10:52:48 - root - INFO - Distributed mode: Disabled
+2025-03-31 10:52:48 - root - INFO - Default AI provider: openai
+2025-03-31 10:52:48 - root - INFO - STT engine: whisper
+2025-03-31 10:52:48 - root - INFO - TTS engine: elevenlabs
+2025-03-31 10:52:48 - root - INFO - Main function started
+2025-03-31 10:52:48 - root - INFO - Core components initialized.
+2025-03-31 10:52:48 - root - INFO - Found 2 joystick(s).
+2025-03-31 10:52:48 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 10:52:48 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 10:52:48 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 10:52:48 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 10:52:48 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:52:53 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgdufagop.wav
+2025-03-31 10:52:53 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgdufagop.wav
+2025-03-31 10:52:54 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:52:54 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:52:59 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpz0dspc3d.wav
+2025-03-31 10:52:59 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpz0dspc3d.wav
+2025-03-31 10:52:59 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:52:59 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:53:04 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpnzav6538.wav
+2025-03-31 10:53:04 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpnzav6538.wav
+2025-03-31 10:53:04 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:53:04 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:53:09 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpd6lks8pd.wav
+2025-03-31 10:53:09 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpd6lks8pd.wav
+2025-03-31 10:53:09 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:53:10 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:53:15 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpg8bzhu14.wav
+2025-03-31 10:53:15 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpg8bzhu14.wav
+2025-03-31 10:53:15 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:53:15 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:53:20 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpauqfp_we.wav
+2025-03-31 10:53:20 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpauqfp_we.wav
+2025-03-31 10:53:20 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:53:20 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:53:25 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpc8mhgra4.wav
+2025-03-31 10:53:25 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpc8mhgra4.wav
+2025-03-31 10:53:26 - WhisperSTT - INFO - Raw Whisper result: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-31 10:53:26 - AudioProcessor - INFO - Queue retrieve: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.'
+2025-03-31 10:53:26 - root - INFO - Processing command: 'I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one. I'm going to start with the first one.' in state STANDBY
+2025-03-31 10:53:26 - root - INFO - handle_command result: False
+2025-03-31 10:53:26 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:53:31 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp0yiivv_e.wav
+2025-03-31 10:53:31 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp0yiivv_e.wav
+2025-03-31 10:53:31 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:53:31 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:53:37 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp022it8__.wav
+2025-03-31 10:53:37 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp022it8__.wav
+2025-03-31 10:53:37 - WhisperSTT - INFO - Raw Whisper result: 'sky tour.'
+2025-03-31 10:53:37 - AudioProcessor - INFO - Queue retrieve: 'sky tour.'
+2025-03-31 10:53:37 - root - INFO - Processing command: 'sky tour.' in state STANDBY
+2025-03-31 10:53:37 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 10:53:37 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 10:53:37 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 10:53:38 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:53:38 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 10:53:39 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 10:53:39 - root - INFO - handle_command result: True
+2025-03-31 10:53:46 - root - INFO - Joystick input: Btn 2 -> 'sky tour'
+2025-03-31 10:53:46 - AudioProcessor - INFO - Queue retrieve: 'sky tour'
+2025-03-31 10:53:46 - root - INFO - Processing command: 'sky tour' in state STANDBY
+2025-03-31 10:53:46 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Wake word
+2025-03-31 10:53:46 - ElevenLabsTTS - INFO - No text to speak.
+2025-03-31 10:53:46 - AudioProcessor - INFO - Playing SFX: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 10:53:47 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 10:53:47 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 10:53:47 - root - INFO - handle_command result: True
+2025-03-31 10:53:47 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:53:48 - root - INFO - Joystick input: Btn 3 -> 'where am i'
+2025-03-31 10:53:48 - AudioProcessor - INFO - Queue retrieve: 'where am i'
+2025-03-31 10:53:48 - root - INFO - Processing command: 'where am i' in state ACTIVE
+2025-03-31 10:53:49 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-31 10:53:49 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: Where am I cmd
+2025-03-31 10:53:49 - StateManager - INFO - Handling 'Where am I?' (thread)...
+2025-03-31 10:53:49 - root - INFO - handle_command result: True
+2025-03-31 10:53:50 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-31 10:53:50 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Checking your location......'
+2025-03-31 10:53:50 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:53:50 - ElevenLabsTTS - INFO - Playing audio: 'Checking your location......'
+2025-03-31 10:53:52 - ElevenLabsTTS - INFO - Finished playing: 'Checking your location......'
+2025-03-31 10:53:52 - GeoUtils - INFO - Reverse geocoded 40.711455935198444, -74.02358103409624 to 'Battery Park City Greenway, Battery Park City, Manhattan, New York County, New York, 10280, United States'
+2025-03-31 10:53:52 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 10:53:52 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpedlk6ps7.wav
+2025-03-31 10:53:52 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpedlk6ps7.wav
+2025-03-31 10:53:52 - WhisperSTT - INFO - Raw Whisper result: 'Checking your location.'
+2025-03-31 10:53:53 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 10:53:54 - OpenAIProvider - INFO - OpenAI response generated successfully (327 chars)
+2025-03-31 10:53:54 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're soaring above Battery Park City in Lower Ma...'
+2025-03-31 10:53:58 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:53:58 - ElevenLabsTTS - INFO - Playing audio: 'You're soaring above Battery Park City in Lower Ma...'
+2025-03-31 10:54:19 - ElevenLabsTTS - INFO - Finished playing: 'You're soaring above Battery Park City in Lower Ma...'
+2025-03-31 10:54:19 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
+2025-03-31 10:54:20 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:54:20 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'
+2025-03-31 10:54:21 - ElevenLabsTTS - INFO - Finished playing: 'More questions?...'
+2025-03-31 10:54:21 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 10:54:21 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 10:54:21 - StateManager - INFO - State change: PROCESSING -> WAITING - Reason: Loc provided
+2025-03-31 10:54:21 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:54:26 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpl9s_l0hj.wav
+2025-03-31 10:54:26 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpl9s_l0hj.wav
+2025-03-31 10:54:26 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:54:26 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:54:31 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp4ii8ir00.wav
+2025-03-31 10:54:31 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp4ii8ir00.wav
+2025-03-31 10:54:32 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:54:32 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:54:37 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp81yy42wn.wav
+2025-03-31 10:54:37 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp81yy42wn.wav
+2025-03-31 10:54:37 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:54:37 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:54:42 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpdrc2utdb.wav
+2025-03-31 10:54:42 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpdrc2utdb.wav
+2025-03-31 10:54:42 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:54:42 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:54:47 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpcfjelqm2.wav
+2025-03-31 10:54:47 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpcfjelqm2.wav
+2025-03-31 10:54:47 - WhisperSTT - INFO - Raw Whisper result: 'Where am I?'
+2025-03-31 10:54:47 - AudioProcessor - INFO - Queue retrieve: 'Where am I?'
+2025-03-31 10:54:47 - root - INFO - Processing command: 'Where am I?' in state WAITING
+2025-03-31 10:54:47 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 10:54:47 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 10:54:47 - StateManager - INFO - State change: WAITING -> PROCESSING - Reason: Where am I cmd
+2025-03-31 10:54:47 - StateManager - INFO - Handling 'Where am I?' (thread)...
+2025-03-31 10:54:47 - root - INFO - handle_command result: True
+2025-03-31 10:54:47 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Checking your location......'
+2025-03-31 10:54:48 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:54:48 - ElevenLabsTTS - INFO - Playing audio: 'Checking your location......'
+2025-03-31 10:54:50 - ElevenLabsTTS - INFO - Finished playing: 'Checking your location......'
+2025-03-31 10:54:50 - GeoUtils - INFO - Reverse geocoded 40.7306273321897, -74.00225252284821 to '11, Carmine Street, University Village, Manhattan, New York County, New York, 10014, United States'
+2025-03-31 10:54:50 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 10:54:52 - OpenAIProvider - INFO - OpenAI response generated successfully (354 chars)
+2025-03-31 10:54:52 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're currently above the West Village, a charmin...'
+2025-03-31 10:54:56 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:54:56 - ElevenLabsTTS - INFO - Playing audio: 'You're currently above the West Village, a charmin...'
+2025-03-31 10:55:16 - ElevenLabsTTS - INFO - Finished playing: 'You're currently above the West Village, a charmin...'
+2025-03-31 10:55:16 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
+2025-03-31 10:55:17 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:55:17 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'
+2025-03-31 10:55:18 - ElevenLabsTTS - INFO - Finished playing: 'More questions?...'
+2025-03-31 10:55:18 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 10:55:18 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 10:55:18 - StateManager - INFO - State change: PROCESSING -> WAITING - Reason: Loc provided
+2025-03-31 10:55:18 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:55:23 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpi_4mz4mn.wav
+2025-03-31 10:55:23 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpi_4mz4mn.wav
+2025-03-31 10:55:23 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:55:23 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:55:29 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpwlttmpp4.wav
+2025-03-31 10:55:29 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpwlttmpp4.wav
+2025-03-31 10:55:29 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:55:29 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:55:35 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 10:55:37 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 10:55:37 - AudioProcessor - INFO - Mixer init.
+2025-03-31 10:55:37 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 10:55:37 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 10:55:37 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 10:55:38 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 10:55:38 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 10:55:38 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 10:55:38 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 10:55:38 - MockSimConnect - INFO - Initializing MockSimConnectServer
+2025-03-31 10:55:38 - MockSimConnect - INFO - Mock SimConnect initialized
+2025-03-31 10:55:38 - MockSimConnect - INFO - Mock AircraftRequests initialized
+2025-03-31 10:55:38 - MockSimConnect - INFO - ✅ Connected to MSFS via MockSimConnect
+2025-03-31 10:55:38 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 10:55:38 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 10:55:38 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 10:55:38 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 10:55:38 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 10:55:38 - root - INFO - Python version: 3.11.4
+2025-03-31 10:55:38 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 10:55:38 - root - INFO - Debug mode: Disabled
+2025-03-31 10:55:38 - root - INFO - Distributed mode: Disabled
+2025-03-31 10:55:38 - root - INFO - Default AI provider: openai
+2025-03-31 10:55:38 - root - INFO - STT engine: whisper
+2025-03-31 10:55:38 - root - INFO - TTS engine: elevenlabs
+2025-03-31 10:55:38 - root - INFO - Main function started
+2025-03-31 10:55:38 - root - INFO - Core components initialized.
+2025-03-31 10:55:38 - root - INFO - Found 2 joystick(s).
+2025-03-31 10:55:38 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 10:55:38 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 10:55:38 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 10:55:38 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 10:55:38 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:55:43 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpxamefhip.wav
+2025-03-31 10:55:43 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpxamefhip.wav
+2025-03-31 10:55:43 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 10:55:44 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 10:55:49 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmppip8w2nt.wav
+2025-03-31 10:55:49 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmppip8w2nt.wav
+2025-03-31 10:55:49 - WhisperSTT - INFO - Raw Whisper result: 'Eぉ! Sky tour.'
+2025-03-31 10:55:49 - AudioProcessor - INFO - Queue retrieve: 'Eぉ! Sky tour.'
+2025-03-31 10:55:49 - root - INFO - Processing command: 'Eぉ! Sky tour.' in state STANDBY
+2025-03-31 10:55:49 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 10:55:49 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 10:55:49 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 10:55:50 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 10:55:50 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 10:55:52 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 10:55:52 - root - INFO - handle_command result: True

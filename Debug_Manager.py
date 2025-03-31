@@ -1,18 +1,16 @@
 """
 Whisper Flight AI - Debug Manager
-Version: 5.0.1
+Version: 5.0.2
 Purpose: Centralized debugging controls and output management
 Last Updated: March 30, 2025
 Author: Brad Coulter
 
-This module provides a central system for controlling debug output,
-filtering verbosity levels, and handling logging across components.
-
-Changes in this version:
-- Initial implementation with support for toggling debug output
-- Added quiet mode for minimal console output
+Changes:
+- Initial implementation of debug manager
+- Added toggle functions for debug mode and quiet mode
 - Implemented debug statistics tracking
-- Added UTF-8 safe logging to handle emoji and special characters
+- Added category-based logging with verbosity levels
+- Created safe Unicode handling for console output
 """
 
 import os

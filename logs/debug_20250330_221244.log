@@ -1,0 +1,747 @@
+2025-03-30 22:12:44,378 - DEBUG - INFO - [SYSTEM] Debug Manager initialized
+2025-03-30 22:12:44,378 - DEBUG - INFO - [AUDIO] No wake phrase or command detected in this transcription
+2025-03-30 22:12:44,379 - DEBUG - INFO - [AUDIO] Initializing AudioProcessor
+2025-03-30 22:12:44,379 - DEBUG - INFO - [AUDIO] Creating STT provider: whisper
+2025-03-30 22:12:44,379 - DEBUG - INFO - [AUDIO] Creating WhisperSTT instance
+2025-03-30 22:12:44,379 - DEBUG - INFO - [AUDIO] WhisperSTT initialized with model=base, noise_threshold=0.2
+2025-03-30 22:12:44,379 - DEBUG - INFO - [AUDIO] Loading Whisper base model...
+2025-03-30 22:12:44,929 - DEBUG - INFO - [AUDIO] Whisper base model loaded successfully in 0.55 seconds
+2025-03-30 22:12:44,929 - DEBUG - INFO - [AUDIO] Creating TTS provider: elevenlabs
+2025-03-30 22:12:44,930 - DEBUG - INFO - [AUDIO] Creating ElevenLabsTTS instance
+2025-03-30 22:12:44,950 - DEBUG - INFO - [AUDIO] TextToSpeech base class initialized
+2025-03-30 22:12:44,950 - DEBUG - INFO - [AUDIO] ElevenLabsTTS initialized
+2025-03-30 22:12:44,950 - DEBUG - INFO - [AUDIO] API key exists: True
+2025-03-30 22:12:44,950 - DEBUG - INFO - [AUDIO] Voice ID: cgSgspJ2msm6clMCkdW9
+2025-03-30 22:12:44,950 - DEBUG - INFO - [AUDIO] ElevenLabs API key found
+2025-03-30 22:12:44,950 - DEBUG - INFO - [AUDIO] ElevenLabs using voice ID: cgSgspJ2msm6clMCkdW9
+2025-03-30 22:12:44,950 - DEBUG - INFO - [AUDIO] Sound effect 'optimus_prime' found at: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:12:44,950 - DEBUG - INFO - [AUDIO] Sound effect 'deactivate' found at: C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 22:12:44,950 - DEBUG - INFO - [AUDIO] AudioProcessor initialization complete
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] Found activation sound file at C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] Found deactivation sound file at C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] === AUDIO PROCESSOR CONFIGURATION ===
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] STT Engine: whisper
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] TTS Engine: elevenlabs
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] Whisper Model: base
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] Noise Threshold: 0.2
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] Recording Seconds: 5.0
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] Input Device: default
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] Output Device: default
+2025-03-30 22:12:44,951 - DEBUG - INFO - [AUDIO] ==========================================
+2025-03-30 22:12:45,631 - DEBUG - INFO - [AUDIO] start_continuous_listening() called
+2025-03-30 22:12:45,631 - DEBUG - INFO - [AUDIO] Creating listen_worker thread
+2025-03-30 22:12:45,632 - DEBUG - INFO - [AUDIO] _listen_worker thread started
+2025-03-30 22:12:45,632 - DEBUG - INFO - [AUDIO] Started continuous listening thread
+2025-03-30 22:12:45,632 - DEBUG - INFO - [AUDIO] Starting listening cycle #1
+2025-03-30 22:12:45,632 - DEBUG - INFO - [AUDIO] Starting listen() method
+2025-03-30 22:12:45,632 - DEBUG - INFO - [AUDIO] Calling STT provider's get_input() method
+2025-03-30 22:12:45,632 - DEBUG - INFO - [AUDIO] Recording audio started for 5.0 seconds
+2025-03-30 22:12:45,662 - DEBUG - INFO - [AUDIO] Available audio devices:
+Device 0: Microsoft Sound Mapper - Input (Inputs: 2)
+Device 1: Microphone (AudioPro X5 Microph (Inputs: 2)
+Device 2: Microphone (USB Camera) (Inputs: 1)
+Device 3: Headset Microphone (Oculus Virt (Inputs: 1)
+Device 4: Microsoft Sound Mapper - Output (Inputs: 0)
+Device 5: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 6: Headphones (Oculus Virtual Audi (Inputs: 0)
+Device 7: BassShaker (USB-C Audio) (Inputs: 0)
+Device 8: Primary Sound Capture Driver (Inputs: 2)
+Device 9: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 10: Microphone (USB Camera) (Inputs: 1)
+Device 11: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 12: Primary Sound Driver (Inputs: 0)
+Device 13: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 14: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 15: BassShaker (USB-C Audio) (Inputs: 0)
+Device 16: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 17: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 18: BassShaker (USB-C Audio) (Inputs: 0)
+Device 19: Microphone (USB Camera) (Inputs: 1)
+Device 20: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 21: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 22: Speakers (USB-C Audio) (Inputs: 0)
+Device 23: Microphone (USB-C Audio) (Inputs: 1)
+Device 24: Output 1 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 25: Output 2 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 26: Input (OCULUSVAD Wave Speaker Headphone) (Inputs: 2)
+Device 27: Headset Microphone (OCULUSVAD Wave Microphone Headphone) (Inputs: 1)
+Device 28: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 0)
+Device 29: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 1)
+Device 30: Analog Connector (Realtek USB2.0 Audio) (Inputs: 2)
+Device 31: Line (Realtek USB2.0 Audio) (Inputs: 2)
+Device 32: Microphone (Realtek USB2.0 Audio) (Inputs: 2)
+Device 33: Speakers (Realtek USB2.0 Audio) (Inputs: 0)
+Device 34: Headphones (Realtek USB2.0 Audio) (Inputs: 0)
+Device 35: SPDIF Out (Realtek USB2.0 Audio) (Inputs: 0)
+Device 36: Output (HD Audio HDMI out) (Inputs: 0)
+Device 37: Output (HD Audio HDMI out 3) (Inputs: 0)
+Device 38: Output (HD Audio HDMI out 4) (Inputs: 0)
+Device 39: Microphone (USB Camera) (Inputs: 1)
+Device 40: Headphones (AudioPro X5 Microphone) (Inputs: 0)
+Device 41: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 42: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 43: Headphones () (Inputs: 0)
+2025-03-30 22:12:45,664 - DEBUG - INFO - [AUDIO] Using default recording device
+2025-03-30 22:12:45,664 - DEBUG - INFO - [AUDIO] Temporary audio file: C:\Users\Admin\AppData\Local\Temp\tmpt3hrdpr_.wav
+2025-03-30 22:12:45,664 - DEBUG - INFO - [AUDIO] Opening audio stream (attempt 1/3)
+2025-03-30 22:12:45,669 - DEBUG - INFO - [AUDIO] Recording started
+2025-03-30 22:12:50,679 - DEBUG - INFO - [AUDIO] Recording finished. Max audio level: 0.0053
+2025-03-30 22:12:51,862 - DEBUG - INFO - [AUDIO] Frames captured: 78
+2025-03-30 22:12:51,863 - DEBUG - INFO - [AUDIO] Audio saved to C:\Users\Admin\AppData\Local\Temp\tmpt3hrdpr_.wav
+2025-03-30 22:12:51,863 - DEBUG - INFO - [AUDIO] Transcribing audio file: C:\Users\Admin\AppData\Local\Temp\tmpt3hrdpr_.wav
+2025-03-30 22:12:51,863 - DEBUG - INFO - [AUDIO] Starting Whisper transcription for audio file: C:\Users\Admin\AppData\Local\Temp\tmpt3hrdpr_.wav
+2025-03-30 22:12:51,864 - DEBUG - INFO - [AUDIO] Audio file size: 159788 bytes
+2025-03-30 22:12:51,864 - DEBUG - INFO - [AUDIO] Using Whisper without word timestamps
+2025-03-30 22:12:52,481 - DEBUG - INFO - [AUDIO] Transcription completed in 0.62 seconds
+2025-03-30 22:12:52,482 - DEBUG - INFO - [AUDIO] Raw Whisper transcription result: 'Let's do it. I can't bend it out there.'
+2025-03-30 22:12:52,482 - DEBUG - INFO - [AUDIO] RAW TRANSCRIPTION: 'Let's do it. I can't bend it out there.'
+2025-03-30 22:12:52,482 - DEBUG - INFO - [AUDIO] Checking for wake phrases in: 'let's do it. i can't bend it out there.'
+2025-03-30 22:12:52,482 - DEBUG - INFO - [AUDIO] ❌ NO WAKE WORD MATCH in: 'let's do it. i can't bend it out there.'
+2025-03-30 22:12:52,482 - DEBUG - INFO - [AUDIO] No wake phrase or command detected in: 'let's do it. i can't bend it out there.'
+2025-03-30 22:12:52,483 - DEBUG - INFO - [AUDIO] Transcription completed successfully: 'Let's do it. I can't bend it out there.'
+2025-03-30 22:12:52,483 - DEBUG - INFO - [AUDIO] Transcribed audio input: 'Let's do it. I can't bend it out there.'
+2025-03-30 22:12:52,483 - DEBUG - INFO - [AUDIO] Temporary audio file C:\Users\Admin\AppData\Local\Temp\tmpt3hrdpr_.wav removed
+2025-03-30 22:12:52,483 - DEBUG - INFO - [AUDIO] Recognized text: 'let's do it. i can't bend it out there.'
+2025-03-30 22:12:52,483 - DEBUG - INFO - [AUDIO] Added text to audio queue: 'let's do it. i can't bend it out there.'
+2025-03-30 22:12:52,514 - DEBUG - INFO - [AUDIO] Retrieved command from queue: 'let's do it. i can't bend it out there.'
+2025-03-30 22:12:52,584 - DEBUG - INFO - [AUDIO] Starting listening cycle #2
+2025-03-30 22:12:52,584 - DEBUG - INFO - [AUDIO] Starting listen() method
+2025-03-30 22:12:52,584 - DEBUG - INFO - [AUDIO] Calling STT provider's get_input() method
+2025-03-30 22:12:52,584 - DEBUG - INFO - [AUDIO] Recording audio started for 5.0 seconds
+2025-03-30 22:12:52,602 - DEBUG - INFO - [AUDIO] Available audio devices:
+Device 0: Microsoft Sound Mapper - Input (Inputs: 2)
+Device 1: Microphone (AudioPro X5 Microph (Inputs: 2)
+Device 2: Microphone (USB Camera) (Inputs: 1)
+Device 3: Headset Microphone (Oculus Virt (Inputs: 1)
+Device 4: Microsoft Sound Mapper - Output (Inputs: 0)
+Device 5: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 6: Headphones (Oculus Virtual Audi (Inputs: 0)
+Device 7: BassShaker (USB-C Audio) (Inputs: 0)
+Device 8: Primary Sound Capture Driver (Inputs: 2)
+Device 9: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 10: Microphone (USB Camera) (Inputs: 1)
+Device 11: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 12: Primary Sound Driver (Inputs: 0)
+Device 13: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 14: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 15: BassShaker (USB-C Audio) (Inputs: 0)
+Device 16: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 17: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 18: BassShaker (USB-C Audio) (Inputs: 0)
+Device 19: Microphone (USB Camera) (Inputs: 1)
+Device 20: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 21: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 22: Speakers (USB-C Audio) (Inputs: 0)
+Device 23: Microphone (USB-C Audio) (Inputs: 1)
+Device 24: Output 1 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 25: Output 2 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 26: Input (OCULUSVAD Wave Speaker Headphone) (Inputs: 2)
+Device 27: Headset Microphone (OCULUSVAD Wave Microphone Headphone) (Inputs: 1)
+Device 28: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 0)
+Device 29: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 1)
+Device 30: Analog Connector (Realtek USB2.0 Audio) (Inputs: 2)
+Device 31: Line (Realtek USB2.0 Audio) (Inputs: 2)
+Device 32: Microphone (Realtek USB2.0 Audio) (Inputs: 2)
+Device 33: Speakers (Realtek USB2.0 Audio) (Inputs: 0)
+Device 34: Headphones (Realtek USB2.0 Audio) (Inputs: 0)
+Device 35: SPDIF Out (Realtek USB2.0 Audio) (Inputs: 0)
+Device 36: Output (HD Audio HDMI out) (Inputs: 0)
+Device 37: Output (HD Audio HDMI out 3) (Inputs: 0)
+Device 38: Output (HD Audio HDMI out 4) (Inputs: 0)
+Device 39: Microphone (USB Camera) (Inputs: 1)
+Device 40: Headphones (AudioPro X5 Microphone) (Inputs: 0)
+Device 41: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 42: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 43: Headphones () (Inputs: 0)
+2025-03-30 22:12:52,603 - DEBUG - INFO - [AUDIO] Using default recording device
+2025-03-30 22:12:52,603 - DEBUG - INFO - [AUDIO] Temporary audio file: C:\Users\Admin\AppData\Local\Temp\tmpa576787m.wav
+2025-03-30 22:12:52,603 - DEBUG - INFO - [AUDIO] Opening audio stream (attempt 1/3)
+2025-03-30 22:12:52,606 - DEBUG - INFO - [AUDIO] Recording started
+2025-03-30 22:12:57,614 - DEBUG - INFO - [AUDIO] Recording finished. Max audio level: 0.0017
+2025-03-30 22:12:57,615 - DEBUG - INFO - [AUDIO] Frames captured: 78
+2025-03-30 22:12:57,616 - DEBUG - INFO - [AUDIO] Audio saved to C:\Users\Admin\AppData\Local\Temp\tmpa576787m.wav
+2025-03-30 22:12:57,616 - DEBUG - INFO - [AUDIO] Transcribing audio file: C:\Users\Admin\AppData\Local\Temp\tmpa576787m.wav
+2025-03-30 22:12:57,616 - DEBUG - INFO - [AUDIO] Starting Whisper transcription for audio file: C:\Users\Admin\AppData\Local\Temp\tmpa576787m.wav
+2025-03-30 22:12:57,616 - DEBUG - INFO - [AUDIO] Audio file size: 159788 bytes
+2025-03-30 22:12:57,616 - DEBUG - INFO - [AUDIO] Using Whisper without word timestamps
+2025-03-30 22:12:58,105 - DEBUG - INFO - [AUDIO] Transcription completed in 0.49 seconds
+2025-03-30 22:12:58,105 - DEBUG - INFO - [AUDIO] Raw Whisper transcription result: 'and'
+2025-03-30 22:12:58,106 - DEBUG - INFO - [AUDIO] RAW TRANSCRIPTION: 'and'
+2025-03-30 22:12:58,106 - DEBUG - INFO - [AUDIO] Checking for wake phrases in: 'and'
+2025-03-30 22:12:58,106 - DEBUG - INFO - [AUDIO] ❌ NO WAKE WORD MATCH in: 'and'
+2025-03-30 22:12:58,106 - DEBUG - INFO - [AUDIO] No wake phrase or command detected in: 'and'
+2025-03-30 22:12:58,106 - DEBUG - INFO - [AUDIO] Transcription completed successfully: 'and'
+2025-03-30 22:12:58,106 - DEBUG - INFO - [AUDIO] Transcribed audio input: 'and'
+2025-03-30 22:12:58,107 - DEBUG - INFO - [AUDIO] Temporary audio file C:\Users\Admin\AppData\Local\Temp\tmpa576787m.wav removed
+2025-03-30 22:12:58,107 - DEBUG - INFO - [AUDIO] Recognized text: 'and'
+2025-03-30 22:12:58,107 - DEBUG - INFO - [AUDIO] Added text to audio queue: 'and'
+2025-03-30 22:12:58,156 - DEBUG - INFO - [AUDIO] Retrieved command from queue: 'and'
+2025-03-30 22:12:58,208 - DEBUG - INFO - [AUDIO] Starting listening cycle #3
+2025-03-30 22:12:58,208 - DEBUG - INFO - [AUDIO] Starting listen() method
+2025-03-30 22:12:58,208 - DEBUG - INFO - [AUDIO] Calling STT provider's get_input() method
+2025-03-30 22:12:58,208 - DEBUG - INFO - [AUDIO] Recording audio started for 5.0 seconds
+2025-03-30 22:12:58,227 - DEBUG - INFO - [AUDIO] Available audio devices:
+Device 0: Microsoft Sound Mapper - Input (Inputs: 2)
+Device 1: Microphone (AudioPro X5 Microph (Inputs: 2)
+Device 2: Microphone (USB Camera) (Inputs: 1)
+Device 3: Headset Microphone (Oculus Virt (Inputs: 1)
+Device 4: Microsoft Sound Mapper - Output (Inputs: 0)
+Device 5: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 6: Headphones (Oculus Virtual Audi (Inputs: 0)
+Device 7: BassShaker (USB-C Audio) (Inputs: 0)
+Device 8: Primary Sound Capture Driver (Inputs: 2)
+Device 9: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 10: Microphone (USB Camera) (Inputs: 1)
+Device 11: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 12: Primary Sound Driver (Inputs: 0)
+Device 13: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 14: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 15: BassShaker (USB-C Audio) (Inputs: 0)
+Device 16: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 17: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 18: BassShaker (USB-C Audio) (Inputs: 0)
+Device 19: Microphone (USB Camera) (Inputs: 1)
+Device 20: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 21: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 22: Speakers (USB-C Audio) (Inputs: 0)
+Device 23: Microphone (USB-C Audio) (Inputs: 1)
+Device 24: Output 1 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 25: Output 2 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 26: Input (OCULUSVAD Wave Speaker Headphone) (Inputs: 2)
+Device 27: Headset Microphone (OCULUSVAD Wave Microphone Headphone) (Inputs: 1)
+Device 28: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 0)
+Device 29: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 1)
+Device 30: Analog Connector (Realtek USB2.0 Audio) (Inputs: 2)
+Device 31: Line (Realtek USB2.0 Audio) (Inputs: 2)
+Device 32: Microphone (Realtek USB2.0 Audio) (Inputs: 2)
+Device 33: Speakers (Realtek USB2.0 Audio) (Inputs: 0)
+Device 34: Headphones (Realtek USB2.0 Audio) (Inputs: 0)
+Device 35: SPDIF Out (Realtek USB2.0 Audio) (Inputs: 0)
+Device 36: Output (HD Audio HDMI out) (Inputs: 0)
+Device 37: Output (HD Audio HDMI out 3) (Inputs: 0)
+Device 38: Output (HD Audio HDMI out 4) (Inputs: 0)
+Device 39: Microphone (USB Camera) (Inputs: 1)
+Device 40: Headphones (AudioPro X5 Microphone) (Inputs: 0)
+Device 41: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 42: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 43: Headphones () (Inputs: 0)
+2025-03-30 22:12:58,228 - DEBUG - INFO - [AUDIO] Using default recording device
+2025-03-30 22:12:58,229 - DEBUG - INFO - [AUDIO] Temporary audio file: C:\Users\Admin\AppData\Local\Temp\tmppdkcq_yg.wav
+2025-03-30 22:12:58,229 - DEBUG - INFO - [AUDIO] Opening audio stream (attempt 1/3)
+2025-03-30 22:12:58,232 - DEBUG - INFO - [AUDIO] Recording started
+2025-03-30 22:13:03,241 - DEBUG - INFO - [AUDIO] Recording finished. Max audio level: 0.0558
+2025-03-30 22:13:03,242 - DEBUG - INFO - [AUDIO] Frames captured: 78
+2025-03-30 22:13:03,242 - DEBUG - INFO - [AUDIO] Audio saved to C:\Users\Admin\AppData\Local\Temp\tmppdkcq_yg.wav
+2025-03-30 22:13:03,243 - DEBUG - INFO - [AUDIO] Transcribing audio file: C:\Users\Admin\AppData\Local\Temp\tmppdkcq_yg.wav
+2025-03-30 22:13:03,243 - DEBUG - INFO - [AUDIO] Starting Whisper transcription for audio file: C:\Users\Admin\AppData\Local\Temp\tmppdkcq_yg.wav
+2025-03-30 22:13:03,243 - DEBUG - INFO - [AUDIO] Audio file size: 159788 bytes
+2025-03-30 22:13:03,243 - DEBUG - INFO - [AUDIO] Using Whisper without word timestamps
+2025-03-30 22:13:03,523 - DEBUG - INFO - [AUDIO] Transcription completed in 0.28 seconds
+2025-03-30 22:13:03,523 - DEBUG - INFO - [AUDIO] Raw Whisper transcription result: 'I commented out that mine and it's still pretty'
+2025-03-30 22:13:03,524 - DEBUG - INFO - [AUDIO] RAW TRANSCRIPTION: 'I commented out that mine and it's still pretty'
+2025-03-30 22:13:03,524 - DEBUG - INFO - [AUDIO] Checking for wake phrases in: 'i commented out that mine and it's still pretty'
+2025-03-30 22:13:03,524 - DEBUG - INFO - [AUDIO] ❌ NO WAKE WORD MATCH in: 'i commented out that mine and it's still pretty'
+2025-03-30 22:13:03,525 - DEBUG - INFO - [AUDIO] No wake phrase or command detected in: 'i commented out that mine and it's still pretty'
+2025-03-30 22:13:03,525 - DEBUG - INFO - [AUDIO] Transcription completed successfully: 'I commented out that mine and it's still pretty'
+2025-03-30 22:13:03,525 - DEBUG - INFO - [AUDIO] Transcribed audio input: 'I commented out that mine and it's still pretty'
+2025-03-30 22:13:03,526 - DEBUG - INFO - [AUDIO] Temporary audio file C:\Users\Admin\AppData\Local\Temp\tmppdkcq_yg.wav removed
+2025-03-30 22:13:03,526 - DEBUG - INFO - [AUDIO] Recognized text: 'i commented out that mine and it's still pretty'
+2025-03-30 22:13:03,526 - DEBUG - INFO - [AUDIO] Added text to audio queue: 'i commented out that mine and it's still pretty'
+2025-03-30 22:13:03,542 - DEBUG - INFO - [AUDIO] Retrieved command from queue: 'i commented out that mine and it's still pretty'
+2025-03-30 22:13:03,627 - DEBUG - INFO - [AUDIO] Starting listening cycle #4
+2025-03-30 22:13:03,627 - DEBUG - INFO - [AUDIO] Starting listen() method
+2025-03-30 22:13:03,627 - DEBUG - INFO - [AUDIO] Calling STT provider's get_input() method
+2025-03-30 22:13:03,628 - DEBUG - INFO - [AUDIO] Recording audio started for 5.0 seconds
+2025-03-30 22:13:03,647 - DEBUG - INFO - [AUDIO] Available audio devices:
+Device 0: Microsoft Sound Mapper - Input (Inputs: 2)
+Device 1: Microphone (AudioPro X5 Microph (Inputs: 2)
+Device 2: Microphone (USB Camera) (Inputs: 1)
+Device 3: Headset Microphone (Oculus Virt (Inputs: 1)
+Device 4: Microsoft Sound Mapper - Output (Inputs: 0)
+Device 5: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 6: Headphones (Oculus Virtual Audi (Inputs: 0)
+Device 7: BassShaker (USB-C Audio) (Inputs: 0)
+Device 8: Primary Sound Capture Driver (Inputs: 2)
+Device 9: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 10: Microphone (USB Camera) (Inputs: 1)
+Device 11: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 12: Primary Sound Driver (Inputs: 0)
+Device 13: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 14: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 15: BassShaker (USB-C Audio) (Inputs: 0)
+Device 16: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 17: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 18: BassShaker (USB-C Audio) (Inputs: 0)
+Device 19: Microphone (USB Camera) (Inputs: 1)
+Device 20: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 21: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 22: Speakers (USB-C Audio) (Inputs: 0)
+Device 23: Microphone (USB-C Audio) (Inputs: 1)
+Device 24: Output 1 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 25: Output 2 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 26: Input (OCULUSVAD Wave Speaker Headphone) (Inputs: 2)
+Device 27: Headset Microphone (OCULUSVAD Wave Microphone Headphone) (Inputs: 1)
+Device 28: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 0)
+Device 29: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 1)
+Device 30: Analog Connector (Realtek USB2.0 Audio) (Inputs: 2)
+Device 31: Line (Realtek USB2.0 Audio) (Inputs: 2)
+Device 32: Microphone (Realtek USB2.0 Audio) (Inputs: 2)
+Device 33: Speakers (Realtek USB2.0 Audio) (Inputs: 0)
+Device 34: Headphones (Realtek USB2.0 Audio) (Inputs: 0)
+Device 35: SPDIF Out (Realtek USB2.0 Audio) (Inputs: 0)
+Device 36: Output (HD Audio HDMI out) (Inputs: 0)
+Device 37: Output (HD Audio HDMI out 3) (Inputs: 0)
+Device 38: Output (HD Audio HDMI out 4) (Inputs: 0)
+Device 39: Microphone (USB Camera) (Inputs: 1)
+Device 40: Headphones (AudioPro X5 Microphone) (Inputs: 0)
+Device 41: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 42: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 43: Headphones () (Inputs: 0)
+2025-03-30 22:13:03,649 - DEBUG - INFO - [AUDIO] Using default recording device
+2025-03-30 22:13:03,650 - DEBUG - INFO - [AUDIO] Temporary audio file: C:\Users\Admin\AppData\Local\Temp\tmpq3daf6v0.wav
+2025-03-30 22:13:03,650 - DEBUG - INFO - [AUDIO] Opening audio stream (attempt 1/3)
+2025-03-30 22:13:03,653 - DEBUG - INFO - [AUDIO] Recording started
+2025-03-30 22:13:08,661 - DEBUG - INFO - [AUDIO] Recording finished. Max audio level: 0.0952
+2025-03-30 22:13:08,661 - DEBUG - INFO - [AUDIO] Frames captured: 78
+2025-03-30 22:13:08,662 - DEBUG - INFO - [AUDIO] Audio saved to C:\Users\Admin\AppData\Local\Temp\tmpq3daf6v0.wav
+2025-03-30 22:13:08,662 - DEBUG - INFO - [AUDIO] Transcribing audio file: C:\Users\Admin\AppData\Local\Temp\tmpq3daf6v0.wav
+2025-03-30 22:13:08,662 - DEBUG - INFO - [AUDIO] Starting Whisper transcription for audio file: C:\Users\Admin\AppData\Local\Temp\tmpq3daf6v0.wav
+2025-03-30 22:13:08,663 - DEBUG - INFO - [AUDIO] Audio file size: 159788 bytes
+2025-03-30 22:13:08,663 - DEBUG - INFO - [AUDIO] Using Whisper without word timestamps
+2025-03-30 22:13:08,920 - DEBUG - INFO - [AUDIO] Transcription completed in 0.26 seconds
+2025-03-30 22:13:08,921 - DEBUG - INFO - [AUDIO] Raw Whisper transcription result: 'the debug stuff so I don't know guess again.'
+2025-03-30 22:13:08,921 - DEBUG - INFO - [AUDIO] RAW TRANSCRIPTION: 'the debug stuff so I don't know guess again.'
+2025-03-30 22:13:08,921 - DEBUG - INFO - [AUDIO] Checking for wake phrases in: 'the debug stuff so i don't know guess again.'
+2025-03-30 22:13:08,921 - DEBUG - INFO - [AUDIO] ❌ NO WAKE WORD MATCH in: 'the debug stuff so i don't know guess again.'
+2025-03-30 22:13:08,921 - DEBUG - INFO - [AUDIO] No wake phrase or command detected in: 'the debug stuff so i don't know guess again.'
+2025-03-30 22:13:08,921 - DEBUG - INFO - [AUDIO] Transcription completed successfully: 'the debug stuff so I don't know guess again.'
+2025-03-30 22:13:08,922 - DEBUG - INFO - [AUDIO] Transcribed audio input: 'the debug stuff so I don't know guess again.'
+2025-03-30 22:13:08,922 - DEBUG - INFO - [AUDIO] Temporary audio file C:\Users\Admin\AppData\Local\Temp\tmpq3daf6v0.wav removed
+2025-03-30 22:13:08,922 - DEBUG - INFO - [AUDIO] Recognized text: 'the debug stuff so i don't know guess again.'
+2025-03-30 22:13:08,922 - DEBUG - INFO - [AUDIO] Added text to audio queue: 'the debug stuff so i don't know guess again.'
+2025-03-30 22:13:08,931 - DEBUG - INFO - [AUDIO] Retrieved command from queue: 'the debug stuff so i don't know guess again.'
+2025-03-30 22:13:09,023 - DEBUG - INFO - [AUDIO] Starting listening cycle #5
+2025-03-30 22:13:09,023 - DEBUG - INFO - [AUDIO] Starting listen() method
+2025-03-30 22:13:09,023 - DEBUG - INFO - [AUDIO] Calling STT provider's get_input() method
+2025-03-30 22:13:09,023 - DEBUG - INFO - [AUDIO] Recording audio started for 5.0 seconds
+2025-03-30 22:13:09,041 - DEBUG - INFO - [AUDIO] Available audio devices:
+Device 0: Microsoft Sound Mapper - Input (Inputs: 2)
+Device 1: Microphone (AudioPro X5 Microph (Inputs: 2)
+Device 2: Microphone (USB Camera) (Inputs: 1)
+Device 3: Headset Microphone (Oculus Virt (Inputs: 1)
+Device 4: Microsoft Sound Mapper - Output (Inputs: 0)
+Device 5: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 6: Headphones (Oculus Virtual Audi (Inputs: 0)
+Device 7: BassShaker (USB-C Audio) (Inputs: 0)
+Device 8: Primary Sound Capture Driver (Inputs: 2)
+Device 9: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 10: Microphone (USB Camera) (Inputs: 1)
+Device 11: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 12: Primary Sound Driver (Inputs: 0)
+Device 13: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 14: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 15: BassShaker (USB-C Audio) (Inputs: 0)
+Device 16: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 17: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 18: BassShaker (USB-C Audio) (Inputs: 0)
+Device 19: Microphone (USB Camera) (Inputs: 1)
+Device 20: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 21: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 22: Speakers (USB-C Audio) (Inputs: 0)
+Device 23: Microphone (USB-C Audio) (Inputs: 1)
+Device 24: Output 1 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 25: Output 2 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 26: Input (OCULUSVAD Wave Speaker Headphone) (Inputs: 2)
+Device 27: Headset Microphone (OCULUSVAD Wave Microphone Headphone) (Inputs: 1)
+Device 28: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 0)
+Device 29: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 1)
+Device 30: Analog Connector (Realtek USB2.0 Audio) (Inputs: 2)
+Device 31: Line (Realtek USB2.0 Audio) (Inputs: 2)
+Device 32: Microphone (Realtek USB2.0 Audio) (Inputs: 2)
+Device 33: Speakers (Realtek USB2.0 Audio) (Inputs: 0)
+Device 34: Headphones (Realtek USB2.0 Audio) (Inputs: 0)
+Device 35: SPDIF Out (Realtek USB2.0 Audio) (Inputs: 0)
+Device 36: Output (HD Audio HDMI out) (Inputs: 0)
+Device 37: Output (HD Audio HDMI out 3) (Inputs: 0)
+Device 38: Output (HD Audio HDMI out 4) (Inputs: 0)
+Device 39: Microphone (USB Camera) (Inputs: 1)
+Device 40: Headphones (AudioPro X5 Microphone) (Inputs: 0)
+Device 41: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 42: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 43: Headphones () (Inputs: 0)
+2025-03-30 22:13:09,042 - DEBUG - INFO - [AUDIO] Using default recording device
+2025-03-30 22:13:09,042 - DEBUG - INFO - [AUDIO] Temporary audio file: C:\Users\Admin\AppData\Local\Temp\tmpiusi3u3o.wav
+2025-03-30 22:13:09,042 - DEBUG - INFO - [AUDIO] Opening audio stream (attempt 1/3)
+2025-03-30 22:13:09,045 - DEBUG - INFO - [AUDIO] Recording started
+2025-03-30 22:13:14,051 - DEBUG - INFO - [AUDIO] Recording finished. Max audio level: 0.0013
+2025-03-30 22:13:14,051 - DEBUG - INFO - [AUDIO] Frames captured: 78
+2025-03-30 22:13:14,052 - DEBUG - INFO - [AUDIO] Audio saved to C:\Users\Admin\AppData\Local\Temp\tmpiusi3u3o.wav
+2025-03-30 22:13:14,052 - DEBUG - INFO - [AUDIO] Transcribing audio file: C:\Users\Admin\AppData\Local\Temp\tmpiusi3u3o.wav
+2025-03-30 22:13:14,053 - DEBUG - INFO - [AUDIO] Starting Whisper transcription for audio file: C:\Users\Admin\AppData\Local\Temp\tmpiusi3u3o.wav
+2025-03-30 22:13:14,053 - DEBUG - INFO - [AUDIO] Audio file size: 159788 bytes
+2025-03-30 22:13:14,053 - DEBUG - INFO - [AUDIO] Using Whisper without word timestamps
+2025-03-30 22:13:17,601 - DEBUG - INFO - [AUDIO] Transcription completed in 3.55 seconds
+2025-03-30 22:13:17,602 - DEBUG - INFO - [AUDIO] Raw Whisper transcription result: '1st rate 4th rate'
+2025-03-30 22:13:17,602 - DEBUG - INFO - [AUDIO] RAW TRANSCRIPTION: '1st rate 4th rate'
+2025-03-30 22:13:17,602 - DEBUG - INFO - [AUDIO] Checking for wake phrases in: '1st rate 4th rate'
+2025-03-30 22:13:17,602 - DEBUG - INFO - [AUDIO] ❌ NO WAKE WORD MATCH in: '1st rate 4th rate'
+2025-03-30 22:13:17,602 - DEBUG - INFO - [AUDIO] No wake phrase or command detected in: '1st rate 4th rate'
+2025-03-30 22:13:17,603 - DEBUG - INFO - [AUDIO] Transcription completed successfully: '1st rate 4th rate'
+2025-03-30 22:13:17,603 - DEBUG - INFO - [AUDIO] Transcribed audio input: '1st rate 4th rate'
+2025-03-30 22:13:17,603 - DEBUG - INFO - [AUDIO] Temporary audio file C:\Users\Admin\AppData\Local\Temp\tmpiusi3u3o.wav removed
+2025-03-30 22:13:17,603 - DEBUG - INFO - [AUDIO] Recognized text: '1st rate 4th rate'
+2025-03-30 22:13:17,603 - DEBUG - INFO - [AUDIO] Added text to audio queue: '1st rate 4th rate'
+2025-03-30 22:13:17,635 - DEBUG - INFO - [AUDIO] Retrieved command from queue: '1st rate 4th rate'
+2025-03-30 22:13:17,705 - DEBUG - INFO - [AUDIO] Starting listening cycle #6
+2025-03-30 22:13:17,705 - DEBUG - INFO - [AUDIO] Starting listen() method
+2025-03-30 22:13:17,705 - DEBUG - INFO - [AUDIO] Calling STT provider's get_input() method
+2025-03-30 22:13:17,705 - DEBUG - INFO - [AUDIO] Recording audio started for 5.0 seconds
+2025-03-30 22:13:17,722 - DEBUG - INFO - [AUDIO] Available audio devices:
+Device 0: Microsoft Sound Mapper - Input (Inputs: 2)
+Device 1: Microphone (AudioPro X5 Microph (Inputs: 2)
+Device 2: Microphone (USB Camera) (Inputs: 1)
+Device 3: Headset Microphone (Oculus Virt (Inputs: 1)
+Device 4: Microsoft Sound Mapper - Output (Inputs: 0)
+Device 5: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 6: Headphones (Oculus Virtual Audi (Inputs: 0)
+Device 7: BassShaker (USB-C Audio) (Inputs: 0)
+Device 8: Primary Sound Capture Driver (Inputs: 2)
+Device 9: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 10: Microphone (USB Camera) (Inputs: 1)
+Device 11: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 12: Primary Sound Driver (Inputs: 0)
+Device 13: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 14: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 15: BassShaker (USB-C Audio) (Inputs: 0)
+Device 16: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 17: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 18: BassShaker (USB-C Audio) (Inputs: 0)
+Device 19: Microphone (USB Camera) (Inputs: 1)
+Device 20: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 21: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 22: Speakers (USB-C Audio) (Inputs: 0)
+Device 23: Microphone (USB-C Audio) (Inputs: 1)
+Device 24: Output 1 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 25: Output 2 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 26: Input (OCULUSVAD Wave Speaker Headphone) (Inputs: 2)
+Device 27: Headset Microphone (OCULUSVAD Wave Microphone Headphone) (Inputs: 1)
+Device 28: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 0)
+Device 29: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 1)
+Device 30: Analog Connector (Realtek USB2.0 Audio) (Inputs: 2)
+Device 31: Line (Realtek USB2.0 Audio) (Inputs: 2)
+Device 32: Microphone (Realtek USB2.0 Audio) (Inputs: 2)
+Device 33: Speakers (Realtek USB2.0 Audio) (Inputs: 0)
+Device 34: Headphones (Realtek USB2.0 Audio) (Inputs: 0)
+Device 35: SPDIF Out (Realtek USB2.0 Audio) (Inputs: 0)
+Device 36: Output (HD Audio HDMI out) (Inputs: 0)
+Device 37: Output (HD Audio HDMI out 3) (Inputs: 0)
+Device 38: Output (HD Audio HDMI out 4) (Inputs: 0)
+Device 39: Microphone (USB Camera) (Inputs: 1)
+Device 40: Headphones (AudioPro X5 Microphone) (Inputs: 0)
+Device 41: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 42: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 43: Headphones () (Inputs: 0)
+2025-03-30 22:13:17,724 - DEBUG - INFO - [AUDIO] Using default recording device
+2025-03-30 22:13:17,724 - DEBUG - INFO - [AUDIO] Temporary audio file: C:\Users\Admin\AppData\Local\Temp\tmpryzg8ts7.wav
+2025-03-30 22:13:17,724 - DEBUG - INFO - [AUDIO] Opening audio stream (attempt 1/3)
+2025-03-30 22:13:17,727 - DEBUG - INFO - [AUDIO] Recording started
+2025-03-30 22:13:22,735 - DEBUG - INFO - [AUDIO] Recording finished. Max audio level: 0.0004
+2025-03-30 22:13:22,735 - DEBUG - INFO - [AUDIO] Frames captured: 78
+2025-03-30 22:13:22,736 - DEBUG - INFO - [AUDIO] Audio saved to C:\Users\Admin\AppData\Local\Temp\tmpryzg8ts7.wav
+2025-03-30 22:13:22,736 - DEBUG - INFO - [AUDIO] Transcribing audio file: C:\Users\Admin\AppData\Local\Temp\tmpryzg8ts7.wav
+2025-03-30 22:13:22,736 - DEBUG - INFO - [AUDIO] Starting Whisper transcription for audio file: C:\Users\Admin\AppData\Local\Temp\tmpryzg8ts7.wav
+2025-03-30 22:13:22,737 - DEBUG - INFO - [AUDIO] Audio file size: 159788 bytes
+2025-03-30 22:13:22,737 - DEBUG - INFO - [AUDIO] Using Whisper without word timestamps
+2025-03-30 22:13:23,085 - DEBUG - INFO - [AUDIO] Transcription completed in 0.35 seconds
+2025-03-30 22:13:23,085 - DEBUG - INFO - [AUDIO] Raw Whisper transcription result: ''
+2025-03-30 22:13:23,086 - DEBUG - INFO - [AUDIO] RAW TRANSCRIPTION: ''
+2025-03-30 22:13:23,086 - DEBUG - INFO - [AUDIO] Checking for wake phrases in: ''
+2025-03-30 22:13:23,086 - DEBUG - INFO - [AUDIO] ❌ NO WAKE WORD MATCH in: ''
+2025-03-30 22:13:23,086 - DEBUG - INFO - [AUDIO] No wake phrase or command detected in: ''
+2025-03-30 22:13:23,086 - DEBUG - INFO - [AUDIO] Transcription completed successfully: ''
+2025-03-30 22:13:23,087 - DEBUG - INFO - [AUDIO] Transcribed audio input: ''
+2025-03-30 22:13:23,087 - DEBUG - INFO - [AUDIO] Temporary audio file C:\Users\Admin\AppData\Local\Temp\tmpryzg8ts7.wav removed
+2025-03-30 22:13:23,087 - DEBUG - INFO - [AUDIO] No text recognized in this listening cycle
+2025-03-30 22:13:23,187 - DEBUG - INFO - [AUDIO] Starting listening cycle #7
+2025-03-30 22:13:23,187 - DEBUG - INFO - [AUDIO] Starting listen() method
+2025-03-30 22:13:23,188 - DEBUG - INFO - [AUDIO] Calling STT provider's get_input() method
+2025-03-30 22:13:23,188 - DEBUG - INFO - [AUDIO] Recording audio started for 5.0 seconds
+2025-03-30 22:13:23,206 - DEBUG - INFO - [AUDIO] Available audio devices:
+Device 0: Microsoft Sound Mapper - Input (Inputs: 2)
+Device 1: Microphone (AudioPro X5 Microph (Inputs: 2)
+Device 2: Microphone (USB Camera) (Inputs: 1)
+Device 3: Headset Microphone (Oculus Virt (Inputs: 1)
+Device 4: Microsoft Sound Mapper - Output (Inputs: 0)
+Device 5: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 6: Headphones (Oculus Virtual Audi (Inputs: 0)
+Device 7: BassShaker (USB-C Audio) (Inputs: 0)
+Device 8: Primary Sound Capture Driver (Inputs: 2)
+Device 9: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 10: Microphone (USB Camera) (Inputs: 1)
+Device 11: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 12: Primary Sound Driver (Inputs: 0)
+Device 13: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 14: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 15: BassShaker (USB-C Audio) (Inputs: 0)
+Device 16: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 17: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 18: BassShaker (USB-C Audio) (Inputs: 0)
+Device 19: Microphone (USB Camera) (Inputs: 1)
+Device 20: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 21: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 22: Speakers (USB-C Audio) (Inputs: 0)
+Device 23: Microphone (USB-C Audio) (Inputs: 1)
+Device 24: Output 1 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 25: Output 2 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 26: Input (OCULUSVAD Wave Speaker Headphone) (Inputs: 2)
+Device 27: Headset Microphone (OCULUSVAD Wave Microphone Headphone) (Inputs: 1)
+Device 28: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 0)
+Device 29: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 1)
+Device 30: Analog Connector (Realtek USB2.0 Audio) (Inputs: 2)
+Device 31: Line (Realtek USB2.0 Audio) (Inputs: 2)
+Device 32: Microphone (Realtek USB2.0 Audio) (Inputs: 2)
+Device 33: Speakers (Realtek USB2.0 Audio) (Inputs: 0)
+Device 34: Headphones (Realtek USB2.0 Audio) (Inputs: 0)
+Device 35: SPDIF Out (Realtek USB2.0 Audio) (Inputs: 0)
+Device 36: Output (HD Audio HDMI out) (Inputs: 0)
+Device 37: Output (HD Audio HDMI out 3) (Inputs: 0)
+Device 38: Output (HD Audio HDMI out 4) (Inputs: 0)
+Device 39: Microphone (USB Camera) (Inputs: 1)
+Device 40: Headphones (AudioPro X5 Microphone) (Inputs: 0)
+Device 41: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 42: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 43: Headphones () (Inputs: 0)
+2025-03-30 22:13:23,207 - DEBUG - INFO - [AUDIO] Using default recording device
+2025-03-30 22:13:23,207 - DEBUG - INFO - [AUDIO] Temporary audio file: C:\Users\Admin\AppData\Local\Temp\tmpa1a1jkq4.wav
+2025-03-30 22:13:23,208 - DEBUG - INFO - [AUDIO] Opening audio stream (attempt 1/3)
+2025-03-30 22:13:23,210 - DEBUG - INFO - [AUDIO] Recording started
+2025-03-30 22:13:28,218 - DEBUG - INFO - [AUDIO] Recording finished. Max audio level: 0.0006
+2025-03-30 22:13:28,218 - DEBUG - INFO - [AUDIO] Frames captured: 78
+2025-03-30 22:13:28,219 - DEBUG - INFO - [AUDIO] Audio saved to C:\Users\Admin\AppData\Local\Temp\tmpa1a1jkq4.wav
+2025-03-30 22:13:28,220 - DEBUG - INFO - [AUDIO] Transcribing audio file: C:\Users\Admin\AppData\Local\Temp\tmpa1a1jkq4.wav
+2025-03-30 22:13:28,220 - DEBUG - INFO - [AUDIO] Starting Whisper transcription for audio file: C:\Users\Admin\AppData\Local\Temp\tmpa1a1jkq4.wav
+2025-03-30 22:13:28,220 - DEBUG - INFO - [AUDIO] Audio file size: 159788 bytes
+2025-03-30 22:13:28,220 - DEBUG - INFO - [AUDIO] Using Whisper without word timestamps
+2025-03-30 22:13:28,470 - DEBUG - INFO - [AUDIO] Transcription completed in 0.25 seconds
+2025-03-30 22:13:28,470 - DEBUG - INFO - [AUDIO] Raw Whisper transcription result: ''
+2025-03-30 22:13:28,470 - DEBUG - INFO - [AUDIO] RAW TRANSCRIPTION: ''
+2025-03-30 22:13:28,470 - DEBUG - INFO - [AUDIO] Checking for wake phrases in: ''
+2025-03-30 22:13:28,471 - DEBUG - INFO - [AUDIO] ❌ NO WAKE WORD MATCH in: ''
+2025-03-30 22:13:28,471 - DEBUG - INFO - [AUDIO] No wake phrase or command detected in: ''
+2025-03-30 22:13:28,471 - DEBUG - INFO - [AUDIO] Transcription completed successfully: ''
+2025-03-30 22:13:28,471 - DEBUG - INFO - [AUDIO] Transcribed audio input: ''
+2025-03-30 22:13:28,471 - DEBUG - INFO - [AUDIO] Temporary audio file C:\Users\Admin\AppData\Local\Temp\tmpa1a1jkq4.wav removed
+2025-03-30 22:13:28,472 - DEBUG - INFO - [AUDIO] No text recognized in this listening cycle
+2025-03-30 22:13:28,572 - DEBUG - INFO - [AUDIO] Starting listening cycle #8
+2025-03-30 22:13:28,572 - DEBUG - INFO - [AUDIO] Starting listen() method
+2025-03-30 22:13:28,572 - DEBUG - INFO - [AUDIO] Calling STT provider's get_input() method
+2025-03-30 22:13:28,572 - DEBUG - INFO - [AUDIO] Recording audio started for 5.0 seconds
+2025-03-30 22:13:28,590 - DEBUG - INFO - [AUDIO] Available audio devices:
+Device 0: Microsoft Sound Mapper - Input (Inputs: 2)
+Device 1: Microphone (AudioPro X5 Microph (Inputs: 2)
+Device 2: Microphone (USB Camera) (Inputs: 1)
+Device 3: Headset Microphone (Oculus Virt (Inputs: 1)
+Device 4: Microsoft Sound Mapper - Output (Inputs: 0)
+Device 5: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 6: Headphones (Oculus Virtual Audi (Inputs: 0)
+Device 7: BassShaker (USB-C Audio) (Inputs: 0)
+Device 8: Primary Sound Capture Driver (Inputs: 2)
+Device 9: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 10: Microphone (USB Camera) (Inputs: 1)
+Device 11: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 12: Primary Sound Driver (Inputs: 0)
+Device 13: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 14: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 15: BassShaker (USB-C Audio) (Inputs: 0)
+Device 16: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 17: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 18: BassShaker (USB-C Audio) (Inputs: 0)
+Device 19: Microphone (USB Camera) (Inputs: 1)
+Device 20: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 21: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 22: Speakers (USB-C Audio) (Inputs: 0)
+Device 23: Microphone (USB-C Audio) (Inputs: 1)
+Device 24: Output 1 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 25: Output 2 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 26: Input (OCULUSVAD Wave Speaker Headphone) (Inputs: 2)
+Device 27: Headset Microphone (OCULUSVAD Wave Microphone Headphone) (Inputs: 1)
+Device 28: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 0)
+Device 29: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 1)
+Device 30: Analog Connector (Realtek USB2.0 Audio) (Inputs: 2)
+Device 31: Line (Realtek USB2.0 Audio) (Inputs: 2)
+Device 32: Microphone (Realtek USB2.0 Audio) (Inputs: 2)
+Device 33: Speakers (Realtek USB2.0 Audio) (Inputs: 0)
+Device 34: Headphones (Realtek USB2.0 Audio) (Inputs: 0)
+Device 35: SPDIF Out (Realtek USB2.0 Audio) (Inputs: 0)
+Device 36: Output (HD Audio HDMI out) (Inputs: 0)
+Device 37: Output (HD Audio HDMI out 3) (Inputs: 0)
+Device 38: Output (HD Audio HDMI out 4) (Inputs: 0)
+Device 39: Microphone (USB Camera) (Inputs: 1)
+Device 40: Headphones (AudioPro X5 Microphone) (Inputs: 0)
+Device 41: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 42: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 43: Headphones () (Inputs: 0)
+2025-03-30 22:13:28,591 - DEBUG - INFO - [AUDIO] Using default recording device
+2025-03-30 22:13:28,591 - DEBUG - INFO - [AUDIO] Temporary audio file: C:\Users\Admin\AppData\Local\Temp\tmpx46htijh.wav
+2025-03-30 22:13:28,592 - DEBUG - INFO - [AUDIO] Opening audio stream (attempt 1/3)
+2025-03-30 22:13:28,594 - DEBUG - INFO - [AUDIO] Recording started
+2025-03-30 22:13:33,602 - DEBUG - INFO - [AUDIO] Recording finished. Max audio level: 0.0004
+2025-03-30 22:13:33,602 - DEBUG - INFO - [AUDIO] Frames captured: 78
+2025-03-30 22:13:33,603 - DEBUG - INFO - [AUDIO] Audio saved to C:\Users\Admin\AppData\Local\Temp\tmpx46htijh.wav
+2025-03-30 22:13:33,604 - DEBUG - INFO - [AUDIO] Transcribing audio file: C:\Users\Admin\AppData\Local\Temp\tmpx46htijh.wav
+2025-03-30 22:13:33,604 - DEBUG - INFO - [AUDIO] Starting Whisper transcription for audio file: C:\Users\Admin\AppData\Local\Temp\tmpx46htijh.wav
+2025-03-30 22:13:33,604 - DEBUG - INFO - [AUDIO] Audio file size: 159788 bytes
+2025-03-30 22:13:33,604 - DEBUG - INFO - [AUDIO] Using Whisper without word timestamps
+2025-03-30 22:13:33,874 - DEBUG - INFO - [AUDIO] Transcription completed in 0.27 seconds
+2025-03-30 22:13:33,874 - DEBUG - INFO - [AUDIO] Raw Whisper transcription result: ''
+2025-03-30 22:13:33,875 - DEBUG - INFO - [AUDIO] RAW TRANSCRIPTION: ''
+2025-03-30 22:13:33,875 - DEBUG - INFO - [AUDIO] Checking for wake phrases in: ''
+2025-03-30 22:13:33,875 - DEBUG - INFO - [AUDIO] ❌ NO WAKE WORD MATCH in: ''
+2025-03-30 22:13:33,876 - DEBUG - INFO - [AUDIO] No wake phrase or command detected in: ''
+2025-03-30 22:13:33,876 - DEBUG - INFO - [AUDIO] Transcription completed successfully: ''
+2025-03-30 22:13:33,876 - DEBUG - INFO - [AUDIO] Transcribed audio input: ''
+2025-03-30 22:13:33,876 - DEBUG - INFO - [AUDIO] Temporary audio file C:\Users\Admin\AppData\Local\Temp\tmpx46htijh.wav removed
+2025-03-30 22:13:33,876 - DEBUG - INFO - [AUDIO] No text recognized in this listening cycle
+2025-03-30 22:13:33,978 - DEBUG - INFO - [AUDIO] Starting listening cycle #9
+2025-03-30 22:13:33,979 - DEBUG - INFO - [AUDIO] Starting listen() method
+2025-03-30 22:13:33,979 - DEBUG - INFO - [AUDIO] Calling STT provider's get_input() method
+2025-03-30 22:13:33,979 - DEBUG - INFO - [AUDIO] Recording audio started for 5.0 seconds
+2025-03-30 22:13:33,997 - DEBUG - INFO - [AUDIO] Available audio devices:
+Device 0: Microsoft Sound Mapper - Input (Inputs: 2)
+Device 1: Microphone (AudioPro X5 Microph (Inputs: 2)
+Device 2: Microphone (USB Camera) (Inputs: 1)
+Device 3: Headset Microphone (Oculus Virt (Inputs: 1)
+Device 4: Microsoft Sound Mapper - Output (Inputs: 0)
+Device 5: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 6: Headphones (Oculus Virtual Audi (Inputs: 0)
+Device 7: BassShaker (USB-C Audio) (Inputs: 0)
+Device 8: Primary Sound Capture Driver (Inputs: 2)
+Device 9: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 10: Microphone (USB Camera) (Inputs: 1)
+Device 11: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 12: Primary Sound Driver (Inputs: 0)
+Device 13: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 14: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 15: BassShaker (USB-C Audio) (Inputs: 0)
+Device 16: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 17: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 18: BassShaker (USB-C Audio) (Inputs: 0)
+Device 19: Microphone (USB Camera) (Inputs: 1)
+Device 20: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 21: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 22: Speakers (USB-C Audio) (Inputs: 0)
+Device 23: Microphone (USB-C Audio) (Inputs: 1)
+Device 24: Output 1 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 25: Output 2 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 26: Input (OCULUSVAD Wave Speaker Headphone) (Inputs: 2)
+Device 27: Headset Microphone (OCULUSVAD Wave Microphone Headphone) (Inputs: 1)
+Device 28: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 0)
+Device 29: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 1)
+Device 30: Analog Connector (Realtek USB2.0 Audio) (Inputs: 2)
+Device 31: Line (Realtek USB2.0 Audio) (Inputs: 2)
+Device 32: Microphone (Realtek USB2.0 Audio) (Inputs: 2)
+Device 33: Speakers (Realtek USB2.0 Audio) (Inputs: 0)
+Device 34: Headphones (Realtek USB2.0 Audio) (Inputs: 0)
+Device 35: SPDIF Out (Realtek USB2.0 Audio) (Inputs: 0)
+Device 36: Output (HD Audio HDMI out) (Inputs: 0)
+Device 37: Output (HD Audio HDMI out 3) (Inputs: 0)
+Device 38: Output (HD Audio HDMI out 4) (Inputs: 0)
+Device 39: Microphone (USB Camera) (Inputs: 1)
+Device 40: Headphones (AudioPro X5 Microphone) (Inputs: 0)
+Device 41: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 42: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 43: Headphones () (Inputs: 0)
+2025-03-30 22:13:34,000 - DEBUG - INFO - [AUDIO] Using default recording device
+2025-03-30 22:13:34,000 - DEBUG - INFO - [AUDIO] Temporary audio file: C:\Users\Admin\AppData\Local\Temp\tmpcifzq4r_.wav
+2025-03-30 22:13:34,000 - DEBUG - INFO - [AUDIO] Opening audio stream (attempt 1/3)
+2025-03-30 22:13:34,003 - DEBUG - INFO - [AUDIO] Recording started
+2025-03-30 22:13:39,012 - DEBUG - INFO - [AUDIO] Recording finished. Max audio level: 0.0006
+2025-03-30 22:13:39,012 - DEBUG - INFO - [AUDIO] Frames captured: 78
+2025-03-30 22:13:39,013 - DEBUG - INFO - [AUDIO] Audio saved to C:\Users\Admin\AppData\Local\Temp\tmpcifzq4r_.wav
+2025-03-30 22:13:39,013 - DEBUG - INFO - [AUDIO] Transcribing audio file: C:\Users\Admin\AppData\Local\Temp\tmpcifzq4r_.wav
+2025-03-30 22:13:39,013 - DEBUG - INFO - [AUDIO] Starting Whisper transcription for audio file: C:\Users\Admin\AppData\Local\Temp\tmpcifzq4r_.wav
+2025-03-30 22:13:39,013 - DEBUG - INFO - [AUDIO] Audio file size: 159788 bytes
+2025-03-30 22:13:39,013 - DEBUG - INFO - [AUDIO] Using Whisper without word timestamps
+2025-03-30 22:13:39,259 - DEBUG - INFO - [AUDIO] Transcription completed in 0.25 seconds
+2025-03-30 22:13:39,259 - DEBUG - INFO - [AUDIO] Raw Whisper transcription result: ''
+2025-03-30 22:13:39,260 - DEBUG - INFO - [AUDIO] RAW TRANSCRIPTION: ''
+2025-03-30 22:13:39,260 - DEBUG - INFO - [AUDIO] Checking for wake phrases in: ''
+2025-03-30 22:13:39,260 - DEBUG - INFO - [AUDIO] ❌ NO WAKE WORD MATCH in: ''
+2025-03-30 22:13:39,261 - DEBUG - INFO - [AUDIO] No wake phrase or command detected in: ''
+2025-03-30 22:13:39,261 - DEBUG - INFO - [AUDIO] Transcription completed successfully: ''
+2025-03-30 22:13:39,261 - DEBUG - INFO - [AUDIO] Transcribed audio input: ''
+2025-03-30 22:13:39,261 - DEBUG - INFO - [AUDIO] Temporary audio file C:\Users\Admin\AppData\Local\Temp\tmpcifzq4r_.wav removed
+2025-03-30 22:13:39,261 - DEBUG - INFO - [AUDIO] No text recognized in this listening cycle
+2025-03-30 22:13:39,362 - DEBUG - INFO - [AUDIO] Starting listening cycle #10
+2025-03-30 22:13:39,362 - DEBUG - INFO - [AUDIO] Starting listen() method
+2025-03-30 22:13:39,362 - DEBUG - INFO - [AUDIO] Calling STT provider's get_input() method
+2025-03-30 22:13:39,362 - DEBUG - INFO - [AUDIO] Recording audio started for 5.0 seconds
+2025-03-30 22:13:39,380 - DEBUG - INFO - [AUDIO] Available audio devices:
+Device 0: Microsoft Sound Mapper - Input (Inputs: 2)
+Device 1: Microphone (AudioPro X5 Microph (Inputs: 2)
+Device 2: Microphone (USB Camera) (Inputs: 1)
+Device 3: Headset Microphone (Oculus Virt (Inputs: 1)
+Device 4: Microsoft Sound Mapper - Output (Inputs: 0)
+Device 5: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 6: Headphones (Oculus Virtual Audi (Inputs: 0)
+Device 7: BassShaker (USB-C Audio) (Inputs: 0)
+Device 8: Primary Sound Capture Driver (Inputs: 2)
+Device 9: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 10: Microphone (USB Camera) (Inputs: 1)
+Device 11: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 12: Primary Sound Driver (Inputs: 0)
+Device 13: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 14: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 15: BassShaker (USB-C Audio) (Inputs: 0)
+Device 16: Headphones (Oculus Virtual Audio Device) (Inputs: 0)
+Device 17: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 18: BassShaker (USB-C Audio) (Inputs: 0)
+Device 19: Microphone (USB Camera) (Inputs: 1)
+Device 20: Headset Microphone (Oculus Virtual Audio Device) (Inputs: 1)
+Device 21: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 22: Speakers (USB-C Audio) (Inputs: 0)
+Device 23: Microphone (USB-C Audio) (Inputs: 1)
+Device 24: Output 1 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 25: Output 2 (OCULUSVAD Wave Speaker Headphone) (Inputs: 0)
+Device 26: Input (OCULUSVAD Wave Speaker Headphone) (Inputs: 2)
+Device 27: Headset Microphone (OCULUSVAD Wave Microphone Headphone) (Inputs: 1)
+Device 28: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 0)
+Device 29: Headset (@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0
+;(JBL LIVE660NC)) (Inputs: 1)
+Device 30: Analog Connector (Realtek USB2.0 Audio) (Inputs: 2)
+Device 31: Line (Realtek USB2.0 Audio) (Inputs: 2)
+Device 32: Microphone (Realtek USB2.0 Audio) (Inputs: 2)
+Device 33: Speakers (Realtek USB2.0 Audio) (Inputs: 0)
+Device 34: Headphones (Realtek USB2.0 Audio) (Inputs: 0)
+Device 35: SPDIF Out (Realtek USB2.0 Audio) (Inputs: 0)
+Device 36: Output (HD Audio HDMI out) (Inputs: 0)
+Device 37: Output (HD Audio HDMI out 3) (Inputs: 0)
+Device 38: Output (HD Audio HDMI out 4) (Inputs: 0)
+Device 39: Microphone (USB Camera) (Inputs: 1)
+Device 40: Headphones (AudioPro X5 Microphone) (Inputs: 0)
+Device 41: Microphone (AudioPro X5 Microphone) (Inputs: 2)
+Device 42: Speakers (Logitech USB Speaker) (Inputs: 0)
+Device 43: Headphones () (Inputs: 0)
+2025-03-30 22:13:39,381 - DEBUG - INFO - [AUDIO] Using default recording device
+2025-03-30 22:13:39,382 - DEBUG - INFO - [AUDIO] Temporary audio file: C:\Users\Admin\AppData\Local\Temp\tmpb4vr5hf8.wav
+2025-03-30 22:13:39,382 - DEBUG - INFO - [AUDIO] Opening audio stream (attempt 1/3)
+2025-03-30 22:13:39,385 - DEBUG - INFO - [AUDIO] Recording started
