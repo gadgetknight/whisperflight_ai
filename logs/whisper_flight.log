@@ -13565,3 +13565,1146 @@ Device 43: Headphones () (Inputs: 0)
 2025-03-31 15:44:01 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318593576, 'Longitude': -74.84109340174575, 'Altitude': 51.65233137078699, 'Heading': 4.358852193032679}
 2025-03-31 15:44:01 - ElevenLabsTTS - INFO - 11L synth OK.
 2025-03-31 15:44:01 - ElevenLabsTTS - INFO - Playing audio: 'You're soaring above Lower Manhattan, just off the...'
+2025-03-31 16:53:08 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 16:55:38 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:01:25 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:08:17 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:08:18 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 17:08:18 - AudioProcessor - INFO - Mixer init.
+2025-03-31 17:08:18 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 17:08:18 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 17:08:18 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 17:08:19 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 17:08:19 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 17:08:19 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:08:19 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 17:08:19 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 17:08:19 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 17:08:19 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 17:08:19 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 17:08:19 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 17:08:19 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 17:08:19 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 17:08:19 - root - INFO - Attempting to connect to real MSFS SimConnect...
+2025-03-31 17:08:19 - root - INFO - pysimconnect module found in environment
+2025-03-31 17:08:19 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 17:08:19 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 17:08:19 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031851869
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340125082
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65236268189522
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814093464446
+2025-03-31 17:08:19 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031851869, 'Longitude': -74.84109340125082, 'Altitude': 51.65236268189522, 'Heading': 4.358814093464446}
+2025-03-31 17:08:19 - root - INFO - Real SimConnect connected successfully (response time: 0.052s)
+2025-03-31 17:08:19 - root - INFO - SimConnect initialized: Real mode
+2025-03-31 17:08:19 - root - INFO - Connection monitor thread started
+2025-03-31 17:08:19 - root - INFO - Connection monitoring started
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031851869
+2025-03-31 17:08:19 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340125082
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65236268189522
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814093464446
+2025-03-31 17:08:19 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031851869, 'Longitude': -74.84109340125082, 'Altitude': 51.65236268189522, 'Heading': 4.358814093464446}
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031851869
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340125082
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65236268189522
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814093464446
+2025-03-31 17:08:19 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031851869, 'Longitude': -74.84109340125082, 'Altitude': 51.65236268189522, 'Heading': 4.358814093464446}
+2025-03-31 17:08:19 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 17:08:19 - root - INFO - Python version: 3.11.4
+2025-03-31 17:08:19 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 17:08:19 - root - INFO - Debug mode: Disabled
+2025-03-31 17:08:19 - root - INFO - Distributed mode: Disabled
+2025-03-31 17:08:19 - root - INFO - Default AI provider: openai
+2025-03-31 17:08:19 - root - INFO - STT engine: whisper
+2025-03-31 17:08:19 - root - INFO - TTS engine: elevenlabs
+2025-03-31 17:08:19 - root - INFO - Found 2 joystick(s).
+2025-03-31 17:08:19 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031851869
+2025-03-31 17:08:19 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340125082
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031851869
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65236268189522
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340125082
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814093464446
+2025-03-31 17:08:19 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031851869, 'Longitude': -74.84109340125082, 'Altitude': 51.65236268189522, 'Heading': 4.358814093464446}
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65236268189522
+2025-03-31 17:08:19 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814093464446
+2025-03-31 17:08:19 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031851869, 'Longitude': -74.84109340125082, 'Altitude': 51.65236268189522, 'Heading': 4.358814093464446}
+2025-03-31 17:08:19 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 17:08:19 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 17:08:19 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 17:08:20 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:08:24 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318536804
+2025-03-31 17:08:25 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340119178
+2025-03-31 17:08:25 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65235745609019
+2025-03-31 17:08:25 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814114947874
+2025-03-31 17:08:25 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318536804, 'Longitude': -74.84109340119178, 'Altitude': 51.65235745609019, 'Heading': 4.358814114947874}
+2025-03-31 17:08:25 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp69mhljls.wav
+2025-03-31 17:08:25 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp69mhljls.wav
+2025-03-31 17:08:27 - WhisperSTT - INFO - Raw Whisper result: 'I often get pretty doll gun in order to follow the channels of fire fr examination. megabash'
+2025-03-31 17:08:27 - AudioProcessor - INFO - Queue retrieve: 'I often get pretty doll gun in order to follow the channels of fire fr examination. megabash'
+2025-03-31 17:08:27 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:08:30 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031858511
+2025-03-31 17:08:30 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340098604
+2025-03-31 17:08:30 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65235364502318
+2025-03-31 17:08:30 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814347814515
+2025-03-31 17:08:30 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031858511, 'Longitude': -74.84109340098604, 'Altitude': 51.65235364502318, 'Heading': 4.358814347814515}
+2025-03-31 17:08:32 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpyc_s83v3.wav
+2025-03-31 17:08:32 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpyc_s83v3.wav
+2025-03-31 17:08:32 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour.'
+2025-03-31 17:08:32 - AudioProcessor - INFO - Queue retrieve: 'Sky tour.'
+2025-03-31 17:08:32 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 17:08:32 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 17:08:32 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 17:08:33 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:08:33 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 17:08:34 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031858511
+2025-03-31 17:08:34 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340098604
+2025-03-31 17:08:34 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65235364502318
+2025-03-31 17:08:34 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814347814515
+2025-03-31 17:08:34 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031858511, 'Longitude': -74.84109340098604, 'Altitude': 51.65235364502318, 'Heading': 4.358814347814515}
+2025-03-31 17:08:34 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031858511
+2025-03-31 17:08:34 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340098604
+2025-03-31 17:08:34 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65235364502318
+2025-03-31 17:08:34 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814347814515
+2025-03-31 17:08:34 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031858511, 'Longitude': -74.84109340098604, 'Altitude': 51.65235364502318, 'Heading': 4.358814347814515}
+2025-03-31 17:08:34 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 17:08:35 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031863217
+2025-03-31 17:08:35 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340081741
+2025-03-31 17:08:35 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65233046753981
+2025-03-31 17:08:35 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814515919622
+2025-03-31 17:08:35 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031863217, 'Longitude': -74.84109340081741, 'Altitude': 51.65233046753981, 'Heading': 4.358814515919622}
+2025-03-31 17:08:40 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859212
+2025-03-31 17:08:40 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340096155
+2025-03-31 17:08:40 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65235118422157
+2025-03-31 17:08:40 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814293927325
+2025-03-31 17:08:40 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859212, 'Longitude': -74.84109340096155, 'Altitude': 51.65235118422157, 'Heading': 4.358814293927325}
+2025-03-31 17:08:43 - root - INFO - Joystick input: Btn 2 -> 'sky tour'
+2025-03-31 17:08:43 - AudioProcessor - INFO - Queue retrieve: 'sky tour'
+2025-03-31 17:08:43 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Wake word
+2025-03-31 17:08:43 - ElevenLabsTTS - INFO - No text to speak.
+2025-03-31 17:08:43 - AudioProcessor - INFO - Playing SFX: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:08:44 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 17:08:44 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 17:08:44 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:08:45 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031855465
+2025-03-31 17:08:45 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340112954
+2025-03-31 17:08:45 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.6523553272249
+2025-03-31 17:08:45 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814034422256
+2025-03-31 17:08:45 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031855465, 'Longitude': -74.84109340112954, 'Altitude': 51.6523553272249, 'Heading': 4.358814034422256}
+2025-03-31 17:08:47 - root - INFO - Joystick input: Btn 3 -> 'where am i'
+2025-03-31 17:08:47 - AudioProcessor - INFO - Queue retrieve: 'where am i'
+2025-03-31 17:08:48 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-31 17:08:48 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: Where am I cmd
+2025-03-31 17:08:48 - StateManager - INFO - Handling 'Where am I?' (thread)...
+2025-03-31 17:08:49 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-31 17:08:49 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Checking your location......'
+2025-03-31 17:08:49 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpqp3a1g5p.wav
+2025-03-31 17:08:49 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpqp3a1g5p.wav
+2025-03-31 17:08:49 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031855465
+2025-03-31 17:08:49 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340112954
+2025-03-31 17:08:49 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.6523553272249
+2025-03-31 17:08:49 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814034422256
+2025-03-31 17:08:49 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031855465, 'Longitude': -74.84109340112954, 'Altitude': 51.6523553272249, 'Heading': 4.358814034422256}
+2025-03-31 17:08:49 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031855465
+2025-03-31 17:08:49 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340112954
+2025-03-31 17:08:49 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.6523553272249
+2025-03-31 17:08:49 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814034422256
+2025-03-31 17:08:49 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031855465, 'Longitude': -74.84109340112954, 'Altitude': 51.6523553272249, 'Heading': 4.358814034422256}
+2025-03-31 17:08:49 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 17:08:49 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:08:49 - ElevenLabsTTS - INFO - Playing audio: 'Checking your location......'
+2025-03-31 17:08:50 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 17:08:50 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031863719
+2025-03-31 17:08:50 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340081238
+2025-03-31 17:08:50 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65231276473106
+2025-03-31 17:08:50 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814417057245
+2025-03-31 17:08:50 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031863719, 'Longitude': -74.84109340081238, 'Altitude': 51.65231276473106, 'Heading': 4.358814417057245}
+2025-03-31 17:08:51 - ElevenLabsTTS - INFO - Finished playing: 'Checking your location......'
+2025-03-31 17:08:51 - GeoUtils - INFO - Reverse geocoded 40.68910817108634, -74.04438434449553 to 'Statue of Liberty, Flagpole Plaza, Jersey City, Hudson County, New Jersey, 10004, United States'
+2025-03-31 17:08:51 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 17:08:55 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031853709
+2025-03-31 17:08:55 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340119473
+2025-03-31 17:08:55 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65235803470581
+2025-03-31 17:08:55 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358813883160164
+2025-03-31 17:08:55 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031853709, 'Longitude': -74.84109340119473, 'Altitude': 51.65235803470581, 'Heading': 4.358813883160164}
+2025-03-31 17:08:55 - OpenAIProvider - INFO - OpenAI response generated successfully (358 chars)
+2025-03-31 17:08:55 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're soaring above Lower Manhattan, where the bu...'
+2025-03-31 17:09:00 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:09:00 - ElevenLabsTTS - INFO - Playing audio: 'You're soaring above Lower Manhattan, where the bu...'
+2025-03-31 17:09:00 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031864372
+2025-03-31 17:09:00 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340079404
+2025-03-31 17:09:00 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65230772609979
+2025-03-31 17:09:00 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.35881436283446
+2025-03-31 17:09:00 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031864372, 'Longitude': -74.84109340079404, 'Altitude': 51.65230772609979, 'Heading': 4.35881436283446}
+2025-03-31 17:09:04 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031864372
+2025-03-31 17:09:04 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340079404
+2025-03-31 17:09:04 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65230772609979
+2025-03-31 17:09:04 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.35881436283446
+2025-03-31 17:09:04 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031864372, 'Longitude': -74.84109340079404, 'Altitude': 51.65230772609979, 'Heading': 4.35881436283446}
+2025-03-31 17:09:04 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031864372
+2025-03-31 17:09:04 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340079404
+2025-03-31 17:09:04 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65230772609979
+2025-03-31 17:09:04 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.35881436283446
+2025-03-31 17:09:04 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031864372, 'Longitude': -74.84109340079404, 'Altitude': 51.65230772609979, 'Heading': 4.35881436283446}
+2025-03-31 17:09:05 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031863364
+2025-03-31 17:09:05 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340080458
+2025-03-31 17:09:05 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65233154687323
+2025-03-31 17:09:05 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.35881430409719
+2025-03-31 17:09:05 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031863364, 'Longitude': -74.84109340080458, 'Altitude': 51.65233154687323, 'Heading': 4.35881430409719}
+2025-03-31 17:09:11 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:09:13 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 17:09:13 - AudioProcessor - INFO - Mixer init.
+2025-03-31 17:09:13 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 17:09:13 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 17:09:13 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 17:09:13 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 17:09:13 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 17:09:13 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:09:13 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 17:09:13 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 17:09:13 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 17:09:13 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 17:09:13 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 17:09:13 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 17:09:13 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 17:09:13 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 17:09:13 - root - INFO - Attempting to connect to real MSFS SimConnect...
+2025-03-31 17:09:13 - root - INFO - pysimconnect module found in environment
+2025-03-31 17:09:13 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 17:09:13 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 17:09:14 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859282
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340095132
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65234653344127
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814066105467
+2025-03-31 17:09:14 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859282, 'Longitude': -74.84109340095132, 'Altitude': 51.65234653344127, 'Heading': 4.358814066105467}
+2025-03-31 17:09:14 - root - INFO - Real SimConnect connected successfully (response time: 0.054s)
+2025-03-31 17:09:14 - root - INFO - SimConnect initialized: Real mode
+2025-03-31 17:09:14 - root - INFO - Connection monitor thread started
+2025-03-31 17:09:14 - root - INFO - Connection monitoring started
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859282
+2025-03-31 17:09:14 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340095132
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65234653344127
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814066105467
+2025-03-31 17:09:14 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859282, 'Longitude': -74.84109340095132, 'Altitude': 51.65234653344127, 'Heading': 4.358814066105467}
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859282
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340095132
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65234653344127
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814066105467
+2025-03-31 17:09:14 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859282, 'Longitude': -74.84109340095132, 'Altitude': 51.65234653344127, 'Heading': 4.358814066105467}
+2025-03-31 17:09:14 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 17:09:14 - root - INFO - Python version: 3.11.4
+2025-03-31 17:09:14 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 17:09:14 - root - INFO - Debug mode: Disabled
+2025-03-31 17:09:14 - root - INFO - Distributed mode: Disabled
+2025-03-31 17:09:14 - root - INFO - Default AI provider: openai
+2025-03-31 17:09:14 - root - INFO - STT engine: whisper
+2025-03-31 17:09:14 - root - INFO - TTS engine: elevenlabs
+2025-03-31 17:09:14 - root - INFO - Found 2 joystick(s).
+2025-03-31 17:09:14 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859282
+2025-03-31 17:09:14 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340095132
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859282
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65234653344127
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340095132
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814066105467
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65234653344127
+2025-03-31 17:09:14 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859282, 'Longitude': -74.84109340095132, 'Altitude': 51.65234653344127, 'Heading': 4.358814066105467}
+2025-03-31 17:09:14 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814066105467
+2025-03-31 17:09:14 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859282, 'Longitude': -74.84109340095132, 'Altitude': 51.65234653344127, 'Heading': 4.358814066105467}
+2025-03-31 17:09:14 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 17:09:14 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 17:09:14 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 17:09:14 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:09:19 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318582655
+2025-03-31 17:09:19 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340101423
+2025-03-31 17:09:19 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652342040103164
+2025-03-31 17:09:19 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmprryz3_mp.wav
+2025-03-31 17:09:19 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmprryz3_mp.wav
+2025-03-31 17:09:19 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358813924517478
+2025-03-31 17:09:19 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318582655, 'Longitude': -74.84109340101423, 'Altitude': 51.652342040103164, 'Heading': 4.358813924517478}
+2025-03-31 17:09:19 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour.'
+2025-03-31 17:09:19 - AudioProcessor - INFO - Queue retrieve: 'Sky tour.'
+2025-03-31 17:09:19 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 17:09:19 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 17:09:19 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 17:09:21 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:09:21 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 17:09:22 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 17:09:24 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318630304
+2025-03-31 17:09:24 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340081876
+2025-03-31 17:09:24 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65233211038592
+2025-03-31 17:09:24 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814137773111
+2025-03-31 17:09:24 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318630304, 'Longitude': -74.84109340081876, 'Altitude': 51.65233211038592, 'Heading': 4.358814137773111}
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318630304
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340081876
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65233211038592
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814137773111
+2025-03-31 17:09:29 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318630304, 'Longitude': -74.84109340081876, 'Altitude': 51.65233211038592, 'Heading': 4.358814137773111}
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318630304
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340081876
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65233211038592
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814137773111
+2025-03-31 17:09:29 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318630304, 'Longitude': -74.84109340081876, 'Altitude': 51.65233211038592, 'Heading': 4.358814137773111}
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031863033
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340081261
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652333236689735
+2025-03-31 17:09:29 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358814117142795
+2025-03-31 17:09:29 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031863033, 'Longitude': -74.84109340081261, 'Altitude': 51.652333236689735, 'Heading': 4.358814117142795}
+2025-03-31 17:09:34 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318589576
+2025-03-31 17:09:34 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340095954
+2025-03-31 17:09:34 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65235281411076
+2025-03-31 17:09:34 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358813894466815
+2025-03-31 17:09:34 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318589576, 'Longitude': -74.84109340095954, 'Altitude': 51.65235281411076, 'Heading': 4.358813894466815}
+2025-03-31 17:40:12 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:40:14 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 17:40:14 - AudioProcessor - INFO - Mixer init.
+2025-03-31 17:40:14 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 17:40:14 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 17:40:14 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 17:40:15 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 17:40:15 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 17:40:15 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:40:15 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 17:40:15 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 17:40:15 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 17:40:15 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 17:40:15 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 17:40:15 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 17:40:15 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 17:40:15 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 17:40:15 - root - INFO - Attempting to connect to real MSFS SimConnect...
+2025-03-31 17:40:15 - root - INFO - pysimconnect module found in environment
+2025-03-31 17:40:15 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 17:40:15 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 17:40:15 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859061
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340064748
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65234107475107
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.3588004693250175
+2025-03-31 17:40:15 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859061, 'Longitude': -74.84109340064748, 'Altitude': 51.65234107475107, 'Heading': 4.3588004693250175}
+2025-03-31 17:40:15 - root - INFO - Real SimConnect connected successfully (response time: 0.054s)
+2025-03-31 17:40:15 - root - INFO - SimConnect initialized: Real mode
+2025-03-31 17:40:15 - root - INFO - Connection monitor thread started
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859061
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340064748
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65234107475107
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.3588004693250175
+2025-03-31 17:40:15 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859061, 'Longitude': -74.84109340064748, 'Altitude': 51.65234107475107, 'Heading': 4.3588004693250175}
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859061
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340064748
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65234107475107
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.3588004693250175
+2025-03-31 17:40:15 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859061, 'Longitude': -74.84109340064748, 'Altitude': 51.65234107475107, 'Heading': 4.3588004693250175}
+2025-03-31 17:40:15 - root - INFO - Connection monitoring started
+2025-03-31 17:40:15 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 17:40:15 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 17:40:15 - root - INFO - Python version: 3.11.4
+2025-03-31 17:40:15 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 17:40:15 - root - INFO - Debug mode: Disabled
+2025-03-31 17:40:15 - root - INFO - Distributed mode: Disabled
+2025-03-31 17:40:15 - root - INFO - Default AI provider: openai
+2025-03-31 17:40:15 - root - INFO - STT engine: whisper
+2025-03-31 17:40:15 - root - INFO - TTS engine: elevenlabs
+2025-03-31 17:40:15 - root - INFO - Found 2 joystick(s).
+2025-03-31 17:40:15 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859061
+2025-03-31 17:40:15 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340064748
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031859061
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65234107475107
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340064748
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.3588004693250175
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65234107475107
+2025-03-31 17:40:15 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859061, 'Longitude': -74.84109340064748, 'Altitude': 51.65234107475107, 'Heading': 4.3588004693250175}
+2025-03-31 17:40:15 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.3588004693250175
+2025-03-31 17:40:15 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031859061, 'Longitude': -74.84109340064748, 'Altitude': 51.65234107475107, 'Heading': 4.3588004693250175}
+2025-03-31 17:40:15 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 17:40:15 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 17:40:15 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 17:40:15 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:40:20 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318613976
+2025-03-31 17:40:20 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340055737
+2025-03-31 17:40:20 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp49vswpq7.wav
+2025-03-31 17:40:20 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp49vswpq7.wav
+2025-03-31 17:40:20 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652325189525996
+2025-03-31 17:40:20 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800548333852
+2025-03-31 17:40:20 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318613976, 'Longitude': -74.84109340055737, 'Altitude': 51.652325189525996, 'Heading': 4.358800548333852}
+2025-03-31 17:40:21 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 17:40:21 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:40:25 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031856595
+2025-03-31 17:40:25 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340073461
+2025-03-31 17:40:25 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65235286390146
+2025-03-31 17:40:25 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800288232389
+2025-03-31 17:40:25 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031856595, 'Longitude': -74.84109340073461, 'Altitude': 51.65235286390146, 'Heading': 4.358800288232389}
+2025-03-31 17:40:26 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpngreohu9.wav
+2025-03-31 17:40:26 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpngreohu9.wav
+2025-03-31 17:40:26 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 17:40:26 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031856595
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340073461
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65235286390146
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800288232389
+2025-03-31 17:40:30 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031856595, 'Longitude': -74.84109340073461, 'Altitude': 51.65235286390146, 'Heading': 4.358800288232389}
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031856595
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340073461
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65235286390146
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800288232389
+2025-03-31 17:40:30 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031856595, 'Longitude': -74.84109340073461, 'Altitude': 51.65235286390146, 'Heading': 4.358800288232389}
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031856402
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340073121
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65233185813535
+2025-03-31 17:40:30 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800286097022
+2025-03-31 17:40:30 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031856402, 'Longitude': -74.84109340073121, 'Altitude': 51.65233185813535, 'Heading': 4.358800286097022}
+2025-03-31 17:40:31 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmptui411jw.wav
+2025-03-31 17:40:31 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmptui411jw.wav
+2025-03-31 17:40:31 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 17:40:31 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:40:35 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031863033
+2025-03-31 17:40:35 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340049929
+2025-03-31 17:40:35 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652302764371704
+2025-03-31 17:40:35 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800501879807
+2025-03-31 17:40:35 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031863033, 'Longitude': -74.84109340049929, 'Altitude': 51.652302764371704, 'Heading': 4.358800501879807}
+2025-03-31 17:40:36 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpfd3khzgo.wav
+2025-03-31 17:40:36 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpfd3khzgo.wav
+2025-03-31 17:40:37 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 17:40:37 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:40:40 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031862044
+2025-03-31 17:40:40 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340053318
+2025-03-31 17:40:40 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652322043658266
+2025-03-31 17:40:40 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800420818241
+2025-03-31 17:40:40 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031862044, 'Longitude': -74.84109340053318, 'Altitude': 51.652322043658266, 'Heading': 4.358800420818241}
+2025-03-31 17:40:42 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpqtcoz1fi.wav
+2025-03-31 17:40:42 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpqtcoz1fi.wav
+2025-03-31 17:40:42 - WhisperSTT - INFO - Raw Whisper result: 'Ah'
+2025-03-31 17:40:42 - AudioProcessor - INFO - Queue retrieve: 'Ah'
+2025-03-31 17:40:42 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031862044
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340053318
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652322043658266
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800420818241
+2025-03-31 17:40:45 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031862044, 'Longitude': -74.84109340053318, 'Altitude': 51.652322043658266, 'Heading': 4.358800420818241}
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031862044
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340053318
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652322043658266
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800420818241
+2025-03-31 17:40:45 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031862044, 'Longitude': -74.84109340053318, 'Altitude': 51.652322043658266, 'Heading': 4.358800420818241}
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318475285
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340106362
+2025-03-31 17:40:45 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65237355883202
+2025-03-31 17:40:46 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358799727526591
+2025-03-31 17:40:46 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318475285, 'Longitude': -74.84109340106362, 'Altitude': 51.65237355883202, 'Heading': 4.358799727526591}
+2025-03-31 17:40:47 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp47jy3p9c.wav
+2025-03-31 17:40:47 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp47jy3p9c.wav
+2025-03-31 17:40:48 - WhisperSTT - INFO - Raw Whisper result: 'in the jail. A tick tocker.'
+2025-03-31 17:40:48 - AudioProcessor - INFO - Queue retrieve: 'in the jail. A tick tocker.'
+2025-03-31 17:40:48 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:40:51 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031854866
+2025-03-31 17:40:51 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340080266
+2025-03-31 17:40:51 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65233753562175
+2025-03-31 17:40:51 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358799991639718
+2025-03-31 17:40:51 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031854866, 'Longitude': -74.84109340080266, 'Altitude': 51.65233753562175, 'Heading': 4.358799991639718}
+2025-03-31 17:40:53 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp35o_rbbr.wav
+2025-03-31 17:40:53 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp35o_rbbr.wav
+2025-03-31 17:40:53 - WhisperSTT - INFO - Raw Whisper result: 'He said, well they're coming at you with mask and guns.'
+2025-03-31 17:40:53 - AudioProcessor - INFO - Queue retrieve: 'He said, well they're coming at you with mask and guns.'
+2025-03-31 17:40:53 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:40:56 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318631235
+2025-03-31 17:40:56 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340049625
+2025-03-31 17:40:56 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652297969127964
+2025-03-31 17:40:56 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800351944117
+2025-03-31 17:40:56 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318631235, 'Longitude': -74.84109340049625, 'Altitude': 51.652297969127964, 'Heading': 4.358800351944117}
+2025-03-31 17:40:58 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpa03qaezx.wav
+2025-03-31 17:40:58 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpa03qaezx.wav
+2025-03-31 17:40:58 - WhisperSTT - INFO - Raw Whisper result: 'Which one? Who's on TikTok? He said, shoot ice agent.'
+2025-03-31 17:40:58 - AudioProcessor - INFO - Queue retrieve: 'Which one? Who's on TikTok? He said, shoot ice agent.'
+2025-03-31 17:40:59 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:41:00 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318631235
+2025-03-31 17:41:00 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340049625
+2025-03-31 17:41:00 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652297969127964
+2025-03-31 17:41:00 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800351944117
+2025-03-31 17:41:00 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318631235, 'Longitude': -74.84109340049625, 'Altitude': 51.652297969127964, 'Heading': 4.358800351944117}
+2025-03-31 17:41:00 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318631235
+2025-03-31 17:41:00 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340049625
+2025-03-31 17:41:00 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652297969127964
+2025-03-31 17:41:00 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800351944117
+2025-03-31 17:41:00 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318631235, 'Longitude': -74.84109340049625, 'Altitude': 51.652297969127964, 'Heading': 4.358800351944117}
+2025-03-31 17:41:01 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031855231
+2025-03-31 17:41:01 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340076922
+2025-03-31 17:41:01 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65232907033282
+2025-03-31 17:41:01 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800015234475
+2025-03-31 17:41:01 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031855231, 'Longitude': -74.84109340076922, 'Altitude': 51.65232907033282, 'Heading': 4.358800015234475}
+2025-03-31 17:41:04 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmplswmmkvg.wav
+2025-03-31 17:41:04 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmplswmmkvg.wav
+2025-03-31 17:41:04 - WhisperSTT - INFO - Raw Whisper result: 'to get you. They're trying to take away your freedom. Oh, dude, you didn't even...'
+2025-03-31 17:41:04 - AudioProcessor - INFO - Queue retrieve: 'to get you. They're trying to take away your freedom. Oh, dude, you didn't even...'
+2025-03-31 17:41:04 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:41:06 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031849142
+2025-03-31 17:41:06 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.8410934010036
+2025-03-31 17:41:06 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.6523596560444
+2025-03-31 17:41:06 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358799640763405
+2025-03-31 17:41:06 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031849142, 'Longitude': -74.8410934010036, 'Altitude': 51.6523596560444, 'Heading': 4.358799640763405}
+2025-03-31 17:41:09 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp06qlqq_d.wav
+2025-03-31 17:41:09 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp06qlqq_d.wav
+2025-03-31 17:41:09 - WhisperSTT - INFO - Raw Whisper result: 'How fast can you set that? Serious? Here you go.'
+2025-03-31 17:41:09 - AudioProcessor - INFO - Queue retrieve: 'How fast can you set that? Serious? Here you go.'
+2025-03-31 17:41:09 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:41:11 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031860242
+2025-03-31 17:41:11 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340060748
+2025-03-31 17:41:11 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652309456880694
+2025-03-31 17:41:11 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800069731057
+2025-03-31 17:41:11 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031860242, 'Longitude': -74.84109340060748, 'Altitude': 51.652309456880694, 'Heading': 4.358800069731057}
+2025-03-31 17:41:14 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpulbk1l4y.wav
+2025-03-31 17:41:14 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpulbk1l4y.wav
+2025-03-31 17:41:15 - WhisperSTT - INFO - Raw Whisper result: 'Let's see a whole couple of hours, but people like it out.'
+2025-03-31 17:41:15 - AudioProcessor - INFO - Queue retrieve: 'Let's see a whole couple of hours, but people like it out.'
+2025-03-31 17:41:15 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:41:15 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031860242
+2025-03-31 17:41:15 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340060748
+2025-03-31 17:41:15 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652309456880694
+2025-03-31 17:41:15 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800069731057
+2025-03-31 17:41:15 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031860242, 'Longitude': -74.84109340060748, 'Altitude': 51.652309456880694, 'Heading': 4.358800069731057}
+2025-03-31 17:41:15 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031860242
+2025-03-31 17:41:15 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340060748
+2025-03-31 17:41:15 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652309456880694
+2025-03-31 17:41:15 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800069731057
+2025-03-31 17:41:15 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031860242, 'Longitude': -74.84109340060748, 'Altitude': 51.652309456880694, 'Heading': 4.358800069731057}
+2025-03-31 17:41:16 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031862505
+2025-03-31 17:41:16 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340051394
+2025-03-31 17:41:16 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65230027597843
+2025-03-31 17:41:16 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800180741835
+2025-03-31 17:41:16 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031862505, 'Longitude': -74.84109340051394, 'Altitude': 51.65230027597843, 'Heading': 4.358800180741835}
+2025-03-31 17:41:20 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpnbdjaw89.wav
+2025-03-31 17:41:20 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpnbdjaw89.wav
+2025-03-31 17:41:20 - WhisperSTT - INFO - Raw Whisper result: 'Huh? Oh well, you will.'
+2025-03-31 17:41:20 - AudioProcessor - INFO - Queue retrieve: 'Huh? Oh well, you will.'
+2025-03-31 17:41:20 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:41:21 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031862475
+2025-03-31 17:41:21 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340049235
+2025-03-31 17:41:21 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65231234066839
+2025-03-31 17:41:21 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800164346299
+2025-03-31 17:41:21 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031862475, 'Longitude': -74.84109340049235, 'Altitude': 51.65231234066839, 'Heading': 4.358800164346299}
+2025-03-31 17:41:25 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmplnfm4zxa.wav
+2025-03-31 17:41:25 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmplnfm4zxa.wav
+2025-03-31 17:41:25 - WhisperSTT - INFO - Raw Whisper result: 'on the news later i don't know why people'
+2025-03-31 17:41:25 - AudioProcessor - INFO - Queue retrieve: 'on the news later i don't know why people'
+2025-03-31 17:41:25 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:41:26 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031860965
+2025-03-31 17:41:26 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340056548
+2025-03-31 17:41:26 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.6523285755169
+2025-03-31 17:41:26 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.3588000399135005
+2025-03-31 17:41:26 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031860965, 'Longitude': -74.84109340056548, 'Altitude': 51.6523285755169, 'Heading': 4.3588000399135005}
+2025-03-31 17:41:30 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031860965
+2025-03-31 17:41:30 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340056548
+2025-03-31 17:41:30 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.6523285755169
+2025-03-31 17:41:30 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.3588000399135005
+2025-03-31 17:41:30 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031860965, 'Longitude': -74.84109340056548, 'Altitude': 51.6523285755169, 'Heading': 4.3588000399135005}
+2025-03-31 17:41:30 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031860965
+2025-03-31 17:41:30 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340056548
+2025-03-31 17:41:30 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.6523285755169
+2025-03-31 17:41:30 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.3588000399135005
+2025-03-31 17:41:30 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031860965, 'Longitude': -74.84109340056548, 'Altitude': 51.6523285755169, 'Heading': 4.3588000399135005}
+2025-03-31 17:41:30 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp_m99z77j.wav
+2025-03-31 17:41:30 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp_m99z77j.wav
+2025-03-31 17:41:30 - WhisperSTT - INFO - Raw Whisper result: 'say that crap.'
+2025-03-31 17:41:30 - AudioProcessor - INFO - Queue retrieve: 'say that crap.'
+2025-03-31 17:41:31 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:41:31 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031862298
+2025-03-31 17:41:31 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340049892
+2025-03-31 17:41:31 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65231549236538
+2025-03-31 17:41:31 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358800076607522
+2025-03-31 17:41:31 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031862298, 'Longitude': -74.84109340049892, 'Altitude': 51.65231549236538, 'Heading': 4.358800076607522}
+2025-03-31 17:43:11 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:43:12 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 17:43:12 - AudioProcessor - INFO - Mixer init.
+2025-03-31 17:43:12 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 17:43:12 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 17:43:12 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 17:43:13 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 17:43:13 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 17:43:13 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:43:13 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 17:43:13 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 17:43:13 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 17:43:13 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 17:43:13 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 17:43:13 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 17:43:20 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 17:43:20 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 17:43:20 - root - INFO - pysimconnect module found in environment
+2025-03-31 17:43:20 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 17:43:20 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 17:43:20 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 17:43:20 - SimConnectLoader - INFO - [SimConnectLoader] Attempting to connect to real SimConnect server...
+2025-03-31 17:43:20 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318581085
+2025-03-31 17:43:20 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.8410934006473
+2025-03-31 17:43:20 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652343400371024
+2025-03-31 17:43:20 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358799086601428
+2025-03-31 17:43:20 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318581085, 'Longitude': -74.8410934006473, 'Altitude': 51.652343400371024, 'Heading': 4.358799086601428}
+2025-03-31 17:43:20 - SimConnectLoader - INFO - ✅ Connected to real SimConnect server.
+2025-03-31 17:45:55 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:45:57 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 17:45:57 - AudioProcessor - INFO - Mixer init.
+2025-03-31 17:45:57 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 17:45:57 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 17:45:57 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 17:45:57 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 17:45:57 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 17:45:57 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:45:57 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 17:45:57 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 17:45:57 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 17:45:57 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 17:45:57 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 17:45:57 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 17:45:57 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 17:45:57 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 17:45:57 - root - INFO - pysimconnect module found in environment
+2025-03-31 17:45:57 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 17:45:58 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 17:45:58 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 17:45:58 - SimConnectLoader - INFO - [SimConnectLoader] Attempting to connect to real SimConnect server...
+2025-03-31 17:45:58 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318618545
+2025-03-31 17:45:58 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340050385
+2025-03-31 17:45:58 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652324987417366
+2025-03-31 17:45:58 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358798052080198
+2025-03-31 17:45:58 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318618545, 'Longitude': -74.84109340050385, 'Altitude': 51.652324987417366, 'Heading': 4.358798052080198}
+2025-03-31 17:45:58 - SimConnectLoader - INFO - ✅ Connected to real SimConnect server.
+2025-03-31 17:45:58 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 17:45:58 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 17:45:58 - root - INFO - Python version: 3.11.4
+2025-03-31 17:45:58 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 17:45:58 - root - INFO - Debug mode: Disabled
+2025-03-31 17:45:58 - root - INFO - Distributed mode: Disabled
+2025-03-31 17:45:58 - root - INFO - Default AI provider: openai
+2025-03-31 17:45:58 - root - INFO - STT engine: whisper
+2025-03-31 17:45:58 - root - INFO - TTS engine: elevenlabs
+2025-03-31 17:45:58 - root - INFO - Found 2 joystick(s).
+2025-03-31 17:45:58 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 17:45:58 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 17:45:58 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 17:45:58 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 17:45:58 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 17:45:58 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:46:03 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpypblud5u.wav
+2025-03-31 17:46:03 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpypblud5u.wav
+2025-03-31 17:46:04 - WhisperSTT - INFO - Raw Whisper result: '...escribe to her'
+2025-03-31 17:46:04 - AudioProcessor - INFO - Queue retrieve: '...escribe to her'
+2025-03-31 17:46:04 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:46:09 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpdumhqh52.wav
+2025-03-31 17:46:09 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpdumhqh52.wav
+2025-03-31 17:46:09 - WhisperSTT - INFO - Raw Whisper result: 'Sky Tour'
+2025-03-31 17:46:09 - AudioProcessor - INFO - Queue retrieve: 'Sky Tour'
+2025-03-31 17:46:09 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Wake word
+2025-03-31 17:46:09 - ElevenLabsTTS - INFO - No text to speak.
+2025-03-31 17:46:09 - AudioProcessor - INFO - Playing SFX: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:46:09 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:46:14 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpfqah4drp.wav
+2025-03-31 17:46:14 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpfqah4drp.wav
+2025-03-31 17:46:14 - WhisperSTT - INFO - Raw Whisper result: 'Sky to activated. Where am I?'
+2025-03-31 17:46:14 - AudioProcessor - INFO - Queue retrieve: 'Sky to activated. Where am I?'
+2025-03-31 17:46:14 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 17:46:14 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 17:46:14 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: Where am I cmd
+2025-03-31 17:46:14 - StateManager - INFO - Handling 'Where am I?' (thread)...
+2025-03-31 17:46:14 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Checking your location......'
+2025-03-31 17:46:15 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:46:15 - ElevenLabsTTS - INFO - Playing audio: 'Checking your location......'
+2025-03-31 17:46:16 - ElevenLabsTTS - INFO - Finished playing: 'Checking your location......'
+2025-03-31 17:46:17 - GeoUtils - INFO - Reverse geocoded 40.68909258416861, -74.04464596654572 to 'Statue of Liberty, Flagpole Plaza, Jersey City, Hudson County, New Jersey, 10004, United States'
+2025-03-31 17:46:17 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 17:46:19 - OpenAIProvider - INFO - OpenAI response generated successfully (411 chars)
+2025-03-31 17:46:19 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're soaring above the southern tip of Manhattan...'
+2025-03-31 17:46:25 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:46:25 - ElevenLabsTTS - INFO - Playing audio: 'You're soaring above the southern tip of Manhattan...'
+2025-03-31 17:49:48 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:49:50 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 17:49:50 - AudioProcessor - INFO - Mixer init.
+2025-03-31 17:49:50 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 17:49:50 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 17:49:50 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 17:49:51 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 17:49:51 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 17:49:51 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:49:51 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 17:49:51 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 17:49:51 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 17:49:51 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 17:49:51 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 17:49:51 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 17:49:51 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 17:49:51 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 17:49:51 - root - INFO - pysimconnect module found in environment
+2025-03-31 17:49:51 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 17:49:51 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 17:49:51 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 17:49:51 - SimConnectLoader - INFO - [SimConnectLoader] Attempting to connect to real SimConnect server...
+2025-03-31 17:49:51 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421031862585
+2025-03-31 17:49:51 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340044306
+2025-03-31 17:49:51 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.65229815496581
+2025-03-31 17:49:51 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358796349764344
+2025-03-31 17:49:51 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421031862585, 'Longitude': -74.84109340044306, 'Altitude': 51.65229815496581, 'Heading': 4.358796349764344}
+2025-03-31 17:49:51 - SimConnectLoader - INFO - ✅ Connected to real SimConnect server.
+2025-03-31 17:49:51 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 17:49:51 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 17:49:51 - root - INFO - Python version: 3.11.4
+2025-03-31 17:49:51 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 17:49:51 - root - INFO - Debug mode: Disabled
+2025-03-31 17:49:51 - root - INFO - Distributed mode: Disabled
+2025-03-31 17:49:51 - root - INFO - Default AI provider: openai
+2025-03-31 17:49:51 - root - INFO - STT engine: whisper
+2025-03-31 17:49:51 - root - INFO - TTS engine: elevenlabs
+2025-03-31 17:49:51 - root - INFO - Found 2 joystick(s).
+2025-03-31 17:49:51 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 17:49:51 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 17:49:51 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 17:49:51 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 17:49:51 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 17:49:51 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:49:56 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1squoy7d.wav
+2025-03-31 17:49:56 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1squoy7d.wav
+2025-03-31 17:49:57 - WhisperSTT - INFO - Raw Whisper result: 'and I saw for example in the first term my job as a Deputy National Security.'
+2025-03-31 17:49:57 - AudioProcessor - INFO - Queue retrieve: 'and I saw for example in the first term my job as a Deputy National Security.'
+2025-03-31 17:49:57 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:50:02 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmplxdbyg_v.wav
+2025-03-31 17:50:02 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmplxdbyg_v.wav
+2025-03-31 17:50:02 - WhisperSTT - INFO - Raw Whisper result: 'my German friend and Chinatown doctor said we expect you to contribute your'
+2025-03-31 17:50:02 - AudioProcessor - INFO - Queue retrieve: 'my German friend and Chinatown doctor said we expect you to contribute your'
+2025-03-31 17:50:02 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:50:07 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp40nqn119.wav
+2025-03-31 17:50:07 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp40nqn119.wav
+2025-03-31 17:50:07 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour.'
+2025-03-31 17:50:07 - AudioProcessor - INFO - Queue retrieve: 'Sky tour.'
+2025-03-31 17:50:07 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 17:50:07 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 17:50:07 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 17:50:08 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:50:08 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 17:50:09 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 17:50:13 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:50:15 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 17:50:15 - AudioProcessor - INFO - Mixer init.
+2025-03-31 17:50:15 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 17:50:15 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 17:50:15 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 17:50:15 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 17:50:15 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 17:50:15 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:50:15 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 17:50:15 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 17:50:15 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 17:50:15 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 17:50:15 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 17:50:15 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 17:50:15 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 17:50:15 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 17:50:15 - root - INFO - pysimconnect module found in environment
+2025-03-31 17:50:15 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 17:50:15 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 17:50:15 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 17:50:15 - SimConnectLoader - INFO - [SimConnectLoader] Attempting to connect to real SimConnect server...
+2025-03-31 17:50:15 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944210318489084
+2025-03-31 17:50:15 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84109340092272
+2025-03-31 17:50:15 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.652346134296195
+2025-03-31 17:50:15 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.358795709677198
+2025-03-31 17:50:15 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944210318489084, 'Longitude': -74.84109340092272, 'Altitude': 51.652346134296195, 'Heading': 4.358795709677198}
+2025-03-31 17:50:15 - SimConnectLoader - INFO - ✅ Connected to real SimConnect server.
+2025-03-31 17:50:15 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 17:50:16 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 17:50:16 - root - INFO - Python version: 3.11.4
+2025-03-31 17:50:16 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 17:50:16 - root - INFO - Debug mode: Disabled
+2025-03-31 17:50:16 - root - INFO - Distributed mode: Disabled
+2025-03-31 17:50:16 - root - INFO - Default AI provider: openai
+2025-03-31 17:50:16 - root - INFO - STT engine: whisper
+2025-03-31 17:50:16 - root - INFO - TTS engine: elevenlabs
+2025-03-31 17:50:16 - root - INFO - Found 2 joystick(s).
+2025-03-31 17:50:16 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 17:50:16 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 17:50:16 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 17:50:16 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 17:50:16 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 17:50:16 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:50:21 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp4r7q8znh.wav
+2025-03-31 17:50:21 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp4r7q8znh.wav
+2025-03-31 17:50:22 - WhisperSTT - INFO - Raw Whisper result: 'So'
+2025-03-31 17:50:22 - AudioProcessor - INFO - Queue retrieve: 'So'
+2025-03-31 17:50:22 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:50:27 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1pg02t92.wav
+2025-03-31 17:50:27 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1pg02t92.wav
+2025-03-31 17:50:27 - WhisperSTT - INFO - Raw Whisper result: 'Skytor.'
+2025-03-31 17:50:27 - AudioProcessor - INFO - Queue retrieve: 'Skytor.'
+2025-03-31 17:50:27 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:50:32 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmplcvyubc1.wav
+2025-03-31 17:50:32 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmplcvyubc1.wav
+2025-03-31 17:50:33 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 17:50:33 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:50:38 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1you5hl5.wav
+2025-03-31 17:50:38 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1you5hl5.wav
+2025-03-31 17:50:38 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 17:50:38 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:50:43 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp5zu2ifd6.wav
+2025-03-31 17:50:43 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp5zu2ifd6.wav
+2025-03-31 17:50:43 - WhisperSTT - INFO - Raw Whisper result: 'Where am I?'
+2025-03-31 17:50:43 - AudioProcessor - INFO - Queue retrieve: 'Where am I?'
+2025-03-31 17:50:43 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Reactivated: 'where am i?'
+2025-03-31 17:50:43 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:50:48 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp2yaqax5u.wav
+2025-03-31 17:50:48 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp2yaqax5u.wav
+2025-03-31 17:50:48 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 17:50:48 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:50:53 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp3fm327ea.wav
+2025-03-31 17:50:53 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp3fm327ea.wav
+2025-03-31 17:50:54 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 17:50:54 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:50:55 - root - INFO - Joystick input: Btn 2 -> 'sky tour'
+2025-03-31 17:50:55 - AudioProcessor - INFO - Queue retrieve: 'sky tour'
+2025-03-31 17:50:56 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-31 17:50:56 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: General question
+2025-03-31 17:50:56 - StateManager - INFO - Handling question (thread): 'sky tour...'
+2025-03-31 17:50:56 - GeoUtils - INFO - Reverse geocoded 40.6889029357707, -74.04436725850306 to 'Flagpole Plaza, Jersey City, Hudson County, New Jersey, 07303, United States'
+2025-03-31 17:50:56 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 17:50:58 - OpenAIProvider - INFO - OpenAI response generated successfully (449 chars)
+2025-03-31 17:50:59 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmplcab1zy6.wav
+2025-03-31 17:50:59 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmplcab1zy6.wav
+2025-03-31 17:50:59 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 17:50:59 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-31 17:50:59 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're flying near Flagpole Plaza in Jersey City. ...'
+2025-03-31 17:50:59 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 17:51:05 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:51:05 - ElevenLabsTTS - INFO - Playing audio: 'You're flying near Flagpole Plaza in Jersey City. ...'
+2025-03-31 17:51:17 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:51:18 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 17:51:18 - AudioProcessor - INFO - Mixer init.
+2025-03-31 17:51:18 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 17:51:18 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 17:51:18 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 17:51:19 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 17:51:19 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 17:51:19 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:51:19 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 17:51:19 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 17:51:19 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 17:51:19 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 17:51:19 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 17:51:19 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 17:51:19 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 17:51:19 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 17:51:19 - root - INFO - pysimconnect module found in environment
+2025-03-31 17:51:19 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 17:51:19 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 17:51:19 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 17:51:19 - SimConnectLoader - INFO - [SimConnectLoader] Attempting to connect to real SimConnect server...
+2025-03-31 17:51:19 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94435874637642
+2025-03-31 17:51:19 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84060753003133
+2025-03-31 17:51:19 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 112.30510639805797
+2025-03-31 17:51:19 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.311792258739352
+2025-03-31 17:51:19 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94435874637642, 'Longitude': -74.84060753003133, 'Altitude': 112.30510639805797, 'Heading': 4.311792258739352}
+2025-03-31 17:51:19 - SimConnectLoader - INFO - ✅ Connected to real SimConnect server.
+2025-03-31 17:51:19 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 17:51:19 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 17:51:19 - root - INFO - Python version: 3.11.4
+2025-03-31 17:51:19 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 17:51:19 - root - INFO - Debug mode: Disabled
+2025-03-31 17:51:19 - root - INFO - Distributed mode: Disabled
+2025-03-31 17:51:19 - root - INFO - Default AI provider: openai
+2025-03-31 17:51:19 - root - INFO - STT engine: whisper
+2025-03-31 17:51:19 - root - INFO - TTS engine: elevenlabs
+2025-03-31 17:51:19 - root - INFO - Found 2 joystick(s).
+2025-03-31 17:51:20 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 17:51:20 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 17:51:20 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 17:51:20 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 17:51:20 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 17:51:20 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:51:25 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpuz60qmmg.wav
+2025-03-31 17:51:25 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpuz60qmmg.wav
+2025-03-31 17:51:25 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour.'
+2025-03-31 17:51:25 - AudioProcessor - INFO - Queue retrieve: 'Sky tour.'
+2025-03-31 17:51:25 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 17:51:25 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 17:51:25 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 17:51:26 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:51:26 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 17:51:27 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 17:51:49 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:51:50 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 17:51:50 - AudioProcessor - INFO - Mixer init.
+2025-03-31 17:51:50 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 17:51:50 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 17:51:50 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 17:51:51 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 17:51:51 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 17:51:51 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:51:51 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 17:51:51 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 17:51:51 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 17:51:51 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 17:51:51 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 17:51:51 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 17:51:51 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 17:51:51 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 17:51:51 - root - INFO - pysimconnect module found in environment
+2025-03-31 17:51:51 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 17:51:51 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 17:51:51 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 17:51:51 - SimConnectLoader - INFO - [SimConnectLoader] Attempting to connect to real SimConnect server...
+2025-03-31 17:51:51 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.944365001639454
+2025-03-31 17:51:51 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84060801311271
+2025-03-31 17:51:51 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 116.44265002600254
+2025-03-31 17:51:51 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.302707261154313
+2025-03-31 17:51:51 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.944365001639454, 'Longitude': -74.84060801311271, 'Altitude': 116.44265002600254, 'Heading': 4.302707261154313}
+2025-03-31 17:51:51 - SimConnectLoader - INFO - ✅ Connected to real SimConnect server.
+2025-03-31 17:51:51 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 17:51:51 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 17:51:51 - root - INFO - Python version: 3.11.4
+2025-03-31 17:51:51 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 17:51:51 - root - INFO - Debug mode: Disabled
+2025-03-31 17:51:51 - root - INFO - Distributed mode: Disabled
+2025-03-31 17:51:51 - root - INFO - Default AI provider: openai
+2025-03-31 17:51:51 - root - INFO - STT engine: whisper
+2025-03-31 17:51:51 - root - INFO - TTS engine: elevenlabs
+2025-03-31 17:51:51 - root - INFO - Found 2 joystick(s).
+2025-03-31 17:51:51 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 17:51:51 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 17:51:51 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 17:51:51 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 17:51:51 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 17:51:51 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:51:56 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpg4di5qzq.wav
+2025-03-31 17:51:56 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpg4di5qzq.wav
+2025-03-31 17:51:57 - WhisperSTT - INFO - Raw Whisper result: 'Skator'
+2025-03-31 17:51:57 - AudioProcessor - INFO - Queue retrieve: 'Skator'
+2025-03-31 17:51:57 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 17:51:57 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 17:51:57 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 17:51:58 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:51:58 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 17:51:59 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 17:58:38 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 17:58:39 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 17:58:39 - AudioProcessor - INFO - Mixer init.
+2025-03-31 17:58:39 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 17:58:39 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 17:58:39 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 17:58:40 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 17:58:40 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 17:58:40 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 17:58:40 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 17:58:40 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 17:58:40 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 17:58:40 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 17:58:40 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 17:58:40 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 17:58:40 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 17:58:40 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 17:58:40 - root - INFO - pysimconnect module found in environment
+2025-03-31 17:58:40 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 17:58:40 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 17:58:40 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 17:58:40 - SimConnectLoader - INFO - [SimConnectLoader] Attempting to connect to real SimConnect server...
+2025-03-31 17:58:40 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94286331069172
+2025-03-31 17:58:40 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84376236778532
+2025-03-31 17:58:40 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.30243904236886
+2025-03-31 17:58:40 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 0.629756248210996
+2025-03-31 17:58:40 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94286331069172, 'Longitude': -74.84376236778532, 'Altitude': 51.30243904236886, 'Heading': 0.629756248210996}
+2025-03-31 17:58:40 - SimConnectLoader - INFO - [SimConnectLoader] Real server returned: {'Latitude': 39.94286331069172, 'Longitude': -74.84376236778532, 'Altitude': 51.30243904236886, 'Heading': 0.629756248210996}
+2025-03-31 17:58:40 - SimConnectLoader - INFO - ✅ Connected to real SimConnect server.
+2025-03-31 17:58:40 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 17:58:40 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 17:58:40 - root - INFO - Python version: 3.11.4
+2025-03-31 17:58:40 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 17:58:40 - root - INFO - Debug mode: Disabled
+2025-03-31 17:58:40 - root - INFO - Distributed mode: Disabled
+2025-03-31 17:58:40 - root - INFO - Default AI provider: openai
+2025-03-31 17:58:40 - root - INFO - STT engine: whisper
+2025-03-31 17:58:40 - root - INFO - TTS engine: elevenlabs
+2025-03-31 17:58:40 - root - INFO - Found 2 joystick(s).
+2025-03-31 17:58:41 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 17:58:41 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 17:58:41 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 17:58:41 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 17:58:41 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 17:58:41 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 17:58:46 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpb0ugktgq.wav
+2025-03-31 17:58:46 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpb0ugktgq.wav
+2025-03-31 17:58:46 - WhisperSTT - INFO - Raw Whisper result: 'sky tour.'
+2025-03-31 17:58:46 - AudioProcessor - INFO - Queue retrieve: 'sky tour.'
+2025-03-31 17:58:47 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 17:58:47 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 17:58:47 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 17:58:47 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 17:58:47 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 17:58:49 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 18:02:45 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 18:02:47 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 18:02:47 - AudioProcessor - INFO - Mixer init.
+2025-03-31 18:02:47 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 18:02:47 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 18:02:47 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 18:02:48 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 18:02:48 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 18:02:48 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 18:02:48 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 18:02:48 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 18:02:48 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 18:02:48 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 18:02:48 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 18:02:48 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 18:02:48 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 18:02:48 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 18:02:48 - root - INFO - pysimconnect module found in environment
+2025-03-31 18:02:48 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 18:02:48 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 18:02:48 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 18:02:48 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.942863310766334
+2025-03-31 18:02:48 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84376236770586
+2025-03-31 18:02:48 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.30245404508431
+2025-03-31 18:02:48 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 0.6297570618822886
+2025-03-31 18:02:48 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.942863310766334, 'Longitude': -74.84376236770586, 'Altitude': 51.30245404508431, 'Heading': 0.6297570618822886}
+2025-03-31 18:02:48 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 18:02:48 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 18:02:48 - root - INFO - Python version: 3.11.4
+2025-03-31 18:02:48 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 18:02:48 - root - INFO - Debug mode: Disabled
+2025-03-31 18:02:48 - root - INFO - Distributed mode: Disabled
+2025-03-31 18:02:48 - root - INFO - Default AI provider: openai
+2025-03-31 18:02:48 - root - INFO - STT engine: whisper
+2025-03-31 18:02:48 - root - INFO - TTS engine: elevenlabs
+2025-03-31 18:02:48 - root - INFO - Found 2 joystick(s).
+2025-03-31 18:02:48 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 18:02:48 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 18:02:48 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 18:02:48 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 18:02:48 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 18:02:48 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:02:53 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpxzhp7asv.wav
+2025-03-31 18:02:53 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpxzhp7asv.wav
+2025-03-31 18:02:54 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 18:02:54 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:02:59 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp4m591c64.wav
+2025-03-31 18:02:59 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp4m591c64.wav
+2025-03-31 18:02:59 - WhisperSTT - INFO - Raw Whisper result: 'Okay, sky tour.'
+2025-03-31 18:02:59 - AudioProcessor - INFO - Queue retrieve: 'Okay, sky tour.'
+2025-03-31 18:02:59 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 18:02:59 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 18:02:59 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 18:03:00 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:03:00 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 18:03:01 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 18:03:02 - root - INFO - Joystick input: Btn 2 -> 'sky tour'
+2025-03-31 18:03:02 - AudioProcessor - INFO - Queue retrieve: 'sky tour'
+2025-03-31 18:03:02 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Wake word
+2025-03-31 18:03:02 - ElevenLabsTTS - INFO - No text to speak.
+2025-03-31 18:03:02 - AudioProcessor - INFO - Playing SFX: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 18:03:04 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 18:03:04 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 18:03:04 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:03:09 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpg6u0njld.wav
+2025-03-31 18:03:09 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpg6u0njld.wav
+2025-03-31 18:03:09 - WhisperSTT - INFO - Raw Whisper result: 'Okay.'
+2025-03-31 18:03:09 - AudioProcessor - INFO - Queue retrieve: 'Okay.'
+2025-03-31 18:03:09 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 18:03:09 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 18:03:09 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: General question
+2025-03-31 18:03:09 - StateManager - INFO - Handling question (thread): 'Okay....'
+2025-03-31 18:03:10 - GeoUtils - INFO - Reverse geocoded 40.689121377257635, -74.0445370545791 to 'Statue of Liberty, Flagpole Plaza, Jersey City, Hudson County, New Jersey, 10004, United States'
+2025-03-31 18:03:10 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 18:03:11 - OpenAIProvider - INFO - OpenAI response generated successfully (27 chars)
+2025-03-31 18:03:11 - ElevenLabsTTS - INFO - Synthesizing(11L): 'How can I assist you today?...'
+2025-03-31 18:03:11 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:03:11 - ElevenLabsTTS - INFO - Playing audio: 'How can I assist you today?...'
+2025-03-31 18:03:13 - ElevenLabsTTS - INFO - Finished playing: 'How can I assist you today?...'
+2025-03-31 18:03:13 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
+2025-03-31 18:03:14 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:03:14 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'
+2025-03-31 18:03:15 - ElevenLabsTTS - INFO - Finished playing: 'More questions?...'
+2025-03-31 18:03:15 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 18:03:15 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 18:03:15 - StateManager - INFO - State change: PROCESSING -> WAITING - Reason: Question answered
+2025-03-31 18:03:15 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:03:20 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp153vkh6o.wav
+2025-03-31 18:03:20 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp153vkh6o.wav
+2025-03-31 18:03:21 - WhisperSTT - INFO - Raw Whisper result: 'Grandma...'
+2025-03-31 18:03:21 - AudioProcessor - INFO - Queue retrieve: 'Grandma...'
+2025-03-31 18:03:21 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 18:03:21 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 18:03:21 - StateManager - INFO - State change: WAITING -> PROCESSING - Reason: General question
+2025-03-31 18:03:21 - StateManager - INFO - Handling question (thread): 'Grandma......'
+2025-03-31 18:03:21 - GeoUtils - INFO - Reverse geocoded 40.68916561749308, -74.04464071731256 to 'Statue of Liberty, Flagpole Plaza, Jersey City, Hudson County, New Jersey, 10004, United States'
+2025-03-31 18:03:21 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 18:03:22 - OpenAIProvider - INFO - OpenAI response generated successfully (145 chars)
+2025-03-31 18:03:22 - ElevenLabsTTS - INFO - Synthesizing(11L): 'If you're trying to communicate or check on your g...'
+2025-03-31 18:03:24 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:03:24 - ElevenLabsTTS - INFO - Playing audio: 'If you're trying to communicate or check on your g...'
+2025-03-31 18:03:32 - ElevenLabsTTS - INFO - Finished playing: 'If you're trying to communicate or check on your g...'
+2025-03-31 18:03:32 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
+2025-03-31 18:03:32 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:03:32 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'
+2025-03-31 18:03:33 - ElevenLabsTTS - INFO - Finished playing: 'More questions?...'
+2025-03-31 18:03:34 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 18:03:34 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 18:03:34 - StateManager - INFO - State change: PROCESSING -> WAITING - Reason: Question answered
+2025-03-31 18:03:34 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:03:39 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpiz32js1s.wav
+2025-03-31 18:03:39 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpiz32js1s.wav
+2025-03-31 18:03:39 - WhisperSTT - INFO - Raw Whisper result: 'Where am I? Where am I?'
+2025-03-31 18:03:39 - AudioProcessor - INFO - Queue retrieve: 'Where am I? Where am I?'
+2025-03-31 18:03:39 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 18:03:39 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 18:03:39 - StateManager - INFO - State change: WAITING -> PROCESSING - Reason: Where am I cmd
+2025-03-31 18:03:39 - StateManager - INFO - Handling 'Where am I?' (thread)...
+2025-03-31 18:03:39 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Checking your location......'
+2025-03-31 18:03:40 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:03:40 - ElevenLabsTTS - INFO - Playing audio: 'Checking your location......'
+2025-03-31 18:03:41 - ElevenLabsTTS - INFO - Finished playing: 'Checking your location......'
+2025-03-31 18:03:42 - GeoUtils - INFO - Reverse geocoded 40.68930228062484, -74.0447867051746 to 'Statue of Liberty, Flagpole Plaza, Jersey City, Hudson County, New Jersey, 10004, United States'
+2025-03-31 18:03:42 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 18:03:44 - OpenAIProvider - INFO - OpenAI response generated successfully (365 chars)
+2025-03-31 18:03:44 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're soaring above the bustling streets of Lower...'
+2025-03-31 18:03:49 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:03:49 - ElevenLabsTTS - INFO - Playing audio: 'You're soaring above the bustling streets of Lower...'
+2025-03-31 18:04:12 - ElevenLabsTTS - INFO - Finished playing: 'You're soaring above the bustling streets of Lower...'
+2025-03-31 18:04:12 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
+2025-03-31 18:04:12 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:04:12 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'
+2025-03-31 18:04:13 - ElevenLabsTTS - INFO - Finished playing: 'More questions?...'
+2025-03-31 18:04:14 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 18:04:14 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 18:04:14 - StateManager - INFO - State change: PROCESSING -> WAITING - Reason: Loc provided
+2025-03-31 18:04:14 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:04:19 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpv_5jxot5.wav
+2025-03-31 18:04:19 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpv_5jxot5.wav
+2025-03-31 18:04:19 - WhisperSTT - INFO - Raw Whisper result: '劈胖'
+2025-03-31 18:04:19 - AudioProcessor - INFO - Queue retrieve: '劈胖'
+2025-03-31 18:04:20 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:04:25 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpvch94fuf.wav
+2025-03-31 18:04:25 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpvch94fuf.wav
+2025-03-31 18:04:25 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 18:04:25 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:04:30 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp9w330pxl.wav
+2025-03-31 18:04:30 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp9w330pxl.wav
+2025-03-31 18:04:30 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 18:04:30 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:04:35 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp5vn41or9.wav
+2025-03-31 18:04:35 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp5vn41or9.wav
+2025-03-31 18:04:36 - WhisperSTT - INFO - Raw Whisper result: 'Well but and and and and'
+2025-03-31 18:04:36 - AudioProcessor - INFO - Queue retrieve: 'Well but and and and and'
+2025-03-31 18:04:36 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 18:04:36 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 18:04:36 - StateManager - INFO - State change: WAITING -> PROCESSING - Reason: General question
+2025-03-31 18:04:36 - StateManager - INFO - Handling question (thread): 'Well but and and and and...'
+2025-03-31 18:04:36 - GeoUtils - INFO - Reverse geocoded 40.6888575945329, -74.045448109436 to 'Flagpole Plaza, Jersey City, Hudson County, New Jersey, 07303, United States'
+2025-03-31 18:04:36 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 18:04:38 - OpenAIProvider - INFO - OpenAI response generated successfully (160 chars)
+2025-03-31 18:04:38 - ElevenLabsTTS - INFO - Synthesizing(11L): 'It sounds like you might be experiencing some conf...'
+2025-03-31 18:04:39 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:04:39 - ElevenLabsTTS - INFO - Playing audio: 'It sounds like you might be experiencing some conf...'
+2025-03-31 18:04:48 - ElevenLabsTTS - INFO - Finished playing: 'It sounds like you might be experiencing some conf...'
+2025-03-31 18:04:48 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
+2025-03-31 18:04:48 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:04:48 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'

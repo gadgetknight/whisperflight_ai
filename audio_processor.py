@@ -1,11 +1,11 @@
 """
 Whisper Flight AI - Audio Processor
-Version: 5.1.18
+Version: 5.0.18
 Purpose: Handles speech recognition and text-to-speech with multiple providers
 Last Updated: March 31, 2025
 Author: Bradley Coulter
 
-Changes in 5.1.18:
+Changes in 5.0.18:
 - Added is_healthy() method for system monitor compatibility
 - Ensures STT and TTS providers are available before use
 """
@@ -435,7 +435,7 @@ class GoogleTTS(TextToSpeech):
             return False
 
 
-# --- AudioProcessor Class (Modified _listen_worker) ---
+# --- AudioProcessor Class ---
 class AudioProcessor:
     def __init__(self):
         self.logger = logging.getLogger("AudioProcessor")
@@ -467,7 +467,7 @@ class AudioProcessor:
             else:
                 self.logger.info(f"Found SFX '{n}': {p}")
 
-    # ✅ NEW METHOD
+    # New method added for system monitor compatibility
     def is_healthy(self):
         """Returns True if audio system is operational"""
         return self.stt_provider is not None and self.tts_provider is not None
@@ -616,7 +616,7 @@ class AudioProcessor:
             if count > 0:
                 self.logger.debug(f"Cleared {count} items from queue on stop.")
 
-    # --- MODIFIED _listen_worker ---
+    # --- _listen_worker ---
     def _listen_worker(self):
         """Continuously listens and puts transcription results into the queue."""
         self.logger.info("Listen worker thread started.")
@@ -624,10 +624,8 @@ class AudioProcessor:
             try:
                 text = self.get_input()  # Returns raw transcription or empty string
 
-                # *** ADDED DEBUG PRINT HERE ***
                 # Print every result, even empty, to see what STT yields
                 print(f"DEBUG STT Raw: '{text}'")
-                # *** END ADDED PRINT ***
 
                 # Only queue non-empty results *if* still listening
                 if self.is_listening and text:
