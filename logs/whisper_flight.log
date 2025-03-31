@@ -14708,3 +14708,299 @@ Device 43: Headphones () (Inputs: 0)
 2025-03-31 18:04:48 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
 2025-03-31 18:04:48 - ElevenLabsTTS - INFO - 11L synth OK.
 2025-03-31 18:04:48 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'
+2025-03-31 18:12:05 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 18:12:06 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 18:12:06 - AudioProcessor - INFO - Mixer init.
+2025-03-31 18:12:06 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 18:12:06 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 18:12:06 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 18:12:07 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 18:12:07 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 18:12:07 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 18:12:07 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 18:12:07 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 18:12:07 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 18:12:07 - root - INFO - pysimconnect module found in environment
+2025-03-31 18:12:07 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 18:12:07 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 18:12:07 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 18:12:07 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94286331076732
+2025-03-31 18:12:07 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84376236768959
+2025-03-31 18:12:07 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.30245223101007
+2025-03-31 18:12:07 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 0.6297588074705284
+2025-03-31 18:12:07 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94286331076732, 'Longitude': -74.84376236768959, 'Altitude': 51.30245223101007, 'Heading': 0.6297588074705284}
+2025-03-31 18:12:07 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 18:12:07 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 18:12:07 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 18:12:07 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 18:12:07 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 18:12:07 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 18:12:07 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 18:12:07 - root - INFO - Python version: 3.11.4
+2025-03-31 18:12:07 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 18:12:07 - root - INFO - Debug mode: Disabled
+2025-03-31 18:12:07 - root - INFO - Distributed mode: Disabled
+2025-03-31 18:12:07 - root - INFO - Default AI provider: openai
+2025-03-31 18:12:07 - root - INFO - STT engine: whisper
+2025-03-31 18:12:07 - root - INFO - TTS engine: elevenlabs
+2025-03-31 18:12:07 - root - INFO - Found 2 joystick(s).
+2025-03-31 18:12:07 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 18:12:07 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 18:12:07 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 18:12:07 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 18:12:07 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 18:12:07 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:12:12 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpfvue8h1s.wav
+2025-03-31 18:12:12 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpfvue8h1s.wav
+2025-03-31 18:12:13 - WhisperSTT - INFO - Raw Whisper result: 'The Lemon Ice. Sky Tour.'
+2025-03-31 18:12:13 - AudioProcessor - INFO - Queue retrieve: 'The Lemon Ice. Sky Tour.'
+2025-03-31 18:12:13 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:12:18 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp1o0wotxb.wav
+2025-03-31 18:12:18 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp1o0wotxb.wav
+2025-03-31 18:12:19 - WhisperSTT - INFO - Raw Whisper result: 'sky tour'
+2025-03-31 18:12:19 - AudioProcessor - INFO - Queue retrieve: 'sky tour'
+2025-03-31 18:12:19 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Wake word
+2025-03-31 18:12:19 - ElevenLabsTTS - INFO - No text to speak.
+2025-03-31 18:12:19 - AudioProcessor - INFO - Playing SFX: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 18:12:19 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:12:24 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmptcyejmme.wav
+2025-03-31 18:12:24 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmptcyejmme.wav
+2025-03-31 18:12:24 - WhisperSTT - INFO - Raw Whisper result: 'Sky to our activated. Where am I?'
+2025-03-31 18:12:24 - AudioProcessor - INFO - Queue retrieve: 'Sky to our activated. Where am I?'
+2025-03-31 18:12:24 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 18:12:24 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 18:12:24 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: Where am I cmd
+2025-03-31 18:12:24 - StateManager - INFO - Handling 'Where am I?' (thread)...
+2025-03-31 18:12:24 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Checking your location......'
+2025-03-31 18:12:25 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:12:25 - ElevenLabsTTS - INFO - Playing audio: 'Checking your location......'
+2025-03-31 18:12:27 - ElevenLabsTTS - INFO - Finished playing: 'Checking your location......'
+2025-03-31 18:12:27 - GeoUtils - INFO - Reverse geocoded 40.68888169766015, -74.0446949303284 to 'Flagpole Plaza, Jersey City, Hudson County, New Jersey, 07303, United States'
+2025-03-31 18:12:27 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 18:12:30 - OpenAIProvider - INFO - OpenAI response generated successfully (348 chars)
+2025-03-31 18:12:30 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're soaring above Jersey City, New Jersey, wher...'
+2025-03-31 18:12:34 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:12:34 - ElevenLabsTTS - INFO - Playing audio: 'You're soaring above Jersey City, New Jersey, wher...'
+2025-03-31 18:56:25 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 18:56:26 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 18:56:26 - AudioProcessor - INFO - Mixer init.
+2025-03-31 18:56:26 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 18:56:26 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 18:56:26 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 18:56:27 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 18:56:27 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 18:56:27 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 18:56:27 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 18:56:27 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 18:56:27 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 18:56:27 - GeoUtils - INFO - ✅ Reverse geocode cache cleared on startup.
+2025-03-31 18:56:27 - root - INFO - pysimconnect module found in environment
+2025-03-31 18:56:27 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 18:56:27 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 18:56:27 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 18:56:27 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94286331082574
+2025-03-31 18:56:27 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.84376236755733
+2025-03-31 18:56:27 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.302453088869086
+2025-03-31 18:56:27 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 0.6297671481429241
+2025-03-31 18:56:27 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94286331082574, 'Longitude': -74.84376236755733, 'Altitude': 51.302453088869086, 'Heading': 0.6297671481429241}
+2025-03-31 18:56:27 - NavigationManager - INFO - Loaded 10 points of interest
+2025-03-31 18:56:27 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 18:56:27 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 18:56:27 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 18:56:27 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 18:56:27 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 18:56:27 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 18:56:27 - root - INFO - Python version: 3.11.4
+2025-03-31 18:56:27 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 18:56:27 - root - INFO - Debug mode: Disabled
+2025-03-31 18:56:27 - root - INFO - Distributed mode: Disabled
+2025-03-31 18:56:27 - root - INFO - Default AI provider: openai
+2025-03-31 18:56:27 - root - INFO - STT engine: whisper
+2025-03-31 18:56:27 - root - INFO - TTS engine: elevenlabs
+2025-03-31 18:56:27 - root - INFO - Found 2 joystick(s).
+2025-03-31 18:56:27 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 18:56:27 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 18:56:27 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 18:56:27 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 18:56:27 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 18:56:27 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:56:33 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpa7k0fh3g.wav
+2025-03-31 18:56:33 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpa7k0fh3g.wav
+2025-03-31 18:56:33 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour.'
+2025-03-31 18:56:33 - AudioProcessor - INFO - Queue retrieve: 'Sky tour.'
+2025-03-31 18:56:33 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 18:56:33 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 18:56:33 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 18:56:34 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:56:34 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 18:56:35 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 18:56:38 - root - INFO - Joystick input: Btn 2 -> 'sky tour'
+2025-03-31 18:56:38 - AudioProcessor - INFO - Queue retrieve: 'sky tour'
+2025-03-31 18:56:38 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Wake word
+2025-03-31 18:56:38 - ElevenLabsTTS - INFO - No text to speak.
+2025-03-31 18:56:38 - AudioProcessor - INFO - Playing SFX: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 18:56:40 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 18:56:40 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 18:56:40 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:56:45 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgt0gq9wg.wav
+2025-03-31 18:56:45 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgt0gq9wg.wav
+2025-03-31 18:56:45 - WhisperSTT - INFO - Raw Whisper result: 'Where am I?'
+2025-03-31 18:56:45 - AudioProcessor - INFO - Queue retrieve: 'Where am I?'
+2025-03-31 18:56:45 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 18:56:45 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 18:56:45 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: Where am I cmd
+2025-03-31 18:56:45 - StateManager - INFO - Handling 'Where am I?' (thread)...
+2025-03-31 18:56:45 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Checking your location......'
+2025-03-31 18:56:46 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:56:46 - ElevenLabsTTS - INFO - Playing audio: 'Checking your location......'
+2025-03-31 18:56:47 - ElevenLabsTTS - INFO - Finished playing: 'Checking your location......'
+2025-03-31 18:56:48 - GeoUtils - INFO - Reverse geocoded 40.68926206861566, -74.04418401941865 to 'Statue of Liberty, Flagpole Plaza, Jersey City, Hudson County, New Jersey, 10004, United States'
+2025-03-31 18:56:48 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 18:56:49 - OpenAIProvider - INFO - OpenAI response generated successfully (382 chars)
+2025-03-31 18:56:49 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're soaring high above the southern tip of Manh...'
+2025-03-31 18:56:54 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:56:54 - ElevenLabsTTS - INFO - Playing audio: 'You're soaring high above the southern tip of Manh...'
+2025-03-31 18:57:17 - ElevenLabsTTS - INFO - Finished playing: 'You're soaring high above the southern tip of Manh...'
+2025-03-31 18:57:17 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
+2025-03-31 18:57:18 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:57:18 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'
+2025-03-31 18:57:19 - ElevenLabsTTS - INFO - Finished playing: 'More questions?...'
+2025-03-31 18:57:19 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 18:57:19 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 18:57:19 - StateManager - INFO - State change: PROCESSING -> WAITING - Reason: Loc provided
+2025-03-31 18:57:19 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:57:24 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp9xil52_0.wav
+2025-03-31 18:57:24 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp9xil52_0.wav
+2025-03-31 18:57:24 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 18:57:24 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:57:29 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpb8v47jab.wav
+2025-03-31 18:57:29 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpb8v47jab.wav
+2025-03-31 18:57:30 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 18:57:30 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:57:35 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpenbceeni.wav
+2025-03-31 18:57:35 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpenbceeni.wav
+2025-03-31 18:57:35 - WhisperSTT - INFO - Raw Whisper result: ''
+2025-03-31 18:57:35 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 18:57:40 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpo9bwk07n.wav
+2025-03-31 18:57:40 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpo9bwk07n.wav
+2025-03-31 18:57:41 - WhisperSTT - INFO - Raw Whisper result: 'there you please'
+2025-03-31 18:57:41 - AudioProcessor - INFO - Queue retrieve: 'there you please'
+2025-03-31 18:57:41 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 18:57:41 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 18:57:41 - StateManager - INFO - State change: WAITING -> PROCESSING - Reason: General question
+2025-03-31 18:57:41 - StateManager - INFO - Handling question (thread): 'there you please...'
+2025-03-31 18:57:41 - GeoUtils - INFO - Reverse geocoded 40.68912275974831, -74.04380978421868 to 'Statue of Liberty, Flagpole Plaza, Jersey City, Hudson County, New Jersey, 10004, United States'
+2025-03-31 18:57:41 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 18:57:42 - OpenAIProvider - INFO - OpenAI response generated successfully (233 chars)
+2025-03-31 18:57:42 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're near the Statue of Liberty, flying over Fla...'
+2025-03-31 18:57:45 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 18:57:45 - ElevenLabsTTS - INFO - Playing audio: 'You're near the Statue of Liberty, flying over Fla...'
+2025-03-31 19:14:45 - root - INFO - Whisper Flight AI v5.0.0 logging initialized
+2025-03-31 19:14:47 - AudioProcessor - INFO - Init AudioProcessor
+2025-03-31 19:14:47 - AudioProcessor - INFO - Mixer init.
+2025-03-31 19:14:47 - AudioProcessor - INFO - STT engine: whisper
+2025-03-31 19:14:47 - WhisperSTT - INFO - WhisperSTT: Noise threshold (for VAD if used): 0.2
+2025-03-31 19:14:47 - WhisperSTT - INFO - Loading Whisper 'base'...
+2025-03-31 19:14:47 - WhisperSTT - INFO - Whisper loaded.
+2025-03-31 19:14:47 - AudioProcessor - INFO - TTS engine: elevenlabs
+2025-03-31 19:14:47 - AudioProcessor - INFO - Found SFX 'optimus_prime': C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 19:14:47 - AudioProcessor - INFO - Found SFX 'deactivate': C:\Projects\WhisperFlight_AI\Sky_Tour_Deactivated.mp3
+2025-03-31 19:14:47 - AIManager - INFO - AI Manager initialized. Active providers: grok, openai. Default: openai
+2025-03-31 19:14:47 - GeoUtils - INFO - Geocoding cache database initialized at C:\Projects\WhisperFlight_AI\geo_cache.db
+2025-03-31 19:14:47 - GeoUtils - INFO - ✅ Reverse geocode cache cleared on startup.
+2025-03-31 19:14:47 - root - INFO - pysimconnect module found in environment
+2025-03-31 19:14:47 - SimConnectServer - INFO - Initializing SimConnectServer
+2025-03-31 19:14:47 - SimConnect.SimConnect - INFO - SIM OPEN
+2025-03-31 19:14:47 - SimConnectServer - INFO - ✅ Connected to MSFS via SimConnect
+2025-03-31 19:14:48 - SimConnectServer - INFO - Fetched PLANE_LATITUDE: 39.94421095546663
+2025-03-31 19:14:48 - SimConnectServer - INFO - Fetched PLANE_LONGITUDE: -74.8410910964875
+2025-03-31 19:14:48 - SimConnectServer - INFO - Fetched PLANE_ALTITUDE: 51.649651087172614
+2025-03-31 19:14:48 - SimConnectServer - INFO - Fetched PLANE_HEADING_DEGREES_TRUE: 4.359374755491355
+2025-03-31 19:14:48 - SimConnectServer - INFO - Updated aircraft data: {'Latitude': 39.94421095546663, 'Longitude': -74.8410910964875, 'Altitude': 51.649651087172614, 'Heading': 4.359374755491355}
+2025-03-31 19:14:48 - NavigationManager - INFO - Loaded 8 points of interest
+2025-03-31 19:14:48 - MockSimConnect - INFO - ✅ [MOCK] SimConnect initialized
+2025-03-31 19:14:48 - MockSimConnect - INFO - ⚠️ [MOCK] Using simulated aircraft data
+2025-03-31 19:14:48 - MockSimConnect - INFO - ✅ [MOCK] Connected via MockSimConnect
+2025-03-31 19:14:48 - StateManager - INFO - StateManager initialized: State=STANDBY, API=openai
+2025-03-31 19:14:48 - root - INFO - Whisper Flight AI v5.1.0 starting up
+2025-03-31 19:14:48 - root - INFO - Whisper Flight AI v5.0.0 starting up
+2025-03-31 19:14:48 - root - INFO - Python version: 3.11.4
+2025-03-31 19:14:48 - root - INFO - Platform: Windows-10-10.0.26100-SP0
+2025-03-31 19:14:48 - root - INFO - Debug mode: Disabled
+2025-03-31 19:14:48 - root - INFO - Distributed mode: Disabled
+2025-03-31 19:14:48 - root - INFO - Default AI provider: openai
+2025-03-31 19:14:48 - root - INFO - STT engine: whisper
+2025-03-31 19:14:48 - root - INFO - TTS engine: elevenlabs
+2025-03-31 19:14:48 - root - INFO - Found 2 joystick(s).
+2025-03-31 19:14:48 - root - INFO - Joystick 'T.16000M' initialized (Index: 0)
+2025-03-31 19:14:48 - root - INFO - Application ready. Current state: STANDBY
+2025-03-31 19:14:48 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 19:14:48 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 19:14:48 - root - INFO - Application status changed to RUNNING: 
+2025-03-31 19:14:48 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 19:14:53 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpdqza53hu.wav
+2025-03-31 19:14:53 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpdqza53hu.wav
+2025-03-31 19:14:53 - WhisperSTT - INFO - Raw Whisper result: 'Okay. Yes, sir. Okay.'
+2025-03-31 19:14:53 - AudioProcessor - INFO - Queue retrieve: 'Okay. Yes, sir. Okay.'
+2025-03-31 19:14:53 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 19:14:58 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmp66cq1q44.wav
+2025-03-31 19:14:58 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmp66cq1q44.wav
+2025-03-31 19:14:59 - WhisperSTT - INFO - Raw Whisper result: 'Sky tour.'
+2025-03-31 19:14:59 - AudioProcessor - INFO - Queue retrieve: 'Sky tour.'
+2025-03-31 19:14:59 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 19:14:59 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 19:14:59 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Say Sky Tour clearly....'
+2025-03-31 19:14:59 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 19:14:59 - ElevenLabsTTS - INFO - Playing audio: 'Say Sky Tour clearly....'
+2025-03-31 19:15:01 - ElevenLabsTTS - INFO - Finished playing: 'Say Sky Tour clearly....'
+2025-03-31 19:15:01 - root - INFO - Joystick input: Btn 2 -> 'sky tour'
+2025-03-31 19:15:01 - AudioProcessor - INFO - Queue retrieve: 'sky tour'
+2025-03-31 19:15:01 - StateManager - INFO - State change: STANDBY -> ACTIVE - Reason: Wake word
+2025-03-31 19:15:01 - ElevenLabsTTS - INFO - No text to speak.
+2025-03-31 19:15:01 - AudioProcessor - INFO - Playing SFX: C:\Projects\WhisperFlight_AI\Sky_Tour_Activated.mp3
+2025-03-31 19:15:03 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 19:15:03 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 19:15:03 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 19:15:03 - root - INFO - Joystick input: Btn 3 -> 'where am i'
+2025-03-31 19:15:03 - AudioProcessor - INFO - Queue retrieve: 'where am i'
+2025-03-31 19:15:04 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-31 19:15:04 - StateManager - INFO - State change: ACTIVE -> PROCESSING - Reason: Where am I cmd
+2025-03-31 19:15:04 - StateManager - INFO - Handling 'Where am I?' (thread)...
+2025-03-31 19:15:04 - AudioProcessor - WARNING - Listen thread failed to join!
+2025-03-31 19:15:04 - ElevenLabsTTS - INFO - Synthesizing(11L): 'Checking your location......'
+2025-03-31 19:15:05 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 19:15:05 - ElevenLabsTTS - INFO - Playing audio: 'Checking your location......'
+2025-03-31 19:15:06 - ElevenLabsTTS - INFO - Finished playing: 'Checking your location......'
+2025-03-31 19:15:07 - GeoUtils - INFO - Reverse geocoded 40.68920906814334, -74.04505702729725 to 'Statue of Liberty, Flagpole Plaza, Jersey City, Hudson County, New Jersey, 10004, United States'
+2025-03-31 19:15:07 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 19:15:08 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpmvb6aoe6.wav
+2025-03-31 19:15:08 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpmvb6aoe6.wav
+2025-03-31 19:15:08 - WhisperSTT - INFO - Raw Whisper result: 'Checking your location.'
+2025-03-31 19:15:08 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 19:15:09 - OpenAIProvider - INFO - OpenAI response generated successfully (282 chars)
+2025-03-31 19:15:09 - ElevenLabsTTS - INFO - Synthesizing(11L): 'You're soaring above the southern tip of Manhattan...'
+2025-03-31 19:15:12 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 19:15:12 - ElevenLabsTTS - INFO - Playing audio: 'You're soaring above the southern tip of Manhattan...'
+2025-03-31 19:15:30 - ElevenLabsTTS - INFO - Finished playing: 'You're soaring above the southern tip of Manhattan...'
+2025-03-31 19:15:30 - ElevenLabsTTS - INFO - Synthesizing(11L): 'More questions?...'
+2025-03-31 19:15:30 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 19:15:30 - ElevenLabsTTS - INFO - Playing audio: 'More questions?...'
+2025-03-31 19:15:32 - ElevenLabsTTS - INFO - Finished playing: 'More questions?...'
+2025-03-31 19:15:32 - AudioProcessor - INFO - Listen worker thread started.
+2025-03-31 19:15:32 - AudioProcessor - INFO - Started continuous listening thread.
+2025-03-31 19:15:32 - StateManager - INFO - State change: PROCESSING -> WAITING - Reason: Loc provided
+2025-03-31 19:15:32 - WhisperSTT - INFO - Using default audio input.
+2025-03-31 19:15:37 - WhisperSTT - INFO - Audio recorded: C:\Users\Admin\AppData\Local\Temp\tmpgphqlg8a.wav
+2025-03-31 19:15:37 - WhisperSTT - INFO - Starting Whisper transcription: C:\Users\Admin\AppData\Local\Temp\tmpgphqlg8a.wav
+2025-03-31 19:15:38 - WhisperSTT - INFO - Raw Whisper result: 'That is amazing.'
+2025-03-31 19:15:38 - AudioProcessor - INFO - Queue retrieve: 'That is amazing.'
+2025-03-31 19:15:38 - AudioProcessor - INFO - Listen worker thread finished.
+2025-03-31 19:15:38 - AudioProcessor - INFO - Stopped continuous listening thread.
+2025-03-31 19:15:38 - StateManager - INFO - State change: WAITING -> PROCESSING - Reason: General question
+2025-03-31 19:15:38 - StateManager - INFO - Handling question (thread): 'That is amazing....'
+2025-03-31 19:15:38 - GeoUtils - INFO - Reverse geocoded 40.68868860066053, -74.04490617161876 to 'Flagpole Plaza, Jersey City, Hudson County, New Jersey, 07303, United States'
+2025-03-31 19:15:38 - AIManager - INFO - Attempting response generation with: openai
+2025-03-31 19:15:39 - OpenAIProvider - INFO - OpenAI response generated successfully (124 chars)
+2025-03-31 19:15:39 - ElevenLabsTTS - INFO - Synthesizing(11L): 'It truly is! The view from up here gives you a uni...'
+2025-03-31 19:15:41 - ElevenLabsTTS - INFO - 11L synth OK.
+2025-03-31 19:15:41 - ElevenLabsTTS - INFO - Playing audio: 'It truly is! The view from up here gives you a uni...'
