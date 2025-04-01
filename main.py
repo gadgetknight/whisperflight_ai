@@ -305,6 +305,7 @@ def main_event_loop() -> None:
 
                 # Handle keyboard input
                 elif event.type == pygame.KEYDOWN and keyboard_enabled:
+                    print(f"[DEBUG] Key pressed: {event.key}")
                     if event.key == pygame.K_F4:
                         print_system_status()
                     elif event.key == pygame.K_F5:

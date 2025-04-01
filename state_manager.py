@@ -1,14 +1,15 @@
 """
 Whisper Flight AI - State Manager
-Version: 5.1.39
+Version: 5.1.40
 Purpose: Manages application state transitions and conversation flow
-Last Updated: March 28, 2025
+Last Updated: March 31, 2025
 Author: Your Name
 
-Changes:
-- Fixed syntax errors in handler methods
-- Corrected import logic for SimConnect compatibility
-- Retained all previous fixes (wake word debug print, restart delays)
+Changes in v5.1.40:
+- Fixed SimConnect import logic to use the loader module
+- Added SimConnect mode change handling
+- Improved error resilience for SimConnect operations
+- Preserved all existing functionality and state handling
 """
 
 import os
@@ -25,28 +26,39 @@ from config_manager import config
 from audio_processor import audio_processor
 from ai_provider import ai_manager
 
-# Try to load mock SimConnect first, fall back to real if that fails
-try:
-    from mock_simconnect_server import sim_server
+# Use the proper SimConnect loader instead of direct imports
+from simconnect_loader import (
+    sim_server,
+    get_connection_info,
+    register_mode_change_callback,
+    is_using_real_simconnect,
+)
 
-    print("State manager using mock SimConnect server directly")
-except ImportError:
-    try:
-        from simconnect_server import sim_server
+# Global flags for dependent modules
+_navigation_available = False
+_geo_utils_available = False
+_efb_available = False
 
-        print("State manager using real SimConnect server")
-    except Exception as e:
-        print(f"State manager SimConnect error: {e}")
-        print("No SimConnect implementation available for state manager")
-        sim_server = None
-
-# Only try importing these if SimConnect import succeeded
+# Only try importing these if SimConnect loader provided a valid server
 if sim_server is not None:
-    from navigation import navigation_manager
-    from geo_utils import geo_utils
+    try:
+        from navigation import navigation_manager
+
+        _navigation_available = True
+    except ImportError:
+        navigation_manager = None
+
+    try:
+        from geo_utils import geo_utils
+
+        _geo_utils_available = True
+    except ImportError:
+        geo_utils = None
 
     try:
         from efb_integration import efb
+
+        _efb_available = True
     except ImportError:
         efb = None
 else:
@@ -69,11 +81,9 @@ class AppState(Enum):
 
 
 class StateManager:
-    # --- __init__ and other methods unchanged ---
     def __init__(self):
         self.logger = logging.getLogger("StateManager")
         self.current_state = AppState.STANDBY
-        # ... (rest of __init__ as before) ...
         self.previous_state = None
         self.state_change_time = time.time()
         self.active_api = config.get("AI", "default_provider", "openai").lower()
@@ -92,13 +102,27 @@ class StateManager:
         self.last_dest_lon = None
         self.state_lock = threading.RLock()
 
+        # Register for SimConnect mode changes
+        register_mode_change_callback(self._handle_simconnect_mode_change)
+
         if navigation_manager:
             if self not in navigation_manager.tracking_callbacks:
                 navigation_manager.tracking_callbacks.append(self)
 
+        # Log the SimConnect mode we're using from the loader
+        sim_status = get_connection_info()
+        self.logger.info(
+            f"StateManager initialized with SimConnect mode: {sim_status['mode']}"
+        )
+
         self.logger.info(
             f"StateManager initialized: State={self.current_state.name}, API={self.active_api}"
         )
+
+    def _handle_simconnect_mode_change(self, new_mode):
+        """Handle SimConnect mode changes"""
+        self.logger.info(f"SimConnect mode changed to: {new_mode}")
+        # Additional handling can be added here if needed
 
     def change_state(self, new_state, reason=None):
         # --- Keep logic ---
@@ -145,7 +169,10 @@ class StateManager:
                 except Exception as e:
                     self.logger.error(f"State callback error: {e}", exc_info=True)
 
-    # --- Other methods (register_..., set_active_api, add_..., get_..., clear..., _is_..., _clear_audio_queue, _create_...) remain the same ---
+    # All other methods remain the same as in the previous version
+    # Including register_state_change_callback, set_active_api, add_to_conversation,
+    # get_conversation_context, clear_conversation, etc.
+
     def register_state_change_callback(self, callback):
         if callback not in self.state_change_callbacks:
             self.state_change_callbacks.append(callback)
@@ -267,10 +294,13 @@ class StateManager:
             return False
 
         wake_lower = wake_word.lower().strip()
+        normalized = (
+            wake_lower.replace(".", "").replace(",", "").replace("!", "").strip()
+        )
         print(f"DEBUG: Wake word check received: '{wake_lower}'")
 
         wake_variations = ["sky tour", "skytour", "scatour"]
-        if any(variation == wake_lower for variation in wake_variations):
+        if any(variation == normalized for variation in wake_variations):
             self.change_state(AppState.ACTIVE, "Wake word")
             if audio_processor:
                 audio_processor.speak("", "optimus_prime")
@@ -410,7 +440,7 @@ class StateManager:
                 if audio_processor:
                     audio_processor.speak("", "deactivate")
                     audio_processor.stop_continuous_listening()
-                if self.navigation_active:
+                if self.navigation_active and navigation_manager:
                     navigation_manager.stop_destination_tracking()
                     self.navigation_active = False
                 self.change_state(AppState.STANDBY, "Deactivation")
@@ -420,7 +450,7 @@ class StateManager:
                 if audio_processor:
                     audio_processor.speak("Resetting context.")
                 self.clear_conversation()
-                if self.navigation_active:
+                if self.navigation_active and navigation_manager:
                     navigation_manager.stop_destination_tracking()
                     self.navigation_active = False
                 self.change_state(AppState.ACTIVE, "Reset")
@@ -455,6 +485,11 @@ class StateManager:
                 ).start()
                 return True
             elif self._is_navigation_query(cmd_lower):
+                if not navigation_manager:
+                    if audio_processor:
+                        audio_processor.speak("Navigation not available.")
+                    return True
+
                 if audio_processor:
                     audio_processor.stop_continuous_listening()
                 self.change_state(AppState.PROCESSING, "Nav request")
@@ -463,6 +498,11 @@ class StateManager:
                 ).start()
                 return True
             elif self._is_tour_request(cmd_lower):
+                if not navigation_manager:
+                    if audio_processor:
+                        audio_processor.speak("Tour guides not available.")
+                    return True
+
                 if audio_processor:
                     audio_processor.stop_continuous_listening()
                 self.change_state(AppState.PROCESSING, "Tour request")
@@ -471,6 +511,11 @@ class StateManager:
                 ).start()
                 return True
             elif "tell me when" in cmd_lower:
+                if not navigation_manager:
+                    if audio_processor:
+                        audio_processor.speak("Navigation not available.")
+                    return True
+
                 if self.last_destination:
                     if audio_processor:
                         audio_processor.stop_continuous_listening()
@@ -518,9 +563,7 @@ class StateManager:
             )
             return False
 
-    # --- Handler Methods (_handle_...) ---
-    # Keep corrected syntax versions from v10
-
+    # All handler methods remain unchanged except for better SimConnect checks
     def _handle_where_am_i_with_tour(self):
         next_state = AppState.ACTIVE
         reason = "Error loc proc"
@@ -531,9 +574,32 @@ class StateManager:
             else:
                 raise RuntimeError("Audio processor N/A.")
 
+            # Check if SimConnect is available
+            if not sim_server:
+                raise RuntimeError("SimConnect not available")
+
             flight_data = sim_server.get_aircraft_data()
             if not flight_data or "Latitude" not in flight_data:
                 raise ValueError("Incomplete data.")
+
+            # Check if geo_utils is available
+            if not geo_utils:
+                raise RuntimeError("Geo utilities not available")
+
+            lat = flight_data.get("Latitude")
+            lon = flight_data.get("Longitude")
+            alt = int(round(flight_data.get("Altitude", 1500)))
+
+            loc_name = geo_utils.reverse_geocode(lat, lon)
+            parts = loc_name.split(", ")
+            simp = []
+            seen = set()
+            country = parts[-1] if parts else ""
+            state = parts[-2] if len(parts) > 1 else None
+            city = parts[-3] if len(parts) > 2 else None
+            # Check if geo_utils is available
+            if not geo_utils:
+                raise RuntimeError("Geo utilities not available")
 
             lat = flight_data.get("Latitude")
             lon = flight_data.get("Longitude")
@@ -611,6 +677,10 @@ class StateManager:
             else:
                 raise RuntimeError("Audio processor N/A.")
 
+            # Check if navigation_manager is available
+            if not navigation_manager:
+                raise RuntimeError("Navigation manager not available")
+
             dir_info = navigation_manager.get_direction_to_destination(query)
             if not dir_info:
                 raise ValueError("Dest not found.")
@@ -650,6 +720,10 @@ class StateManager:
             self.change_state(next_state, reason)
 
     def _setup_arrival_notification(self):
+        if not navigation_manager:
+            self.logger.error("Navigation manager not available")
+            return False
+
         if self.navigation_active:
             self.logger.info("Stopping prev track.")
             navigation_manager.stop_destination_tracking()
@@ -663,9 +737,6 @@ class StateManager:
             return False
 
         try:
-            if not navigation_manager:
-                raise RuntimeError("NavManager N/A")
-
             success = navigation_manager.start_destination_tracking(
                 self.last_destination,
                 self.last_dest_lat,
@@ -694,6 +765,13 @@ class StateManager:
                 audio_processor.speak("Looking...")
             else:
                 raise RuntimeError("Audio processor N/A.")
+
+            # Check dependencies
+            if not sim_server:
+                raise RuntimeError("SimConnect not available")
+
+            if not geo_utils:
+                raise RuntimeError("Geo utilities not available")
 
             flight_data = sim_server.get_aircraft_data()
             if not flight_data or "Latitude" not in flight_data:
@@ -770,20 +848,24 @@ class StateManager:
         reason = "Question error"
         try:
             self.logger.info(f"Handling question (thread): '{question[:50]}...'")
-            flight_data = sim_server.get_aircraft_data()
+            flight_data = None
             loc_ctx = ""
 
-            if flight_data:
-                lat = flight_data.get("Latitude")
-                lon = flight_data.get("Longitude")
-                alt = flight_data.get("Altitude")
+            # Use SimConnect if available but don't fail if not
+            if sim_server and geo_utils:
+                try:
+                    flight_data = sim_server.get_aircraft_data()
+                    if flight_data:
+                        lat = flight_data.get("Latitude")
+                        lon = flight_data.get("Longitude")
+                        alt = flight_data.get("Altitude")
 
-                if None not in (lat, lon, alt):
-                    try:
-                        loc = geo_utils.reverse_geocode(lat, lon)
-                        loc_ctx = f"Pilot near {loc} at {alt:.0f} ft. "
-                    except Exception as geo_e:
-                        self.logger.warning(f"Failed geo ctx: {geo_e}")
+                        if None not in (lat, lon, alt):
+                            loc = geo_utils.reverse_geocode(lat, lon)
+                            loc_ctx = f"Pilot near {loc} at {alt:.0f} ft. "
+                except Exception as geo_e:
+                    self.logger.warning(f"Failed to get location context: {geo_e}")
+                    # Continue without location context
 
             sys_prompt = f"AI flight guide. {loc_ctx}Answer pilot concisely for audio."
             msgs = [{"role": "system", "content": sys_prompt}]
@@ -834,8 +916,7 @@ class StateManager:
                     audio_processor.start_continuous_listening()
             self.change_state(next_state, reason)
 
-    # ---
-    # --- Navigation Callbacks ---
+    # Navigation Callbacks - checking for SimConnect availability
     def on_arrival(self, destination):
         with self.state_lock:
             if self.current_state not in [AppState.STANDBY, AppState.ERROR]:
